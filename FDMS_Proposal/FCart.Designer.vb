@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class FCart
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,9 +20,8 @@ Partial Class FCart
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.components = New System.ComponentModel.Container()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.account = New System.Windows.Forms.Label()
         Me.help = New System.Windows.Forms.Label()
@@ -34,24 +33,14 @@ Partial Class FCart
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.CartBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.MerchTorresDataSet1 = New FDMS_Proposal.MerchTorresDataSet1()
-        Me.GymSitiesBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.MerchTorresDataSet = New FDMS_Proposal.MerchTorresDataSet()
         Me.Button24 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.GymSitiesTableAdapter = New FDMS_Proposal.MerchTorresDataSetTableAdapters.GymSitiesTableAdapter()
-        Me.CartTableAdapter = New FDMS_Proposal.MerchTorresDataSet1TableAdapters.CartTableAdapter()
         Me.Panel1.SuspendLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.CartBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.MerchTorresDataSet1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.GymSitiesBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.MerchTorresDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Panel1
@@ -184,26 +173,6 @@ Partial Class FCart
         Me.DataGridView1.Size = New System.Drawing.Size(346, 239)
         Me.DataGridView1.TabIndex = 6
         '
-        'CartBindingSource
-        '
-        Me.CartBindingSource.DataMember = "Cart"
-        Me.CartBindingSource.DataSource = Me.MerchTorresDataSet1
-        '
-        'MerchTorresDataSet1
-        '
-        Me.MerchTorresDataSet1.DataSetName = "MerchTorresDataSet1"
-        Me.MerchTorresDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
-        'GymSitiesBindingSource
-        '
-        Me.GymSitiesBindingSource.DataMember = "GymSities"
-        Me.GymSitiesBindingSource.DataSource = Me.MerchTorresDataSet
-        '
-        'MerchTorresDataSet
-        '
-        Me.MerchTorresDataSet.DataSetName = "MerchTorresDataSet"
-        Me.MerchTorresDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
         'Button24
         '
         Me.Button24.BackColor = System.Drawing.Color.MidnightBlue
@@ -264,14 +233,6 @@ Partial Class FCart
         Me.TextBox3.Size = New System.Drawing.Size(165, 20)
         Me.TextBox3.TabIndex = 24
         '
-        'GymSitiesTableAdapter
-        '
-        Me.GymSitiesTableAdapter.ClearBeforeFill = True
-        '
-        'CartTableAdapter
-        '
-        Me.CartTableAdapter.ClearBeforeFill = True
-        '
         'FCart
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -294,10 +255,6 @@ Partial Class FCart
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.CartBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.MerchTorresDataSet1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.GymSitiesBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.MerchTorresDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -320,10 +277,4 @@ Partial Class FCart
     Friend WithEvents TextBox1 As TextBox
     Friend WithEvents TextBox2 As TextBox
     Friend WithEvents TextBox3 As TextBox
-    Friend WithEvents MerchTorresDataSet As MerchTorresDataSet
-    Friend WithEvents GymSitiesBindingSource As BindingSource
-    Friend WithEvents GymSitiesTableAdapter As MerchTorresDataSetTableAdapters.GymSitiesTableAdapter
-    Friend WithEvents MerchTorresDataSet1 As MerchTorresDataSet1
-    Friend WithEvents CartBindingSource As BindingSource
-    Friend WithEvents CartTableAdapter As MerchTorresDataSet1TableAdapters.CartTableAdapter
 End Class
