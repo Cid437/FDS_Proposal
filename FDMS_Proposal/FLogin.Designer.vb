@@ -153,6 +153,7 @@ Partial Class FLogin
         Me.TextBox2.Location = New System.Drawing.Point(445, 222)
         Me.TextBox2.Multiline = True
         Me.TextBox2.Name = "TextBox2"
+        Me.TextBox2.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.TextBox2.Size = New System.Drawing.Size(268, 31)
         Me.TextBox2.TabIndex = 5
         '

@@ -34,8 +34,8 @@ Partial Class FCart
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.ItemNameDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.PriceDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.CartBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.MerchTorresDataSet1 = New FDMS_Proposal.MerchTorresDataSet1()
         Me.GymSitiesBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.MerchTorresDataSet = New FDMS_Proposal.MerchTorresDataSet()
         Me.Button24 = New System.Windows.Forms.Button()
@@ -45,15 +45,13 @@ Partial Class FCart
         Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.TextBox3 = New System.Windows.Forms.TextBox()
         Me.GymSitiesTableAdapter = New FDMS_Proposal.MerchTorresDataSetTableAdapters.GymSitiesTableAdapter()
-        Me.MerchTorresDataSet1 = New FDMS_Proposal.MerchTorresDataSet1()
-        Me.CartBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.CartTableAdapter = New FDMS_Proposal.MerchTorresDataSet1TableAdapters.CartTableAdapter()
         Me.Panel1.SuspendLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.CartBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.MerchTorresDataSet1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.GymSitiesBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.MerchTorresDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.MerchTorresDataSet1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.CartBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Panel1
@@ -179,27 +177,22 @@ Partial Class FCart
         '
         'DataGridView1
         '
-        Me.DataGridView1.AutoGenerateColumns = False
         Me.DataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.ItemNameDataGridViewTextBoxColumn, Me.PriceDataGridViewTextBoxColumn})
-        Me.DataGridView1.DataSource = Me.CartBindingSource
         Me.DataGridView1.Location = New System.Drawing.Point(400, 163)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.Size = New System.Drawing.Size(346, 239)
         Me.DataGridView1.TabIndex = 6
         '
-        'ItemNameDataGridViewTextBoxColumn
+        'CartBindingSource
         '
-        Me.ItemNameDataGridViewTextBoxColumn.DataPropertyName = "ItemName"
-        Me.ItemNameDataGridViewTextBoxColumn.HeaderText = "ItemName"
-        Me.ItemNameDataGridViewTextBoxColumn.Name = "ItemNameDataGridViewTextBoxColumn"
+        Me.CartBindingSource.DataMember = "Cart"
+        Me.CartBindingSource.DataSource = Me.MerchTorresDataSet1
         '
-        'PriceDataGridViewTextBoxColumn
+        'MerchTorresDataSet1
         '
-        Me.PriceDataGridViewTextBoxColumn.DataPropertyName = "Price"
-        Me.PriceDataGridViewTextBoxColumn.HeaderText = "Price"
-        Me.PriceDataGridViewTextBoxColumn.Name = "PriceDataGridViewTextBoxColumn"
+        Me.MerchTorresDataSet1.DataSetName = "MerchTorresDataSet1"
+        Me.MerchTorresDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
         'GymSitiesBindingSource
         '
@@ -275,16 +268,6 @@ Partial Class FCart
         '
         Me.GymSitiesTableAdapter.ClearBeforeFill = True
         '
-        'MerchTorresDataSet1
-        '
-        Me.MerchTorresDataSet1.DataSetName = "MerchTorresDataSet1"
-        Me.MerchTorresDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
-        'CartBindingSource
-        '
-        Me.CartBindingSource.DataMember = "Cart"
-        Me.CartBindingSource.DataSource = Me.MerchTorresDataSet1
-        '
         'CartTableAdapter
         '
         Me.CartTableAdapter.ClearBeforeFill = True
@@ -311,10 +294,10 @@ Partial Class FCart
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.CartBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.MerchTorresDataSet1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.GymSitiesBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.MerchTorresDataSet, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.MerchTorresDataSet1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.CartBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -340,8 +323,6 @@ Partial Class FCart
     Friend WithEvents MerchTorresDataSet As MerchTorresDataSet
     Friend WithEvents GymSitiesBindingSource As BindingSource
     Friend WithEvents GymSitiesTableAdapter As MerchTorresDataSetTableAdapters.GymSitiesTableAdapter
-    Friend WithEvents ItemNameDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
-    Friend WithEvents PriceDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
     Friend WithEvents MerchTorresDataSet1 As MerchTorresDataSet1
     Friend WithEvents CartBindingSource As BindingSource
     Friend WithEvents CartTableAdapter As MerchTorresDataSet1TableAdapters.CartTableAdapter
