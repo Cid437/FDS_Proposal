@@ -1,0 +1,297 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{58110EB3-A3F0-4610-ADE6-65F05193A07D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>FDMS_Proposal.My.MyApplication</StartupObject>
+    <RootNamespace>FDMS_Proposal</RootNamespace>
+    <AssemblyName>FDMS_Proposal</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>FDMS_Proposal.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>FDMS_Proposal.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FAbout.Designer.vb">
+      <DependentUpon>FAbout.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FAbout.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FCart.Designer.vb">
+      <DependentUpon>FCart.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FCart.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FLogin.Designer.vb">
+      <DependentUpon>FLogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fbuy.Designer.vb">
+      <DependentUpon>Fbuy.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Fbuy.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fstaff.Designer.vb">
+      <DependentUpon>Fstaff.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Fstaff.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MerchTorresDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MerchTorresDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MerchTorresDataSet1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MerchTorresDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FAbout.resx">
+      <DependentUpon>FAbout.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FCart.resx">
+      <DependentUpon>FCart.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FLogin.resx">
+      <DependentUpon>FLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fbuy.resx">
+      <DependentUpon>Fbuy.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fstaff.resx">
+      <DependentUpon>Fstaff.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="MerchTorresDataSet.xsc">
+      <DependentUpon>MerchTorresDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="MerchTorresDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MerchTorresDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MerchTorresDataSet.xss">
+      <DependentUpon>MerchTorresDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="MerchTorresDataSet1.xsc">
+      <DependentUpon>MerchTorresDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="MerchTorresDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MerchTorresDataSet1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MerchTorresDataSet1.xss">
+      <DependentUpon>MerchTorresDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pawnshop2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pawnshopguy-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ChatGPT Image Jun 30, 2025, 03_05_44 PM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\canvagoods.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\valley-view-center-mall-298790.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\c072e1a6-2058-4146-992f-ce68322fe1cf-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8a3e074f-2f61-447f-9031-62bbc99320f4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\c072e1a6-2058-4146-992f-ce68322fe1cf-removebg-preview %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\d2e5ebd6-3fdb-4867-81bf-0ccc6d46123f.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cc5f706d-34d1-46af-a2c2-b5b1494c1965.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\45d99d12-b09e-4413-a8af-9fc342d33741 %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DC_Header.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Buy now!.mp4" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pawn &amp; Trade.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DCAboutus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Whats in my Cart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Whats in my Cart1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ocean.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Whats in my Cart2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dagat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DCPT_Items.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fstaff.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
