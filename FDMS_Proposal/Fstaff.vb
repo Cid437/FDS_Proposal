@@ -151,7 +151,7 @@ Public Class Fstaff
                 MsgBox("Item not reorganized")
 
             End If
-
+            ' lol '
         Catch ex As Exception
             MsgBox("Item not organized, make sure it has (A unique name, a unique id, a unique description and so)")
         End Try
