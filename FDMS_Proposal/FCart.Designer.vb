@@ -39,6 +39,7 @@ Partial Class FCart
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.Label3 = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -158,7 +159,7 @@ Partial Class FCart
         Me.Label2.BackColor = System.Drawing.Color.Transparent
         Me.Label2.Font = New System.Drawing.Font("Lucida Fax", 20.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label2.Location = New System.Drawing.Point(251, 116)
+        Me.Label2.Location = New System.Drawing.Point(12, 147)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(276, 32)
         Me.Label2.TabIndex = 5
@@ -166,7 +167,6 @@ Partial Class FCart
         '
         'DataGridView1
         '
-        Me.DataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridView1.Location = New System.Drawing.Point(400, 163)
         Me.DataGridView1.Name = "DataGridView1"
@@ -179,7 +179,7 @@ Partial Class FCart
         Me.Button24.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Button24.Font = New System.Drawing.Font("Lucida Fax", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button24.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Button24.Location = New System.Drawing.Point(81, 205)
+        Me.Button24.Location = New System.Drawing.Point(54, 229)
         Me.Button24.Name = "Button24"
         Me.Button24.Size = New System.Drawing.Size(141, 27)
         Me.Button24.TabIndex = 19
@@ -192,7 +192,7 @@ Partial Class FCart
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Button1.Font = New System.Drawing.Font("Lucida Fax", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Button1.Location = New System.Drawing.Point(81, 271)
+        Me.Button1.Location = New System.Drawing.Point(54, 295)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(141, 27)
         Me.Button1.TabIndex = 20
@@ -205,7 +205,7 @@ Partial Class FCart
         Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Button2.Font = New System.Drawing.Font("Lucida Fax", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Button2.Location = New System.Drawing.Point(81, 341)
+        Me.Button2.Location = New System.Drawing.Point(54, 365)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(141, 27)
         Me.Button2.TabIndex = 21
@@ -214,24 +214,36 @@ Partial Class FCart
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(81, 176)
+        Me.TextBox1.Location = New System.Drawing.Point(54, 200)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(165, 20)
         Me.TextBox1.TabIndex = 22
         '
         'TextBox2
         '
-        Me.TextBox2.Location = New System.Drawing.Point(81, 245)
+        Me.TextBox2.Location = New System.Drawing.Point(54, 269)
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(165, 20)
         Me.TextBox2.TabIndex = 23
         '
         'TextBox3
         '
-        Me.TextBox3.Location = New System.Drawing.Point(81, 312)
+        Me.TextBox3.Location = New System.Drawing.Point(54, 336)
         Me.TextBox3.Name = "TextBox3"
         Me.TextBox3.Size = New System.Drawing.Size(165, 20)
         Me.TextBox3.TabIndex = 24
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.BackColor = System.Drawing.Color.Transparent
+        Me.Label3.Font = New System.Drawing.Font("Lucida Fax", 20.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Label3.Location = New System.Drawing.Point(277, 115)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(276, 32)
+        Me.Label3.TabIndex = 25
+        Me.Label3.Text = "Whats in my Cart?"
         '
         'FCart
         '
@@ -239,6 +251,7 @@ Partial Class FCart
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.FDMS_Proposal.My.Resources.Resources.dagat
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.TextBox3)
         Me.Controls.Add(Me.TextBox2)
         Me.Controls.Add(Me.TextBox1)
@@ -277,4 +290,5 @@ Partial Class FCart
     Friend WithEvents TextBox1 As TextBox
     Friend WithEvents TextBox2 As TextBox
     Friend WithEvents TextBox3 As TextBox
+    Friend WithEvents Label3 As Label
 End Class
