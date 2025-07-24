@@ -27,6 +27,25 @@ Public Class FCart
         conn.Close()
     End Sub
 
+    Private Sub reloaddatagrid()
+        Try
+            conn.Open()
+            sql = "SELECT * FROM carts ORDER BY item_id"
+
+            DataAdapter1 = New MySqlDataAdapter(sql, conn)
+            ds = New DataSet()
+            DataAdapter1.Fill(ds, "items")
+            DataGridView1.DataSource = ds
+            DataGridView1.DataMember = "items"
+
+
+        Catch ex As Exception
+            MsgBox("Error in collecting data from Database. Error is :" & ex.Message)
+
+        End Try
+        conn.Close()
+    End Sub
+
     Private Sub buy_Click(sender As Object, e As EventArgs) Handles buy.Click
         Me.Hide()
         Fbuy.Show()
@@ -45,5 +64,26 @@ Public Class FCart
     Private Sub account_Click(sender As Object, e As EventArgs) Handles account.Click
         Me.Hide()
         FLogin.Show()
+    End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Dim id = TextBox2.Text
+        Try
+            conn.Open()
+            sql = $"DELETE FROM carts WHERE item_id = {id}"
+            dbcomm = New MySqlCommand(sql, conn)
+            Dim i As Integer = dbcomm.ExecuteNonQuery
+
+            If (i > 0) Then
+                MsgBox("Item removed")
+            Else
+                MsgBox("item not removed")
+
+            End If
+        Catch ex As MySqlException
+            MsgBox(ex.Message)
+        End Try
+        conn.Close()
+        reloaddatagrid()
     End Sub
 End Class

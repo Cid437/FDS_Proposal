@@ -48,11 +48,16 @@ Partial Class Fstaff
         Me.Button6 = New System.Windows.Forms.Button()
         Me.TextBox7 = New System.Windows.Forms.TextBox()
         Me.DataGridView2 = New System.Windows.Forms.DataGridView()
+        Me.TabControl2 = New System.Windows.Forms.TabControl()
+        Me.TabPage3 = New System.Windows.Forms.TabPage()
+        Me.TabPage4 = New System.Windows.Forms.TabPage()
+        Me.TabPage5 = New System.Windows.Forms.TabPage()
         Me.TabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabPage2.SuspendLayout()
         CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.TabControl2.SuspendLayout()
         Me.SuspendLayout()
         '
         'Button1
@@ -70,7 +75,8 @@ Partial Class Fstaff
         '
         Me.TabControl1.Controls.Add(Me.TabPage1)
         Me.TabControl1.Controls.Add(Me.TabPage2)
-        Me.TabControl1.Location = New System.Drawing.Point(23, 60)
+        Me.TabControl1.Controls.Add(Me.TabPage5)
+        Me.TabControl1.Location = New System.Drawing.Point(23, 57)
         Me.TabControl1.Name = "TabControl1"
         Me.TabControl1.SelectedIndex = 0
         Me.TabControl1.Size = New System.Drawing.Size(737, 368)
@@ -316,6 +322,52 @@ Partial Class Fstaff
         Me.DataGridView2.Size = New System.Drawing.Size(310, 150)
         Me.DataGridView2.TabIndex = 0
         '
+        'TabControl2
+        '
+        Me.TabControl2.Controls.Add(Me.TabPage3)
+        Me.TabControl2.Controls.Add(Me.TabPage4)
+        Me.TabControl2.Location = New System.Drawing.Point(23, 59)
+        Me.TabControl2.Name = "TabControl2"
+        Me.TabControl2.SelectedIndex = 0
+        Me.TabControl2.Size = New System.Drawing.Size(737, 366)
+        Me.TabControl2.TabIndex = 3
+        '
+        'TabPage3
+        '
+        Me.TabPage3.BackgroundImage = Global.FDMS_Proposal.My.Resources.Resources.Fstaff
+        Me.TabPage3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.TabPage3.Location = New System.Drawing.Point(4, 22)
+        Me.TabPage3.Name = "TabPage3"
+        Me.TabPage3.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabPage3.Size = New System.Drawing.Size(729, 340)
+        Me.TabPage3.TabIndex = 0
+        Me.TabPage3.Text = "Accounts"
+        Me.TabPage3.UseVisualStyleBackColor = True
+        '
+        'TabPage4
+        '
+        Me.TabPage4.BackgroundImage = Global.FDMS_Proposal.My.Resources.Resources.Fstaff
+        Me.TabPage4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.TabPage4.Location = New System.Drawing.Point(4, 22)
+        Me.TabPage4.Name = "TabPage4"
+        Me.TabPage4.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabPage4.Size = New System.Drawing.Size(729, 340)
+        Me.TabPage4.TabIndex = 1
+        Me.TabPage4.Text = "Staff"
+        Me.TabPage4.UseVisualStyleBackColor = True
+        '
+        'TabPage5
+        '
+        Me.TabPage5.BackgroundImage = Global.FDMS_Proposal.My.Resources.Resources.Fstaff
+        Me.TabPage5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.TabPage5.Location = New System.Drawing.Point(4, 22)
+        Me.TabPage5.Name = "TabPage5"
+        Me.TabPage5.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabPage5.Size = New System.Drawing.Size(729, 342)
+        Me.TabPage5.TabIndex = 2
+        Me.TabPage5.Text = "Customer help"
+        Me.TabPage5.UseVisualStyleBackColor = True
+        '
         'Fstaff
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -324,6 +376,7 @@ Partial Class Fstaff
         Me.ClientSize = New System.Drawing.Size(800, 450)
         Me.Controls.Add(Me.TabControl1)
         Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.TabControl2)
         Me.Name = "Fstaff"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Fstaff"
@@ -334,6 +387,7 @@ Partial Class Fstaff
         Me.TabPage2.ResumeLayout(False)
         Me.TabPage2.PerformLayout()
         CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.TabControl2.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
@@ -364,4 +418,8 @@ Partial Class Fstaff
     Friend WithEvents TextBox5 As TextBox
     Friend WithEvents TextBox6 As TextBox
     Friend WithEvents Label6 As Label
+    Friend WithEvents TabControl2 As TabControl
+    Friend WithEvents TabPage3 As TabPage
+    Friend WithEvents TabPage4 As TabPage
+    Friend WithEvents TabPage5 As TabPage
 End Class

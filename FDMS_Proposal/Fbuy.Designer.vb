@@ -31,6 +31,12 @@ Partial Class Fbuy
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Label3 = New System.Windows.Forms.Label()
+        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox5 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox6 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.TabPage3 = New System.Windows.Forms.TabPage()
         Me.Button10 = New System.Windows.Forms.Button()
         Me.Button11 = New System.Windows.Forms.Button()
@@ -39,6 +45,12 @@ Partial Class Fbuy
         Me.Button8 = New System.Windows.Forms.Button()
         Me.Button9 = New System.Windows.Forms.Button()
         Me.Label4 = New System.Windows.Forms.Label()
+        Me.PictureBox16 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox17 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox18 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox7 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox8 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox9 = New System.Windows.Forms.PictureBox()
         Me.TabPage4 = New System.Windows.Forms.TabPage()
         Me.Button16 = New System.Windows.Forms.Button()
         Me.Button17 = New System.Windows.Forms.Button()
@@ -47,6 +59,12 @@ Partial Class Fbuy
         Me.Button14 = New System.Windows.Forms.Button()
         Me.Button15 = New System.Windows.Forms.Button()
         Me.Label5 = New System.Windows.Forms.Label()
+        Me.PictureBox19 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox20 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox21 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox10 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox11 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox12 = New System.Windows.Forms.PictureBox()
         Me.TabPage5 = New System.Windows.Forms.TabPage()
         Me.Button22 = New System.Windows.Forms.Button()
         Me.Button23 = New System.Windows.Forms.Button()
@@ -55,24 +73,6 @@ Partial Class Fbuy
         Me.Button20 = New System.Windows.Forms.Button()
         Me.Button21 = New System.Windows.Forms.Button()
         Me.Label6 = New System.Windows.Forms.Label()
-        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox5 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox6 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox16 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox17 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox18 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox7 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox8 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox9 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox19 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox20 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox21 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox10 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox11 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox12 = New System.Windows.Forms.PictureBox()
         Me.PictureBox22 = New System.Windows.Forms.PictureBox()
         Me.PictureBox23 = New System.Windows.Forms.PictureBox()
         Me.PictureBox24 = New System.Windows.Forms.PictureBox()
@@ -89,27 +89,27 @@ Partial Class Fbuy
         Me.home = New System.Windows.Forms.Label()
         Me.TabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
-        Me.TabPage3.SuspendLayout()
-        Me.TabPage4.SuspendLayout()
-        Me.TabPage5.SuspendLayout()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.TabPage3.SuspendLayout()
         CType(Me.PictureBox16, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox17, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox18, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.TabPage4.SuspendLayout()
         CType(Me.PictureBox19, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox20, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox21, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox10, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox11, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox12, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.TabPage5.SuspendLayout()
         CType(Me.PictureBox22, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox23, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox24, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -244,6 +244,66 @@ Partial Class Fbuy
         Me.Label3.TabIndex = 7
         Me.Label3.Text = "Jewelries"
         '
+        'PictureBox4
+        '
+        Me.PictureBox4.BackColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.PictureBox4.Image = Global.FDMS_Proposal.My.Resources.Resources.DCPT_Items
+        Me.PictureBox4.Location = New System.Drawing.Point(537, 419)
+        Me.PictureBox4.Name = "PictureBox4"
+        Me.PictureBox4.Size = New System.Drawing.Size(217, 267)
+        Me.PictureBox4.TabIndex = 6
+        Me.PictureBox4.TabStop = False
+        '
+        'PictureBox5
+        '
+        Me.PictureBox5.BackColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.PictureBox5.Image = Global.FDMS_Proposal.My.Resources.Resources.DCPT_Items
+        Me.PictureBox5.Location = New System.Drawing.Point(279, 419)
+        Me.PictureBox5.Name = "PictureBox5"
+        Me.PictureBox5.Size = New System.Drawing.Size(217, 267)
+        Me.PictureBox5.TabIndex = 5
+        Me.PictureBox5.TabStop = False
+        '
+        'PictureBox6
+        '
+        Me.PictureBox6.BackColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.PictureBox6.Image = Global.FDMS_Proposal.My.Resources.Resources.DCPT_Items
+        Me.PictureBox6.Location = New System.Drawing.Point(20, 419)
+        Me.PictureBox6.Name = "PictureBox6"
+        Me.PictureBox6.Size = New System.Drawing.Size(217, 267)
+        Me.PictureBox6.TabIndex = 4
+        Me.PictureBox6.TabStop = False
+        '
+        'PictureBox3
+        '
+        Me.PictureBox3.BackColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.PictureBox3.Image = Global.FDMS_Proposal.My.Resources.Resources.DCPT_Items
+        Me.PictureBox3.Location = New System.Drawing.Point(537, 109)
+        Me.PictureBox3.Name = "PictureBox3"
+        Me.PictureBox3.Size = New System.Drawing.Size(217, 267)
+        Me.PictureBox3.TabIndex = 3
+        Me.PictureBox3.TabStop = False
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.BackColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.PictureBox1.Image = Global.FDMS_Proposal.My.Resources.Resources.DCPT_Items
+        Me.PictureBox1.Location = New System.Drawing.Point(279, 109)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(217, 267)
+        Me.PictureBox1.TabIndex = 2
+        Me.PictureBox1.TabStop = False
+        '
+        'PictureBox2
+        '
+        Me.PictureBox2.BackColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.PictureBox2.Image = Global.FDMS_Proposal.My.Resources.Resources.DCPT_Items
+        Me.PictureBox2.Location = New System.Drawing.Point(20, 109)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(217, 267)
+        Me.PictureBox2.TabIndex = 1
+        Me.PictureBox2.TabStop = False
+        '
         'TabPage3
         '
         Me.TabPage3.AutoScroll = True
@@ -355,6 +415,66 @@ Partial Class Fbuy
         Me.Label4.Size = New System.Drawing.Size(139, 28)
         Me.Label4.TabIndex = 11
         Me.Label4.Text = "Electronics"
+        '
+        'PictureBox16
+        '
+        Me.PictureBox16.BackColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.PictureBox16.Image = Global.FDMS_Proposal.My.Resources.Resources.DCPT_Items
+        Me.PictureBox16.Location = New System.Drawing.Point(537, 389)
+        Me.PictureBox16.Name = "PictureBox16"
+        Me.PictureBox16.Size = New System.Drawing.Size(217, 267)
+        Me.PictureBox16.TabIndex = 14
+        Me.PictureBox16.TabStop = False
+        '
+        'PictureBox17
+        '
+        Me.PictureBox17.BackColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.PictureBox17.Image = Global.FDMS_Proposal.My.Resources.Resources.DCPT_Items
+        Me.PictureBox17.Location = New System.Drawing.Point(279, 389)
+        Me.PictureBox17.Name = "PictureBox17"
+        Me.PictureBox17.Size = New System.Drawing.Size(217, 267)
+        Me.PictureBox17.TabIndex = 13
+        Me.PictureBox17.TabStop = False
+        '
+        'PictureBox18
+        '
+        Me.PictureBox18.BackColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.PictureBox18.Image = Global.FDMS_Proposal.My.Resources.Resources.DCPT_Items
+        Me.PictureBox18.Location = New System.Drawing.Point(20, 389)
+        Me.PictureBox18.Name = "PictureBox18"
+        Me.PictureBox18.Size = New System.Drawing.Size(217, 267)
+        Me.PictureBox18.TabIndex = 12
+        Me.PictureBox18.TabStop = False
+        '
+        'PictureBox7
+        '
+        Me.PictureBox7.BackColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.PictureBox7.Image = Global.FDMS_Proposal.My.Resources.Resources.DCPT_Items
+        Me.PictureBox7.Location = New System.Drawing.Point(537, 80)
+        Me.PictureBox7.Name = "PictureBox7"
+        Me.PictureBox7.Size = New System.Drawing.Size(217, 267)
+        Me.PictureBox7.TabIndex = 10
+        Me.PictureBox7.TabStop = False
+        '
+        'PictureBox8
+        '
+        Me.PictureBox8.BackColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.PictureBox8.Image = Global.FDMS_Proposal.My.Resources.Resources.DCPT_Items
+        Me.PictureBox8.Location = New System.Drawing.Point(279, 80)
+        Me.PictureBox8.Name = "PictureBox8"
+        Me.PictureBox8.Size = New System.Drawing.Size(217, 267)
+        Me.PictureBox8.TabIndex = 9
+        Me.PictureBox8.TabStop = False
+        '
+        'PictureBox9
+        '
+        Me.PictureBox9.BackColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.PictureBox9.Image = Global.FDMS_Proposal.My.Resources.Resources.DCPT_Items
+        Me.PictureBox9.Location = New System.Drawing.Point(20, 80)
+        Me.PictureBox9.Name = "PictureBox9"
+        Me.PictureBox9.Size = New System.Drawing.Size(217, 267)
+        Me.PictureBox9.TabIndex = 8
+        Me.PictureBox9.TabStop = False
         '
         'TabPage4
         '
@@ -468,6 +588,66 @@ Partial Class Fbuy
         Me.Label5.TabIndex = 11
         Me.Label5.Text = "Antiques"
         '
+        'PictureBox19
+        '
+        Me.PictureBox19.BackColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.PictureBox19.Image = Global.FDMS_Proposal.My.Resources.Resources.DCPT_Items
+        Me.PictureBox19.Location = New System.Drawing.Point(537, 376)
+        Me.PictureBox19.Name = "PictureBox19"
+        Me.PictureBox19.Size = New System.Drawing.Size(217, 267)
+        Me.PictureBox19.TabIndex = 14
+        Me.PictureBox19.TabStop = False
+        '
+        'PictureBox20
+        '
+        Me.PictureBox20.BackColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.PictureBox20.Image = Global.FDMS_Proposal.My.Resources.Resources.DCPT_Items
+        Me.PictureBox20.Location = New System.Drawing.Point(279, 376)
+        Me.PictureBox20.Name = "PictureBox20"
+        Me.PictureBox20.Size = New System.Drawing.Size(217, 267)
+        Me.PictureBox20.TabIndex = 13
+        Me.PictureBox20.TabStop = False
+        '
+        'PictureBox21
+        '
+        Me.PictureBox21.BackColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.PictureBox21.Image = Global.FDMS_Proposal.My.Resources.Resources.DCPT_Items
+        Me.PictureBox21.Location = New System.Drawing.Point(20, 376)
+        Me.PictureBox21.Name = "PictureBox21"
+        Me.PictureBox21.Size = New System.Drawing.Size(217, 267)
+        Me.PictureBox21.TabIndex = 12
+        Me.PictureBox21.TabStop = False
+        '
+        'PictureBox10
+        '
+        Me.PictureBox10.BackColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.PictureBox10.Image = Global.FDMS_Proposal.My.Resources.Resources.DCPT_Items
+        Me.PictureBox10.Location = New System.Drawing.Point(537, 80)
+        Me.PictureBox10.Name = "PictureBox10"
+        Me.PictureBox10.Size = New System.Drawing.Size(217, 267)
+        Me.PictureBox10.TabIndex = 10
+        Me.PictureBox10.TabStop = False
+        '
+        'PictureBox11
+        '
+        Me.PictureBox11.BackColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.PictureBox11.Image = Global.FDMS_Proposal.My.Resources.Resources.DCPT_Items
+        Me.PictureBox11.Location = New System.Drawing.Point(279, 80)
+        Me.PictureBox11.Name = "PictureBox11"
+        Me.PictureBox11.Size = New System.Drawing.Size(217, 267)
+        Me.PictureBox11.TabIndex = 9
+        Me.PictureBox11.TabStop = False
+        '
+        'PictureBox12
+        '
+        Me.PictureBox12.BackColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.PictureBox12.Image = Global.FDMS_Proposal.My.Resources.Resources.DCPT_Items
+        Me.PictureBox12.Location = New System.Drawing.Point(20, 80)
+        Me.PictureBox12.Name = "PictureBox12"
+        Me.PictureBox12.Size = New System.Drawing.Size(217, 267)
+        Me.PictureBox12.TabIndex = 8
+        Me.PictureBox12.TabStop = False
+        '
         'TabPage5
         '
         Me.TabPage5.AutoScroll = True
@@ -579,186 +759,6 @@ Partial Class Fbuy
         Me.Label6.Size = New System.Drawing.Size(89, 28)
         Me.Label6.TabIndex = 11
         Me.Label6.Text = "Others"
-        '
-        'PictureBox4
-        '
-        Me.PictureBox4.BackColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.PictureBox4.Image = Global.FDMS_Proposal.My.Resources.Resources.DCPT_Items
-        Me.PictureBox4.Location = New System.Drawing.Point(537, 419)
-        Me.PictureBox4.Name = "PictureBox4"
-        Me.PictureBox4.Size = New System.Drawing.Size(217, 267)
-        Me.PictureBox4.TabIndex = 6
-        Me.PictureBox4.TabStop = False
-        '
-        'PictureBox5
-        '
-        Me.PictureBox5.BackColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.PictureBox5.Image = Global.FDMS_Proposal.My.Resources.Resources.DCPT_Items
-        Me.PictureBox5.Location = New System.Drawing.Point(279, 419)
-        Me.PictureBox5.Name = "PictureBox5"
-        Me.PictureBox5.Size = New System.Drawing.Size(217, 267)
-        Me.PictureBox5.TabIndex = 5
-        Me.PictureBox5.TabStop = False
-        '
-        'PictureBox6
-        '
-        Me.PictureBox6.BackColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.PictureBox6.Image = Global.FDMS_Proposal.My.Resources.Resources.DCPT_Items
-        Me.PictureBox6.Location = New System.Drawing.Point(20, 419)
-        Me.PictureBox6.Name = "PictureBox6"
-        Me.PictureBox6.Size = New System.Drawing.Size(217, 267)
-        Me.PictureBox6.TabIndex = 4
-        Me.PictureBox6.TabStop = False
-        '
-        'PictureBox3
-        '
-        Me.PictureBox3.BackColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.PictureBox3.Image = Global.FDMS_Proposal.My.Resources.Resources.DCPT_Items
-        Me.PictureBox3.Location = New System.Drawing.Point(537, 109)
-        Me.PictureBox3.Name = "PictureBox3"
-        Me.PictureBox3.Size = New System.Drawing.Size(217, 267)
-        Me.PictureBox3.TabIndex = 3
-        Me.PictureBox3.TabStop = False
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.BackColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.PictureBox1.Image = Global.FDMS_Proposal.My.Resources.Resources.DCPT_Items
-        Me.PictureBox1.Location = New System.Drawing.Point(279, 109)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(217, 267)
-        Me.PictureBox1.TabIndex = 2
-        Me.PictureBox1.TabStop = False
-        '
-        'PictureBox2
-        '
-        Me.PictureBox2.BackColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.PictureBox2.Image = Global.FDMS_Proposal.My.Resources.Resources.DCPT_Items
-        Me.PictureBox2.Location = New System.Drawing.Point(20, 109)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(217, 267)
-        Me.PictureBox2.TabIndex = 1
-        Me.PictureBox2.TabStop = False
-        '
-        'PictureBox16
-        '
-        Me.PictureBox16.BackColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.PictureBox16.Image = Global.FDMS_Proposal.My.Resources.Resources.DCPT_Items
-        Me.PictureBox16.Location = New System.Drawing.Point(537, 389)
-        Me.PictureBox16.Name = "PictureBox16"
-        Me.PictureBox16.Size = New System.Drawing.Size(217, 267)
-        Me.PictureBox16.TabIndex = 14
-        Me.PictureBox16.TabStop = False
-        '
-        'PictureBox17
-        '
-        Me.PictureBox17.BackColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.PictureBox17.Image = Global.FDMS_Proposal.My.Resources.Resources.DCPT_Items
-        Me.PictureBox17.Location = New System.Drawing.Point(279, 389)
-        Me.PictureBox17.Name = "PictureBox17"
-        Me.PictureBox17.Size = New System.Drawing.Size(217, 267)
-        Me.PictureBox17.TabIndex = 13
-        Me.PictureBox17.TabStop = False
-        '
-        'PictureBox18
-        '
-        Me.PictureBox18.BackColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.PictureBox18.Image = Global.FDMS_Proposal.My.Resources.Resources.DCPT_Items
-        Me.PictureBox18.Location = New System.Drawing.Point(20, 389)
-        Me.PictureBox18.Name = "PictureBox18"
-        Me.PictureBox18.Size = New System.Drawing.Size(217, 267)
-        Me.PictureBox18.TabIndex = 12
-        Me.PictureBox18.TabStop = False
-        '
-        'PictureBox7
-        '
-        Me.PictureBox7.BackColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.PictureBox7.Image = Global.FDMS_Proposal.My.Resources.Resources.DCPT_Items
-        Me.PictureBox7.Location = New System.Drawing.Point(537, 80)
-        Me.PictureBox7.Name = "PictureBox7"
-        Me.PictureBox7.Size = New System.Drawing.Size(217, 267)
-        Me.PictureBox7.TabIndex = 10
-        Me.PictureBox7.TabStop = False
-        '
-        'PictureBox8
-        '
-        Me.PictureBox8.BackColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.PictureBox8.Image = Global.FDMS_Proposal.My.Resources.Resources.DCPT_Items
-        Me.PictureBox8.Location = New System.Drawing.Point(279, 80)
-        Me.PictureBox8.Name = "PictureBox8"
-        Me.PictureBox8.Size = New System.Drawing.Size(217, 267)
-        Me.PictureBox8.TabIndex = 9
-        Me.PictureBox8.TabStop = False
-        '
-        'PictureBox9
-        '
-        Me.PictureBox9.BackColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.PictureBox9.Image = Global.FDMS_Proposal.My.Resources.Resources.DCPT_Items
-        Me.PictureBox9.Location = New System.Drawing.Point(20, 80)
-        Me.PictureBox9.Name = "PictureBox9"
-        Me.PictureBox9.Size = New System.Drawing.Size(217, 267)
-        Me.PictureBox9.TabIndex = 8
-        Me.PictureBox9.TabStop = False
-        '
-        'PictureBox19
-        '
-        Me.PictureBox19.BackColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.PictureBox19.Image = Global.FDMS_Proposal.My.Resources.Resources.DCPT_Items
-        Me.PictureBox19.Location = New System.Drawing.Point(537, 376)
-        Me.PictureBox19.Name = "PictureBox19"
-        Me.PictureBox19.Size = New System.Drawing.Size(217, 267)
-        Me.PictureBox19.TabIndex = 14
-        Me.PictureBox19.TabStop = False
-        '
-        'PictureBox20
-        '
-        Me.PictureBox20.BackColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.PictureBox20.Image = Global.FDMS_Proposal.My.Resources.Resources.DCPT_Items
-        Me.PictureBox20.Location = New System.Drawing.Point(279, 376)
-        Me.PictureBox20.Name = "PictureBox20"
-        Me.PictureBox20.Size = New System.Drawing.Size(217, 267)
-        Me.PictureBox20.TabIndex = 13
-        Me.PictureBox20.TabStop = False
-        '
-        'PictureBox21
-        '
-        Me.PictureBox21.BackColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.PictureBox21.Image = Global.FDMS_Proposal.My.Resources.Resources.DCPT_Items
-        Me.PictureBox21.Location = New System.Drawing.Point(20, 376)
-        Me.PictureBox21.Name = "PictureBox21"
-        Me.PictureBox21.Size = New System.Drawing.Size(217, 267)
-        Me.PictureBox21.TabIndex = 12
-        Me.PictureBox21.TabStop = False
-        '
-        'PictureBox10
-        '
-        Me.PictureBox10.BackColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.PictureBox10.Image = Global.FDMS_Proposal.My.Resources.Resources.DCPT_Items
-        Me.PictureBox10.Location = New System.Drawing.Point(537, 80)
-        Me.PictureBox10.Name = "PictureBox10"
-        Me.PictureBox10.Size = New System.Drawing.Size(217, 267)
-        Me.PictureBox10.TabIndex = 10
-        Me.PictureBox10.TabStop = False
-        '
-        'PictureBox11
-        '
-        Me.PictureBox11.BackColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.PictureBox11.Image = Global.FDMS_Proposal.My.Resources.Resources.DCPT_Items
-        Me.PictureBox11.Location = New System.Drawing.Point(279, 80)
-        Me.PictureBox11.Name = "PictureBox11"
-        Me.PictureBox11.Size = New System.Drawing.Size(217, 267)
-        Me.PictureBox11.TabIndex = 9
-        Me.PictureBox11.TabStop = False
-        '
-        'PictureBox12
-        '
-        Me.PictureBox12.BackColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.PictureBox12.Image = Global.FDMS_Proposal.My.Resources.Resources.DCPT_Items
-        Me.PictureBox12.Location = New System.Drawing.Point(20, 80)
-        Me.PictureBox12.Name = "PictureBox12"
-        Me.PictureBox12.Size = New System.Drawing.Size(217, 267)
-        Me.PictureBox12.TabIndex = 8
-        Me.PictureBox12.TabStop = False
         '
         'PictureBox22
         '
@@ -934,30 +934,30 @@ Partial Class Fbuy
         Me.TabControl1.ResumeLayout(False)
         Me.TabPage1.ResumeLayout(False)
         Me.TabPage1.PerformLayout()
-        Me.TabPage3.ResumeLayout(False)
-        Me.TabPage3.PerformLayout()
-        Me.TabPage4.ResumeLayout(False)
-        Me.TabPage4.PerformLayout()
-        Me.TabPage5.ResumeLayout(False)
-        Me.TabPage5.PerformLayout()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.TabPage3.ResumeLayout(False)
+        Me.TabPage3.PerformLayout()
         CType(Me.PictureBox16, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox17, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox18, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.TabPage4.ResumeLayout(False)
+        Me.TabPage4.PerformLayout()
         CType(Me.PictureBox19, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox20, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox21, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox10, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox11, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox12, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.TabPage5.ResumeLayout(False)
+        Me.TabPage5.PerformLayout()
         CType(Me.PictureBox22, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox23, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox24, System.ComponentModel.ISupportInitialize).EndInit()
