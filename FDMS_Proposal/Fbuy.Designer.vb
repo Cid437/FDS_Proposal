@@ -678,7 +678,7 @@ Partial Class Fbuy
         Me.Button22.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Button22.Font = New System.Drawing.Font("Lucida Fax", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button22.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Button22.Location = New System.Drawing.Point(600, 310)
+        Me.Button22.Location = New System.Drawing.Point(605, 614)
         Me.Button22.Name = "Button22"
         Me.Button22.Size = New System.Drawing.Size(90, 30)
         Me.Button22.TabIndex = 20
@@ -691,7 +691,7 @@ Partial Class Fbuy
         Me.Button23.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Button23.Font = New System.Drawing.Font("Lucida Fax", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button23.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Button23.Location = New System.Drawing.Point(343, 310)
+        Me.Button23.Location = New System.Drawing.Point(348, 614)
         Me.Button23.Name = "Button23"
         Me.Button23.Size = New System.Drawing.Size(90, 30)
         Me.Button23.TabIndex = 19
@@ -704,7 +704,7 @@ Partial Class Fbuy
         Me.Button24.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Button24.Font = New System.Drawing.Font("Lucida Fax", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button24.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Button24.Location = New System.Drawing.Point(85, 310)
+        Me.Button24.Location = New System.Drawing.Point(90, 614)
         Me.Button24.Name = "Button24"
         Me.Button24.Size = New System.Drawing.Size(90, 30)
         Me.Button24.TabIndex = 18
@@ -717,7 +717,7 @@ Partial Class Fbuy
         Me.Button19.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Button19.Font = New System.Drawing.Font("Lucida Fax", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button19.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Button19.Location = New System.Drawing.Point(605, 615)
+        Me.Button19.Location = New System.Drawing.Point(610, 313)
         Me.Button19.Name = "Button19"
         Me.Button19.Size = New System.Drawing.Size(90, 30)
         Me.Button19.TabIndex = 17
@@ -730,7 +730,7 @@ Partial Class Fbuy
         Me.Button20.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Button20.Font = New System.Drawing.Font("Lucida Fax", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button20.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Button20.Location = New System.Drawing.Point(348, 615)
+        Me.Button20.Location = New System.Drawing.Point(348, 313)
         Me.Button20.Name = "Button20"
         Me.Button20.Size = New System.Drawing.Size(90, 30)
         Me.Button20.TabIndex = 16
@@ -743,7 +743,7 @@ Partial Class Fbuy
         Me.Button21.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Button21.Font = New System.Drawing.Font("Lucida Fax", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button21.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Button21.Location = New System.Drawing.Point(90, 615)
+        Me.Button21.Location = New System.Drawing.Point(90, 313)
         Me.Button21.Name = "Button21"
         Me.Button21.Size = New System.Drawing.Size(90, 30)
         Me.Button21.TabIndex = 15

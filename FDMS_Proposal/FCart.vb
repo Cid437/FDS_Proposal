@@ -86,4 +86,8 @@ Public Class FCart
         conn.Close()
         reloaddatagrid()
     End Sub
+
+    Private Sub Button24_Click(sender As Object, e As EventArgs) Handles Button24.Click
+
+    End Sub
 End Class
