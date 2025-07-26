@@ -88,6 +88,21 @@ Public Class FCart
     End Sub
 
     Private Sub Button24_Click(sender As Object, e As EventArgs) Handles Button24.Click
+        Dim id As Integer
+        Try
+            conn.Open()
+            id = Val(TextBox1.Text)
+            sql = "SELECT * FROM carts WHERE item_id = " & id
+            dbcomm = New MySqlCommand(sql, conn)
+            dbread = dbcomm.ExecuteReader()
+            dbread.Read()
 
+            TextBox2.Text = dbread("item_name")
+            TextBox3.Text = dbread("item_price")
+
+        Catch ex As MySqlException
+            MsgBox(ex.Message)
+        End Try
+        conn.Close()
     End Sub
 End Class
