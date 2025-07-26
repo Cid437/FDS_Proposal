@@ -54,6 +54,7 @@ Public Class FLogin
 
                 loggedInUser = name 'Global variables
                 loggedInRole = role
+                loggedInID = dbread("account_id")
 
                 If role = adminconfirm Then
                     MsgBox("Welcome, admin '" & loggedInUser & "'!")

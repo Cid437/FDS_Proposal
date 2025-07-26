@@ -201,7 +201,42 @@ Public Class FCart
             Exit Sub
         End If
 
-        MsgBox("You are logged in as: " & loggedInUser)
+        Dim conn As New MySqlConnection("Data Source=localhost;Database=DCPT;User=root;Password=;")
+        Dim sql As String = "SELECT item_name, item_price, cart_amount, COUNT(*) AS quantity " &
+                        "FROM carts GROUP BY item_name, item_price"
+        Dim dbcomm2 As New MySqlCommand(sql, conn)
+        Dim reader As MySqlDataReader
+        Dim message As String = ""
+        Dim total As Decimal = 0
+        Dim today As String = Date.Now.ToString("yyyy-MM-dd")
+
+        Try
+            conn.Open()
+            reader = dbcomm2.ExecuteReader()
+
+            While reader.Read()
+                Dim name As String = reader("item_name")
+                Dim price As Decimal = reader("item_price")
+                Dim qty As Integer = reader("cart_amount")
+                Dim subtotal As Decimal = price * qty
+
+                message &= qty & " x " & name & " = ₱" & subtotal & vbCrLf
+                total += subtotal
+            End While
+            reader.Close()
+
+            message &= vbCrLf & "Total: ₱" & total
+            MsgBox(message, MsgBoxStyle.Information, "Purchase Summary")
+
+            sql = "INSERT INTO order_description (account_id, date_ordered , price, order_description) VALUES ('" & loggedInID & "','" & today & "','" & total & "', '" & message & "')"
+            dbcomm = New MySqlCommand(sql, conn)
+            dbcomm.ExecuteNonQuery()
+
+        Catch ex As Exception
+            MsgBox("Error: " & ex.Message)
+        Finally
+            conn.Close()
+        End Try
     End Sub
 
 End Class
