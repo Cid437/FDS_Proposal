@@ -9,7 +9,6 @@ Public Class FCart
     Public ds As DataSet
 
     Private Sub FCart_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Label4.Text = loggedInUser
         Try
             conn.Open()
             sql = "SELECT * FROM carts ORDER BY item_id"
