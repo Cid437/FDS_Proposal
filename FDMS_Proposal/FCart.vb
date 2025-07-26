@@ -99,7 +99,7 @@ Public Class FCart
 
             TextBox2.Text = dbread("item_name")
             TextBox3.Text = dbread("item_price")
-
+            'testing
         Catch ex As MySqlException
             MsgBox(ex.Message)
         End Try
