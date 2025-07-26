@@ -11,6 +11,7 @@ Public Class FLogin
     Private Sub buy_Click(sender As Object, e As EventArgs) Handles buy.Click
         Me.Hide()
         Fbuy.Show()
+
     End Sub
 
     Private Sub home_Click(sender As Object, e As EventArgs) Handles home.Click
@@ -40,6 +41,7 @@ Public Class FLogin
         Dim name = TextBox1.Text
         Dim password = TextBox2.Text
         Dim staffconfirm = "staff"
+        Dim adminconfirm = "admin"
 
         Try
             conn.Open()
@@ -50,12 +52,21 @@ Public Class FLogin
             If dbread.Read() Then
                 Dim role As String = dbread("role")
 
-                If role = staffconfirm Then
-                    MsgBox("Welcome, staff '" & name & "'!")
+                loggedInUser = name 'Global variables
+                loggedInRole = role
+
+                If role = adminconfirm Then
+                    MsgBox("Welcome, admin '" & loggedInUser & "'!")
+                    Fstaff.Show()
+                    Me.Hide()
+                ElseIf role = staffconfirm Then
+                    MsgBox("Welcome, staff '" & loggedInUser & "'!")
                     Fstaff.Show()
                     Me.Hide()
                 Else
-                    MsgBox("Login Successful, welcome '" & name & "'!")
+                    MsgBox("Login Successful, welcome '" & loggedInUser & "'!")
+                    Me.Hide()
+                    FCart.Show()
                 End If
             Else
                 MsgBox("Please check your username or password. If you don't have an account, please sign up.")

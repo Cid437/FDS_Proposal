@@ -24,13 +24,22 @@ Partial Class Fbuy
     Private Sub InitializeComponent()
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.PictureBox28 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox29 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox30 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox27 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox26 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox25 = New System.Windows.Forms.PictureBox()
         Me.Button4 = New System.Windows.Forms.Button()
         Me.Button5 = New System.Windows.Forms.Button()
         Me.Button6 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
-        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Jewelry = New System.Windows.Forms.Label()
         Me.PictureBox4 = New System.Windows.Forms.PictureBox()
         Me.PictureBox5 = New System.Windows.Forms.PictureBox()
         Me.PictureBox6 = New System.Windows.Forms.PictureBox()
@@ -38,13 +47,25 @@ Partial Class Fbuy
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.TabPage3 = New System.Windows.Forms.TabPage()
+        Me.Label10 = New System.Windows.Forms.Label()
+        Me.Label11 = New System.Windows.Forms.Label()
+        Me.Label12 = New System.Windows.Forms.Label()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.PictureBox34 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox35 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox36 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox31 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox32 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox33 = New System.Windows.Forms.PictureBox()
         Me.Button10 = New System.Windows.Forms.Button()
         Me.Button11 = New System.Windows.Forms.Button()
         Me.Button12 = New System.Windows.Forms.Button()
         Me.Button7 = New System.Windows.Forms.Button()
         Me.Button8 = New System.Windows.Forms.Button()
         Me.Button9 = New System.Windows.Forms.Button()
-        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Electronics = New System.Windows.Forms.Label()
         Me.PictureBox16 = New System.Windows.Forms.PictureBox()
         Me.PictureBox17 = New System.Windows.Forms.PictureBox()
         Me.PictureBox18 = New System.Windows.Forms.PictureBox()
@@ -52,13 +73,25 @@ Partial Class Fbuy
         Me.PictureBox8 = New System.Windows.Forms.PictureBox()
         Me.PictureBox9 = New System.Windows.Forms.PictureBox()
         Me.TabPage4 = New System.Windows.Forms.TabPage()
+        Me.Label16 = New System.Windows.Forms.Label()
+        Me.Label17 = New System.Windows.Forms.Label()
+        Me.Label18 = New System.Windows.Forms.Label()
+        Me.Label13 = New System.Windows.Forms.Label()
+        Me.Label14 = New System.Windows.Forms.Label()
+        Me.Label15 = New System.Windows.Forms.Label()
+        Me.PictureBox40 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox41 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox42 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox37 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox38 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox39 = New System.Windows.Forms.PictureBox()
         Me.Button16 = New System.Windows.Forms.Button()
         Me.Button17 = New System.Windows.Forms.Button()
         Me.Button18 = New System.Windows.Forms.Button()
         Me.Button13 = New System.Windows.Forms.Button()
         Me.Button14 = New System.Windows.Forms.Button()
         Me.Button15 = New System.Windows.Forms.Button()
-        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Antique = New System.Windows.Forms.Label()
         Me.PictureBox19 = New System.Windows.Forms.PictureBox()
         Me.PictureBox20 = New System.Windows.Forms.PictureBox()
         Me.PictureBox21 = New System.Windows.Forms.PictureBox()
@@ -66,13 +99,25 @@ Partial Class Fbuy
         Me.PictureBox11 = New System.Windows.Forms.PictureBox()
         Me.PictureBox12 = New System.Windows.Forms.PictureBox()
         Me.TabPage5 = New System.Windows.Forms.TabPage()
+        Me.Label22 = New System.Windows.Forms.Label()
+        Me.Label23 = New System.Windows.Forms.Label()
+        Me.Label24 = New System.Windows.Forms.Label()
+        Me.Label19 = New System.Windows.Forms.Label()
+        Me.Label20 = New System.Windows.Forms.Label()
+        Me.Label21 = New System.Windows.Forms.Label()
+        Me.PictureBox46 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox47 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox48 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox43 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox44 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox45 = New System.Windows.Forms.PictureBox()
         Me.Button22 = New System.Windows.Forms.Button()
         Me.Button23 = New System.Windows.Forms.Button()
         Me.Button24 = New System.Windows.Forms.Button()
         Me.Button19 = New System.Windows.Forms.Button()
         Me.Button20 = New System.Windows.Forms.Button()
         Me.Button21 = New System.Windows.Forms.Button()
-        Me.Label6 = New System.Windows.Forms.Label()
+        Me.Other = New System.Windows.Forms.Label()
         Me.PictureBox22 = New System.Windows.Forms.PictureBox()
         Me.PictureBox23 = New System.Windows.Forms.PictureBox()
         Me.PictureBox24 = New System.Windows.Forms.PictureBox()
@@ -87,8 +132,17 @@ Partial Class Fbuy
         Me.Pawn = New System.Windows.Forms.Label()
         Me.buy = New System.Windows.Forms.Label()
         Me.home = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.TabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
+        CType(Me.PictureBox28, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox29, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox30, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox27, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox26, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox25, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -96,6 +150,12 @@ Partial Class Fbuy
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabPage3.SuspendLayout()
+        CType(Me.PictureBox34, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox35, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox36, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox31, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox32, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox33, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox16, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox17, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox18, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -103,6 +163,12 @@ Partial Class Fbuy
         CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabPage4.SuspendLayout()
+        CType(Me.PictureBox40, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox41, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox42, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox37, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox38, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox39, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox19, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox20, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox21, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -110,6 +176,12 @@ Partial Class Fbuy
         CType(Me.PictureBox11, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox12, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabPage5.SuspendLayout()
+        CType(Me.PictureBox46, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox47, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox48, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox43, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox44, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox45, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox22, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox23, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox24, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -135,13 +207,25 @@ Partial Class Fbuy
         '
         Me.TabPage1.AutoScroll = True
         Me.TabPage1.BackgroundImage = Global.FDMS_Proposal.My.Resources.Resources.dagat
+        Me.TabPage1.Controls.Add(Me.Label3)
+        Me.TabPage1.Controls.Add(Me.Label2)
+        Me.TabPage1.Controls.Add(Me.Label1)
+        Me.TabPage1.Controls.Add(Me.Label4)
+        Me.TabPage1.Controls.Add(Me.Label5)
+        Me.TabPage1.Controls.Add(Me.Label6)
+        Me.TabPage1.Controls.Add(Me.PictureBox28)
+        Me.TabPage1.Controls.Add(Me.PictureBox29)
+        Me.TabPage1.Controls.Add(Me.PictureBox30)
+        Me.TabPage1.Controls.Add(Me.PictureBox27)
+        Me.TabPage1.Controls.Add(Me.PictureBox26)
+        Me.TabPage1.Controls.Add(Me.PictureBox25)
         Me.TabPage1.Controls.Add(Me.Button4)
         Me.TabPage1.Controls.Add(Me.Button5)
         Me.TabPage1.Controls.Add(Me.Button6)
         Me.TabPage1.Controls.Add(Me.Button3)
         Me.TabPage1.Controls.Add(Me.Button2)
         Me.TabPage1.Controls.Add(Me.Button1)
-        Me.TabPage1.Controls.Add(Me.Label3)
+        Me.TabPage1.Controls.Add(Me.Jewelry)
         Me.TabPage1.Controls.Add(Me.PictureBox4)
         Me.TabPage1.Controls.Add(Me.PictureBox5)
         Me.TabPage1.Controls.Add(Me.PictureBox6)
@@ -156,6 +240,96 @@ Partial Class Fbuy
         Me.TabPage1.TabIndex = 0
         Me.TabPage1.Text = "Jewelry"
         Me.TabPage1.UseVisualStyleBackColor = True
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.Label4.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.ForeColor = System.Drawing.Color.Black
+        Me.Label4.Location = New System.Drawing.Point(585, 439)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(43, 15)
+        Me.Label4.TabIndex = 25
+        Me.Label4.Text = "Label4"
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.Label5.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.ForeColor = System.Drawing.Color.Black
+        Me.Label5.Location = New System.Drawing.Point(324, 439)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(43, 15)
+        Me.Label5.TabIndex = 24
+        Me.Label5.Text = "Label5"
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.Label6.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.ForeColor = System.Drawing.Color.Black
+        Me.Label6.Location = New System.Drawing.Point(69, 439)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(43, 15)
+        Me.Label6.TabIndex = 23
+        Me.Label6.Text = "Label6"
+        '
+        'PictureBox28
+        '
+        Me.PictureBox28.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.PictureBox28.Location = New System.Drawing.Point(560, 436)
+        Me.PictureBox28.Name = "PictureBox28"
+        Me.PictureBox28.Size = New System.Drawing.Size(180, 21)
+        Me.PictureBox28.TabIndex = 22
+        Me.PictureBox28.TabStop = False
+        '
+        'PictureBox29
+        '
+        Me.PictureBox29.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.PictureBox29.Location = New System.Drawing.Point(294, 436)
+        Me.PictureBox29.Name = "PictureBox29"
+        Me.PictureBox29.Size = New System.Drawing.Size(180, 21)
+        Me.PictureBox29.TabIndex = 21
+        Me.PictureBox29.TabStop = False
+        '
+        'PictureBox30
+        '
+        Me.PictureBox30.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.PictureBox30.Location = New System.Drawing.Point(40, 436)
+        Me.PictureBox30.Name = "PictureBox30"
+        Me.PictureBox30.Size = New System.Drawing.Size(180, 21)
+        Me.PictureBox30.TabIndex = 20
+        Me.PictureBox30.TabStop = False
+        '
+        'PictureBox27
+        '
+        Me.PictureBox27.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.PictureBox27.Location = New System.Drawing.Point(560, 125)
+        Me.PictureBox27.Name = "PictureBox27"
+        Me.PictureBox27.Size = New System.Drawing.Size(180, 21)
+        Me.PictureBox27.TabIndex = 19
+        Me.PictureBox27.TabStop = False
+        '
+        'PictureBox26
+        '
+        Me.PictureBox26.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.PictureBox26.Location = New System.Drawing.Point(294, 125)
+        Me.PictureBox26.Name = "PictureBox26"
+        Me.PictureBox26.Size = New System.Drawing.Size(180, 21)
+        Me.PictureBox26.TabIndex = 18
+        Me.PictureBox26.TabStop = False
+        '
+        'PictureBox25
+        '
+        Me.PictureBox25.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.PictureBox25.Location = New System.Drawing.Point(40, 125)
+        Me.PictureBox25.Name = "PictureBox25"
+        Me.PictureBox25.Size = New System.Drawing.Size(180, 21)
+        Me.PictureBox25.TabIndex = 17
+        Me.PictureBox25.TabStop = False
         '
         'Button4
         '
@@ -202,7 +376,7 @@ Partial Class Fbuy
         Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Button3.Font = New System.Drawing.Font("Lucida Fax", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button3.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Button3.Location = New System.Drawing.Point(601, 307)
+        Me.Button3.Location = New System.Drawing.Point(84, 307)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(90, 30)
         Me.Button3.TabIndex = 10
@@ -228,23 +402,23 @@ Partial Class Fbuy
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Button1.Font = New System.Drawing.Font("Lucida Fax", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Button1.Location = New System.Drawing.Point(86, 307)
+        Me.Button1.Location = New System.Drawing.Point(603, 307)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(90, 30)
         Me.Button1.TabIndex = 8
         Me.Button1.Text = "Add"
         Me.Button1.UseVisualStyleBackColor = False
         '
-        'Label3
+        'Jewelry
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Imprint MT Shadow", 18.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label3.Location = New System.Drawing.Point(331, 31)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(114, 28)
-        Me.Label3.TabIndex = 7
-        Me.Label3.Text = "Jewelries"
+        Me.Jewelry.AutoSize = True
+        Me.Jewelry.Font = New System.Drawing.Font("Imprint MT Shadow", 18.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Jewelry.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Jewelry.Location = New System.Drawing.Point(331, 16)
+        Me.Jewelry.Name = "Jewelry"
+        Me.Jewelry.Size = New System.Drawing.Size(114, 28)
+        Me.Jewelry.TabIndex = 7
+        Me.Jewelry.Text = "Jewelries"
         '
         'PictureBox4
         '
@@ -280,7 +454,7 @@ Partial Class Fbuy
         '
         Me.PictureBox3.BackColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.PictureBox3.Image = Global.FDMS_Proposal.My.Resources.Resources._3
-        Me.PictureBox3.Location = New System.Drawing.Point(537, 79)
+        Me.PictureBox3.Location = New System.Drawing.Point(20, 79)
         Me.PictureBox3.Name = "PictureBox3"
         Me.PictureBox3.Size = New System.Drawing.Size(217, 267)
         Me.PictureBox3.TabIndex = 3
@@ -300,7 +474,7 @@ Partial Class Fbuy
         '
         Me.PictureBox2.BackColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.PictureBox2.Image = Global.FDMS_Proposal.My.Resources.Resources._1
-        Me.PictureBox2.Location = New System.Drawing.Point(20, 79)
+        Me.PictureBox2.Location = New System.Drawing.Point(537, 79)
         Me.PictureBox2.Name = "PictureBox2"
         Me.PictureBox2.Size = New System.Drawing.Size(217, 267)
         Me.PictureBox2.TabIndex = 1
@@ -310,13 +484,25 @@ Partial Class Fbuy
         '
         Me.TabPage3.AutoScroll = True
         Me.TabPage3.BackgroundImage = Global.FDMS_Proposal.My.Resources.Resources.dagat
+        Me.TabPage3.Controls.Add(Me.Label10)
+        Me.TabPage3.Controls.Add(Me.Label11)
+        Me.TabPage3.Controls.Add(Me.Label12)
+        Me.TabPage3.Controls.Add(Me.Label7)
+        Me.TabPage3.Controls.Add(Me.Label8)
+        Me.TabPage3.Controls.Add(Me.Label9)
+        Me.TabPage3.Controls.Add(Me.PictureBox34)
+        Me.TabPage3.Controls.Add(Me.PictureBox35)
+        Me.TabPage3.Controls.Add(Me.PictureBox36)
+        Me.TabPage3.Controls.Add(Me.PictureBox31)
+        Me.TabPage3.Controls.Add(Me.PictureBox32)
+        Me.TabPage3.Controls.Add(Me.PictureBox33)
         Me.TabPage3.Controls.Add(Me.Button10)
         Me.TabPage3.Controls.Add(Me.Button11)
         Me.TabPage3.Controls.Add(Me.Button12)
         Me.TabPage3.Controls.Add(Me.Button7)
         Me.TabPage3.Controls.Add(Me.Button8)
         Me.TabPage3.Controls.Add(Me.Button9)
-        Me.TabPage3.Controls.Add(Me.Label4)
+        Me.TabPage3.Controls.Add(Me.Electronics)
         Me.TabPage3.Controls.Add(Me.PictureBox16)
         Me.TabPage3.Controls.Add(Me.PictureBox17)
         Me.TabPage3.Controls.Add(Me.PictureBox18)
@@ -330,6 +516,132 @@ Partial Class Fbuy
         Me.TabPage3.TabIndex = 2
         Me.TabPage3.Text = "Electronics"
         Me.TabPage3.UseVisualStyleBackColor = True
+        '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.Label10.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label10.ForeColor = System.Drawing.Color.Black
+        Me.Label10.Location = New System.Drawing.Point(582, 459)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(50, 15)
+        Me.Label10.TabIndex = 32
+        Me.Label10.Text = "Label10"
+        '
+        'Label11
+        '
+        Me.Label11.AutoSize = True
+        Me.Label11.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.Label11.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label11.ForeColor = System.Drawing.Color.Black
+        Me.Label11.Location = New System.Drawing.Point(322, 459)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(50, 15)
+        Me.Label11.TabIndex = 31
+        Me.Label11.Text = "Label11"
+        '
+        'Label12
+        '
+        Me.Label12.AutoSize = True
+        Me.Label12.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.Label12.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label12.ForeColor = System.Drawing.Color.Black
+        Me.Label12.Location = New System.Drawing.Point(67, 459)
+        Me.Label12.Name = "Label12"
+        Me.Label12.Size = New System.Drawing.Size(50, 15)
+        Me.Label12.TabIndex = 30
+        Me.Label12.Text = "Label12"
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.Label7.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.ForeColor = System.Drawing.Color.Black
+        Me.Label7.Location = New System.Drawing.Point(581, 150)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(43, 15)
+        Me.Label7.TabIndex = 29
+        Me.Label7.Text = "Label7"
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.Label8.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label8.ForeColor = System.Drawing.Color.Black
+        Me.Label8.Location = New System.Drawing.Point(318, 150)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(43, 15)
+        Me.Label8.TabIndex = 28
+        Me.Label8.Text = "Label8"
+        '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.Label9.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label9.ForeColor = System.Drawing.Color.Black
+        Me.Label9.Location = New System.Drawing.Point(64, 150)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(43, 15)
+        Me.Label9.TabIndex = 27
+        Me.Label9.Text = "Label9"
+        '
+        'PictureBox34
+        '
+        Me.PictureBox34.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.PictureBox34.Location = New System.Drawing.Point(560, 456)
+        Me.PictureBox34.Name = "PictureBox34"
+        Me.PictureBox34.Size = New System.Drawing.Size(180, 21)
+        Me.PictureBox34.TabIndex = 26
+        Me.PictureBox34.TabStop = False
+        '
+        'PictureBox35
+        '
+        Me.PictureBox35.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.PictureBox35.Location = New System.Drawing.Point(294, 456)
+        Me.PictureBox35.Name = "PictureBox35"
+        Me.PictureBox35.Size = New System.Drawing.Size(180, 21)
+        Me.PictureBox35.TabIndex = 25
+        Me.PictureBox35.TabStop = False
+        '
+        'PictureBox36
+        '
+        Me.PictureBox36.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.PictureBox36.Location = New System.Drawing.Point(40, 456)
+        Me.PictureBox36.Name = "PictureBox36"
+        Me.PictureBox36.Size = New System.Drawing.Size(180, 21)
+        Me.PictureBox36.TabIndex = 24
+        Me.PictureBox36.TabStop = False
+        '
+        'PictureBox31
+        '
+        Me.PictureBox31.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.PictureBox31.Location = New System.Drawing.Point(560, 147)
+        Me.PictureBox31.Name = "PictureBox31"
+        Me.PictureBox31.Size = New System.Drawing.Size(180, 21)
+        Me.PictureBox31.TabIndex = 23
+        Me.PictureBox31.TabStop = False
+        '
+        'PictureBox32
+        '
+        Me.PictureBox32.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.PictureBox32.Location = New System.Drawing.Point(294, 147)
+        Me.PictureBox32.Name = "PictureBox32"
+        Me.PictureBox32.Size = New System.Drawing.Size(180, 21)
+        Me.PictureBox32.TabIndex = 22
+        Me.PictureBox32.TabStop = False
+        '
+        'PictureBox33
+        '
+        Me.PictureBox33.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.PictureBox33.Location = New System.Drawing.Point(40, 147)
+        Me.PictureBox33.Name = "PictureBox33"
+        Me.PictureBox33.Size = New System.Drawing.Size(180, 21)
+        Me.PictureBox33.TabIndex = 21
+        Me.PictureBox33.TabStop = False
         '
         'Button10
         '
@@ -409,16 +721,16 @@ Partial Class Fbuy
         Me.Button9.Text = "Add"
         Me.Button9.UseVisualStyleBackColor = False
         '
-        'Label4
+        'Electronics
         '
-        Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Imprint MT Shadow", 18.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label4.Location = New System.Drawing.Point(322, 43)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(139, 28)
-        Me.Label4.TabIndex = 11
-        Me.Label4.Text = "Electronics"
+        Me.Electronics.AutoSize = True
+        Me.Electronics.Font = New System.Drawing.Font("Imprint MT Shadow", 18.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Electronics.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.Electronics.Location = New System.Drawing.Point(322, 43)
+        Me.Electronics.Name = "Electronics"
+        Me.Electronics.Size = New System.Drawing.Size(139, 28)
+        Me.Electronics.TabIndex = 11
+        Me.Electronics.Text = "Electronics"
         '
         'PictureBox16
         '
@@ -484,13 +796,25 @@ Partial Class Fbuy
         '
         Me.TabPage4.AutoScroll = True
         Me.TabPage4.BackgroundImage = Global.FDMS_Proposal.My.Resources.Resources.dagat
+        Me.TabPage4.Controls.Add(Me.Label16)
+        Me.TabPage4.Controls.Add(Me.Label17)
+        Me.TabPage4.Controls.Add(Me.Label18)
+        Me.TabPage4.Controls.Add(Me.Label13)
+        Me.TabPage4.Controls.Add(Me.Label14)
+        Me.TabPage4.Controls.Add(Me.Label15)
+        Me.TabPage4.Controls.Add(Me.PictureBox40)
+        Me.TabPage4.Controls.Add(Me.PictureBox41)
+        Me.TabPage4.Controls.Add(Me.PictureBox42)
+        Me.TabPage4.Controls.Add(Me.PictureBox37)
+        Me.TabPage4.Controls.Add(Me.PictureBox38)
+        Me.TabPage4.Controls.Add(Me.PictureBox39)
         Me.TabPage4.Controls.Add(Me.Button16)
         Me.TabPage4.Controls.Add(Me.Button17)
         Me.TabPage4.Controls.Add(Me.Button18)
         Me.TabPage4.Controls.Add(Me.Button13)
         Me.TabPage4.Controls.Add(Me.Button14)
         Me.TabPage4.Controls.Add(Me.Button15)
-        Me.TabPage4.Controls.Add(Me.Label5)
+        Me.TabPage4.Controls.Add(Me.Antique)
         Me.TabPage4.Controls.Add(Me.PictureBox19)
         Me.TabPage4.Controls.Add(Me.PictureBox20)
         Me.TabPage4.Controls.Add(Me.PictureBox21)
@@ -504,6 +828,132 @@ Partial Class Fbuy
         Me.TabPage4.TabIndex = 3
         Me.TabPage4.Text = "Antique"
         Me.TabPage4.UseVisualStyleBackColor = True
+        '
+        'Label16
+        '
+        Me.Label16.AutoSize = True
+        Me.Label16.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.Label16.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label16.ForeColor = System.Drawing.Color.Black
+        Me.Label16.Location = New System.Drawing.Point(589, 434)
+        Me.Label16.Name = "Label16"
+        Me.Label16.Size = New System.Drawing.Size(50, 15)
+        Me.Label16.TabIndex = 32
+        Me.Label16.Text = "Label16"
+        '
+        'Label17
+        '
+        Me.Label17.AutoSize = True
+        Me.Label17.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.Label17.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label17.ForeColor = System.Drawing.Color.Black
+        Me.Label17.Location = New System.Drawing.Point(319, 434)
+        Me.Label17.Name = "Label17"
+        Me.Label17.Size = New System.Drawing.Size(50, 15)
+        Me.Label17.TabIndex = 31
+        Me.Label17.Text = "Label17"
+        '
+        'Label18
+        '
+        Me.Label18.AutoSize = True
+        Me.Label18.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.Label18.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label18.ForeColor = System.Drawing.Color.Black
+        Me.Label18.Location = New System.Drawing.Point(71, 434)
+        Me.Label18.Name = "Label18"
+        Me.Label18.Size = New System.Drawing.Size(50, 15)
+        Me.Label18.TabIndex = 30
+        Me.Label18.Text = "Label18"
+        '
+        'Label13
+        '
+        Me.Label13.AutoSize = True
+        Me.Label13.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.Label13.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label13.ForeColor = System.Drawing.Color.Black
+        Me.Label13.Location = New System.Drawing.Point(585, 138)
+        Me.Label13.Name = "Label13"
+        Me.Label13.Size = New System.Drawing.Size(50, 15)
+        Me.Label13.TabIndex = 29
+        Me.Label13.Text = "Label13"
+        '
+        'Label14
+        '
+        Me.Label14.AutoSize = True
+        Me.Label14.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.Label14.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label14.ForeColor = System.Drawing.Color.Black
+        Me.Label14.Location = New System.Drawing.Point(322, 138)
+        Me.Label14.Name = "Label14"
+        Me.Label14.Size = New System.Drawing.Size(50, 15)
+        Me.Label14.TabIndex = 28
+        Me.Label14.Text = "Label14"
+        '
+        'Label15
+        '
+        Me.Label15.AutoSize = True
+        Me.Label15.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.Label15.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label15.ForeColor = System.Drawing.Color.Black
+        Me.Label15.Location = New System.Drawing.Point(62, 138)
+        Me.Label15.Name = "Label15"
+        Me.Label15.Size = New System.Drawing.Size(50, 15)
+        Me.Label15.TabIndex = 27
+        Me.Label15.Text = "Label15"
+        '
+        'PictureBox40
+        '
+        Me.PictureBox40.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.PictureBox40.Location = New System.Drawing.Point(560, 431)
+        Me.PictureBox40.Name = "PictureBox40"
+        Me.PictureBox40.Size = New System.Drawing.Size(180, 21)
+        Me.PictureBox40.TabIndex = 26
+        Me.PictureBox40.TabStop = False
+        '
+        'PictureBox41
+        '
+        Me.PictureBox41.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.PictureBox41.Location = New System.Drawing.Point(294, 431)
+        Me.PictureBox41.Name = "PictureBox41"
+        Me.PictureBox41.Size = New System.Drawing.Size(180, 21)
+        Me.PictureBox41.TabIndex = 25
+        Me.PictureBox41.TabStop = False
+        '
+        'PictureBox42
+        '
+        Me.PictureBox42.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.PictureBox42.Location = New System.Drawing.Point(40, 431)
+        Me.PictureBox42.Name = "PictureBox42"
+        Me.PictureBox42.Size = New System.Drawing.Size(180, 21)
+        Me.PictureBox42.TabIndex = 24
+        Me.PictureBox42.TabStop = False
+        '
+        'PictureBox37
+        '
+        Me.PictureBox37.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.PictureBox37.Location = New System.Drawing.Point(560, 135)
+        Me.PictureBox37.Name = "PictureBox37"
+        Me.PictureBox37.Size = New System.Drawing.Size(180, 21)
+        Me.PictureBox37.TabIndex = 23
+        Me.PictureBox37.TabStop = False
+        '
+        'PictureBox38
+        '
+        Me.PictureBox38.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.PictureBox38.Location = New System.Drawing.Point(294, 135)
+        Me.PictureBox38.Name = "PictureBox38"
+        Me.PictureBox38.Size = New System.Drawing.Size(180, 21)
+        Me.PictureBox38.TabIndex = 22
+        Me.PictureBox38.TabStop = False
+        '
+        'PictureBox39
+        '
+        Me.PictureBox39.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.PictureBox39.Location = New System.Drawing.Point(40, 135)
+        Me.PictureBox39.Name = "PictureBox39"
+        Me.PictureBox39.Size = New System.Drawing.Size(180, 21)
+        Me.PictureBox39.TabIndex = 21
+        Me.PictureBox39.TabStop = False
         '
         'Button16
         '
@@ -583,16 +1033,16 @@ Partial Class Fbuy
         Me.Button15.Text = "Add"
         Me.Button15.UseVisualStyleBackColor = False
         '
-        'Label5
+        'Antique
         '
-        Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Imprint MT Shadow", 18.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label5.Location = New System.Drawing.Point(321, 35)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(113, 28)
-        Me.Label5.TabIndex = 11
-        Me.Label5.Text = "Antiques"
+        Me.Antique.AutoSize = True
+        Me.Antique.Font = New System.Drawing.Font("Imprint MT Shadow", 18.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Antique.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Antique.Location = New System.Drawing.Point(321, 35)
+        Me.Antique.Name = "Antique"
+        Me.Antique.Size = New System.Drawing.Size(113, 28)
+        Me.Antique.TabIndex = 11
+        Me.Antique.Text = "Antiques"
         '
         'PictureBox19
         '
@@ -658,13 +1108,25 @@ Partial Class Fbuy
         '
         Me.TabPage5.AutoScroll = True
         Me.TabPage5.BackgroundImage = Global.FDMS_Proposal.My.Resources.Resources.dagat
+        Me.TabPage5.Controls.Add(Me.Label22)
+        Me.TabPage5.Controls.Add(Me.Label23)
+        Me.TabPage5.Controls.Add(Me.Label24)
+        Me.TabPage5.Controls.Add(Me.Label19)
+        Me.TabPage5.Controls.Add(Me.Label20)
+        Me.TabPage5.Controls.Add(Me.Label21)
+        Me.TabPage5.Controls.Add(Me.PictureBox46)
+        Me.TabPage5.Controls.Add(Me.PictureBox47)
+        Me.TabPage5.Controls.Add(Me.PictureBox48)
+        Me.TabPage5.Controls.Add(Me.PictureBox43)
+        Me.TabPage5.Controls.Add(Me.PictureBox44)
+        Me.TabPage5.Controls.Add(Me.PictureBox45)
         Me.TabPage5.Controls.Add(Me.Button22)
         Me.TabPage5.Controls.Add(Me.Button23)
         Me.TabPage5.Controls.Add(Me.Button24)
         Me.TabPage5.Controls.Add(Me.Button19)
         Me.TabPage5.Controls.Add(Me.Button20)
         Me.TabPage5.Controls.Add(Me.Button21)
-        Me.TabPage5.Controls.Add(Me.Label6)
+        Me.TabPage5.Controls.Add(Me.Other)
         Me.TabPage5.Controls.Add(Me.PictureBox22)
         Me.TabPage5.Controls.Add(Me.PictureBox23)
         Me.TabPage5.Controls.Add(Me.PictureBox24)
@@ -678,6 +1140,132 @@ Partial Class Fbuy
         Me.TabPage5.TabIndex = 4
         Me.TabPage5.Text = "Others"
         Me.TabPage5.UseVisualStyleBackColor = True
+        '
+        'Label22
+        '
+        Me.Label22.AutoSize = True
+        Me.Label22.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.Label22.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label22.ForeColor = System.Drawing.Color.Black
+        Me.Label22.Location = New System.Drawing.Point(585, 416)
+        Me.Label22.Name = "Label22"
+        Me.Label22.Size = New System.Drawing.Size(50, 15)
+        Me.Label22.TabIndex = 32
+        Me.Label22.Text = "Label22"
+        '
+        'Label23
+        '
+        Me.Label23.AutoSize = True
+        Me.Label23.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.Label23.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label23.ForeColor = System.Drawing.Color.Black
+        Me.Label23.Location = New System.Drawing.Point(318, 416)
+        Me.Label23.Name = "Label23"
+        Me.Label23.Size = New System.Drawing.Size(50, 15)
+        Me.Label23.TabIndex = 31
+        Me.Label23.Text = "Label23"
+        '
+        'Label24
+        '
+        Me.Label24.AutoSize = True
+        Me.Label24.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.Label24.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label24.ForeColor = System.Drawing.Color.Black
+        Me.Label24.Location = New System.Drawing.Point(67, 416)
+        Me.Label24.Name = "Label24"
+        Me.Label24.Size = New System.Drawing.Size(50, 15)
+        Me.Label24.TabIndex = 30
+        Me.Label24.Text = "Label24"
+        '
+        'Label19
+        '
+        Me.Label19.AutoSize = True
+        Me.Label19.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.Label19.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label19.ForeColor = System.Drawing.Color.Black
+        Me.Label19.Location = New System.Drawing.Point(586, 113)
+        Me.Label19.Name = "Label19"
+        Me.Label19.Size = New System.Drawing.Size(50, 15)
+        Me.Label19.TabIndex = 29
+        Me.Label19.Text = "Label19"
+        '
+        'Label20
+        '
+        Me.Label20.AutoSize = True
+        Me.Label20.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.Label20.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label20.ForeColor = System.Drawing.Color.Black
+        Me.Label20.Location = New System.Drawing.Point(321, 113)
+        Me.Label20.Name = "Label20"
+        Me.Label20.Size = New System.Drawing.Size(50, 15)
+        Me.Label20.TabIndex = 28
+        Me.Label20.Text = "Label20"
+        '
+        'Label21
+        '
+        Me.Label21.AutoSize = True
+        Me.Label21.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.Label21.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label21.ForeColor = System.Drawing.Color.Black
+        Me.Label21.Location = New System.Drawing.Point(67, 113)
+        Me.Label21.Name = "Label21"
+        Me.Label21.Size = New System.Drawing.Size(50, 15)
+        Me.Label21.TabIndex = 27
+        Me.Label21.Text = "Label21"
+        '
+        'PictureBox46
+        '
+        Me.PictureBox46.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.PictureBox46.Location = New System.Drawing.Point(560, 413)
+        Me.PictureBox46.Name = "PictureBox46"
+        Me.PictureBox46.Size = New System.Drawing.Size(180, 21)
+        Me.PictureBox46.TabIndex = 26
+        Me.PictureBox46.TabStop = False
+        '
+        'PictureBox47
+        '
+        Me.PictureBox47.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.PictureBox47.Location = New System.Drawing.Point(294, 413)
+        Me.PictureBox47.Name = "PictureBox47"
+        Me.PictureBox47.Size = New System.Drawing.Size(180, 21)
+        Me.PictureBox47.TabIndex = 25
+        Me.PictureBox47.TabStop = False
+        '
+        'PictureBox48
+        '
+        Me.PictureBox48.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.PictureBox48.Location = New System.Drawing.Point(40, 413)
+        Me.PictureBox48.Name = "PictureBox48"
+        Me.PictureBox48.Size = New System.Drawing.Size(180, 21)
+        Me.PictureBox48.TabIndex = 24
+        Me.PictureBox48.TabStop = False
+        '
+        'PictureBox43
+        '
+        Me.PictureBox43.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.PictureBox43.Location = New System.Drawing.Point(560, 110)
+        Me.PictureBox43.Name = "PictureBox43"
+        Me.PictureBox43.Size = New System.Drawing.Size(180, 21)
+        Me.PictureBox43.TabIndex = 23
+        Me.PictureBox43.TabStop = False
+        '
+        'PictureBox44
+        '
+        Me.PictureBox44.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.PictureBox44.Location = New System.Drawing.Point(294, 110)
+        Me.PictureBox44.Name = "PictureBox44"
+        Me.PictureBox44.Size = New System.Drawing.Size(180, 21)
+        Me.PictureBox44.TabIndex = 22
+        Me.PictureBox44.TabStop = False
+        '
+        'PictureBox45
+        '
+        Me.PictureBox45.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.PictureBox45.Location = New System.Drawing.Point(40, 110)
+        Me.PictureBox45.Name = "PictureBox45"
+        Me.PictureBox45.Size = New System.Drawing.Size(180, 21)
+        Me.PictureBox45.TabIndex = 21
+        Me.PictureBox45.TabStop = False
         '
         'Button22
         '
@@ -757,16 +1345,16 @@ Partial Class Fbuy
         Me.Button21.Text = "Buy"
         Me.Button21.UseVisualStyleBackColor = False
         '
-        'Label6
+        'Other
         '
-        Me.Label6.AutoSize = True
-        Me.Label6.Font = New System.Drawing.Font("Imprint MT Shadow", 18.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label6.Location = New System.Drawing.Point(332, 12)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(89, 28)
-        Me.Label6.TabIndex = 11
-        Me.Label6.Text = "Others"
+        Me.Other.AutoSize = True
+        Me.Other.Font = New System.Drawing.Font("Imprint MT Shadow", 18.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Other.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Other.Location = New System.Drawing.Point(332, 12)
+        Me.Other.Name = "Other"
+        Me.Other.Size = New System.Drawing.Size(89, 28)
+        Me.Other.TabIndex = 11
+        Me.Other.Text = "Others"
         '
         'PictureBox22
         '
@@ -929,6 +1517,42 @@ Partial Class Fbuy
         Me.home.TabIndex = 0
         Me.home.Text = "Home"
         '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.Label3.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.ForeColor = System.Drawing.Color.Black
+        Me.Label3.Location = New System.Drawing.Point(63, 128)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(43, 15)
+        Me.Label3.TabIndex = 28
+        Me.Label3.Text = "Label3"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.Label2.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.ForeColor = System.Drawing.Color.Black
+        Me.Label2.Location = New System.Drawing.Point(322, 128)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(43, 15)
+        Me.Label2.TabIndex = 27
+        Me.Label2.Text = "Label2"
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.Label1.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.Color.Black
+        Me.Label1.Location = New System.Drawing.Point(585, 128)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(43, 15)
+        Me.Label1.TabIndex = 26
+        Me.Label1.Text = "Label1"
+        '
         'Fbuy
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -942,6 +1566,12 @@ Partial Class Fbuy
         Me.TabControl1.ResumeLayout(False)
         Me.TabPage1.ResumeLayout(False)
         Me.TabPage1.PerformLayout()
+        CType(Me.PictureBox28, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox29, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox30, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox27, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox26, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox25, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
@@ -950,6 +1580,12 @@ Partial Class Fbuy
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabPage3.ResumeLayout(False)
         Me.TabPage3.PerformLayout()
+        CType(Me.PictureBox34, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox35, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox36, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox31, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox32, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox33, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox16, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox17, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox18, System.ComponentModel.ISupportInitialize).EndInit()
@@ -958,6 +1594,12 @@ Partial Class Fbuy
         CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabPage4.ResumeLayout(False)
         Me.TabPage4.PerformLayout()
+        CType(Me.PictureBox40, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox41, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox42, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox37, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox38, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox39, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox19, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox20, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox21, System.ComponentModel.ISupportInitialize).EndInit()
@@ -966,6 +1608,12 @@ Partial Class Fbuy
         CType(Me.PictureBox12, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabPage5.ResumeLayout(False)
         Me.TabPage5.PerformLayout()
+        CType(Me.PictureBox46, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox47, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox48, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox43, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox44, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox45, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox22, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox23, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox24, System.ComponentModel.ISupportInitialize).EndInit()
@@ -988,7 +1636,7 @@ Partial Class Fbuy
     Friend WithEvents home As Label
     Friend WithEvents TabControl1 As TabControl
     Friend WithEvents TabPage1 As TabPage
-    Friend WithEvents Label3 As Label
+    Friend WithEvents Jewelry As Label
     Friend WithEvents PictureBox4 As PictureBox
     Friend WithEvents PictureBox5 As PictureBox
     Friend WithEvents PictureBox6 As PictureBox
@@ -999,7 +1647,7 @@ Partial Class Fbuy
     Friend WithEvents PictureBox16 As PictureBox
     Friend WithEvents PictureBox17 As PictureBox
     Friend WithEvents PictureBox18 As PictureBox
-    Friend WithEvents Label4 As Label
+    Friend WithEvents Electronics As Label
     Friend WithEvents PictureBox7 As PictureBox
     Friend WithEvents PictureBox8 As PictureBox
     Friend WithEvents PictureBox9 As PictureBox
@@ -1007,7 +1655,7 @@ Partial Class Fbuy
     Friend WithEvents PictureBox19 As PictureBox
     Friend WithEvents PictureBox20 As PictureBox
     Friend WithEvents PictureBox21 As PictureBox
-    Friend WithEvents Label5 As Label
+    Friend WithEvents Antique As Label
     Friend WithEvents PictureBox10 As PictureBox
     Friend WithEvents PictureBox11 As PictureBox
     Friend WithEvents PictureBox12 As PictureBox
@@ -1015,7 +1663,7 @@ Partial Class Fbuy
     Friend WithEvents PictureBox22 As PictureBox
     Friend WithEvents PictureBox23 As PictureBox
     Friend WithEvents PictureBox24 As PictureBox
-    Friend WithEvents Label6 As Label
+    Friend WithEvents Other As Label
     Friend WithEvents PictureBox13 As PictureBox
     Friend WithEvents PictureBox14 As PictureBox
     Friend WithEvents PictureBox15 As PictureBox
@@ -1043,4 +1691,52 @@ Partial Class Fbuy
     Friend WithEvents Button19 As Button
     Friend WithEvents Button20 As Button
     Friend WithEvents Button21 As Button
+    Friend WithEvents PictureBox25 As PictureBox
+    Friend WithEvents Label4 As Label
+    Friend WithEvents Label5 As Label
+    Friend WithEvents Label6 As Label
+    Friend WithEvents PictureBox28 As PictureBox
+    Friend WithEvents PictureBox29 As PictureBox
+    Friend WithEvents PictureBox30 As PictureBox
+    Friend WithEvents PictureBox27 As PictureBox
+    Friend WithEvents PictureBox26 As PictureBox
+    Friend WithEvents Label10 As Label
+    Friend WithEvents Label11 As Label
+    Friend WithEvents Label12 As Label
+    Friend WithEvents Label7 As Label
+    Friend WithEvents Label8 As Label
+    Friend WithEvents Label9 As Label
+    Friend WithEvents PictureBox34 As PictureBox
+    Friend WithEvents PictureBox35 As PictureBox
+    Friend WithEvents PictureBox36 As PictureBox
+    Friend WithEvents PictureBox31 As PictureBox
+    Friend WithEvents PictureBox32 As PictureBox
+    Friend WithEvents PictureBox33 As PictureBox
+    Friend WithEvents Label16 As Label
+    Friend WithEvents Label17 As Label
+    Friend WithEvents Label18 As Label
+    Friend WithEvents Label13 As Label
+    Friend WithEvents Label14 As Label
+    Friend WithEvents Label15 As Label
+    Friend WithEvents PictureBox40 As PictureBox
+    Friend WithEvents PictureBox41 As PictureBox
+    Friend WithEvents PictureBox42 As PictureBox
+    Friend WithEvents PictureBox37 As PictureBox
+    Friend WithEvents PictureBox38 As PictureBox
+    Friend WithEvents PictureBox39 As PictureBox
+    Friend WithEvents Label22 As Label
+    Friend WithEvents Label23 As Label
+    Friend WithEvents Label24 As Label
+    Friend WithEvents Label19 As Label
+    Friend WithEvents Label20 As Label
+    Friend WithEvents Label21 As Label
+    Friend WithEvents PictureBox46 As PictureBox
+    Friend WithEvents PictureBox47 As PictureBox
+    Friend WithEvents PictureBox48 As PictureBox
+    Friend WithEvents PictureBox43 As PictureBox
+    Friend WithEvents PictureBox44 As PictureBox
+    Friend WithEvents PictureBox45 As PictureBox
+    Friend WithEvents Label3 As Label
+    Friend WithEvents Label2 As Label
+    Friend WithEvents Label1 As Label
 End Class

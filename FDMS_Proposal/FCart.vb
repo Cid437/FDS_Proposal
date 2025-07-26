@@ -9,6 +9,7 @@ Public Class FCart
     Public ds As DataSet
 
     Private Sub FCart_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Label4.Text = loggedInUser
         Try
             conn.Open()
             sql = "SELECT * FROM carts ORDER BY item_id"
@@ -103,7 +104,7 @@ Public Class FCart
             TextBox4.Text = dbread("item_price")
             'testing
         Catch ex As MySqlException
-            MsgBox(ex.Message)
+            MsgBox("Please Enter a valid id")
         End Try
         conn.Close()
     End Sub
@@ -188,4 +189,20 @@ Public Class FCart
         conn.Close()
         reloaddatagrid()
     End Sub
+
+    Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
+        reloaddatagrid()
+    End Sub
+
+    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+        If loggedInUser = "" Then
+            MsgBox("Please log in first.")
+            Me.Hide()
+            FLogin.Show()
+            Exit Sub
+        End If
+
+        MsgBox("You are logged in as: " & loggedInUser)
+    End Sub
+
 End Class

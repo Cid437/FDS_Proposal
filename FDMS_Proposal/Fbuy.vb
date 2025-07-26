@@ -8,25 +8,93 @@ Public Class Fbuy
     Public DataAdapter1 As MySqlDataAdapter
     Public ds As DataSet
 
-    Private Sub adder(ByVal id As Integer, ByVal name As String, ByVal price As Decimal, ByVal amount As Integer)
+    Private Function FindLabel(name As String) As Label
+        Return FindControlRecursive(Me, name)
+    End Function
+
+    Private Function FindControlRecursive(parent As Control, name As String) As Label
+        For Each ctrl As Control In parent.Controls
+            If TypeOf ctrl Is Label AndAlso ctrl.Name = name Then
+                Return CType(ctrl, Label)
+            End If
+
+            ' Recursive search
+            Dim found As Label = FindControlRecursive(ctrl, name)
+            If found IsNot Nothing Then Return found
+        Next
+        Return Nothing
+    End Function
+
+
+    Private Sub Fbuy_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        For i As Integer = 1 To 24
+            Dim lbl As Label = FindLabel("Label" & i)
+            If lbl IsNot Nothing Then
+                setLabel(i, lbl)
+            End If
+        Next
+    End Sub
+
+    Private Sub adder(ByVal id As Integer)
+        Dim name As String
+        Dim price As Decimal
+        Dim amount As Integer = 1
+
         Try
             conn.Open()
-            sql = "INSERT INTO carts (item_id, item_name, item_price, cart_amount) VALUES ('" & id & "','" & name & "','" & price & "','" & amount & "')"
+
+            sql = "SELECT item_name, item_price FROM items WHERE item_id = " & id
             dbcomm = New MySqlCommand(sql, conn)
-            Dim i As Integer = dbcomm.ExecuteNonQuery
+            dbread = dbcomm.ExecuteReader()
 
-            If (i > 0) Then
-                MsgBox("Item '" & name & "' added to cart")
+            If dbread.Read() Then
+                name = dbread("item_name")
+                price = dbread("item_price")
             Else
-                MsgBox("Something went wrong, please check your cart")
-
+                MsgBox("Item not found.")
+                conn.Close()
+                Exit Sub
             End If
-        Catch ex As MySqlException
-            MsgBox("Item might already be in cart")
-            conn.Close()
+            dbread.Close()
+
+            sql = "INSERT INTO carts (item_id, item_name, item_price, cart_amount) VALUES (" & id & ", '" & name & "', " & price & ", " & amount & ")"
+            dbcomm = New MySqlCommand(sql, conn)
+            Dim i As Integer = dbcomm.ExecuteNonQuery()
+
+            If i > 0 Then
+                MsgBox("Item " & name & " added.")
+            Else
+                MsgBox("Failed to add item.")
+            End If
+
+        Catch ex As Exception
+            MsgBox("Error, item might already be in cart. ")
         End Try
+
         conn.Close()
     End Sub
+
+    Private Sub setLabel(itemID As Integer, targetLabel As Label)
+        Try
+            conn.Open()
+            sql = "SELECT item_name FROM items WHERE item_id = " & itemID
+            dbcomm = New MySqlCommand(sql, conn)
+            dbread = dbcomm.ExecuteReader()
+
+            If dbread.Read() Then
+                targetLabel.Text = "Item: " & dbread("item_name").ToString()
+            Else
+                targetLabel.Text = "Item not found."
+            End If
+
+        Catch ex As Exception
+            MsgBox("Error: " & ex.Message)
+        Finally
+            conn.Close()
+        End Try
+    End Sub
+
+
     Private Sub home_Click(sender As Object, e As EventArgs) Handles home.Click
         Me.Hide()
         Form1.Show()
@@ -45,200 +113,127 @@ Public Class Fbuy
     Private Sub cart_Click(sender As Object, e As EventArgs) Handles cart.Click
         Me.Hide()
         FCart.Show()
+
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        Dim id = 1
-        Dim name = "Gold Necklace"
-        Dim price = 3500.0
-        Dim amount = 1
-        adder(id, name, price, amount)
+        adder(1)
+        setLabel(1, Label1)
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        Dim id As Integer = 2
-        Dim name As String = "Diamond Ring"
-        Dim price As Double = 8200.0
-        Dim amount As Integer = 1
-        adder(id, name, price, amount)
+        adder(2)
+        setLabel(2, Label2)
     End Sub
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
-        Dim id As Integer = 3
-        Dim name As String = "Silver Bracelet"
-        Dim price As Double = 1200.0
-        Dim amount As Integer = 1
-        adder(id, name, price, amount)
+        adder(3)
+        setLabel(3, Label3)
     End Sub
 
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
-        Dim id As Integer = 4
-        Dim name As String = "Pearl Earrings"
-        Dim price As Double = 1800.0
-        Dim amount As Integer = 1
-        adder(id, name, price, amount)
+        adder(4)
+        setLabel(4, Label4)
     End Sub
 
     Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
-        Dim id As Integer = 5
-        Dim name As String = "Emerald Pendant"
-        Dim price As Double = 2500.0
-        Dim amount As Integer = 1
-        adder(id, name, price, amount)
+        adder(5)
+        setLabel(5, Label5)
     End Sub
 
     Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
-        Dim id As Integer = 6
-        Dim name As String = "Platinum Watch"
-        Dim price As Double = 9500.0
-        Dim amount As Integer = 1
-        adder(id, name, price, amount)
+        adder(6)
+        setLabel(6, Label6)
     End Sub
 
     Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
-        Dim id As Integer = 7
-        Dim name As String = "Samsung Smart TV"
-        Dim price As Double = 32000.0
-        Dim amount As Integer = 1
-        adder(id, name, price, amount)
+        adder(7)
+        setLabel(7, Label7)
     End Sub
 
     Private Sub Button8_Click(sender As Object, e As EventArgs) Handles Button8.Click
-        Dim id As Integer = 8
-        Dim name As String = "Apple MacBook Air"
-        Dim price As Double = 65000.0
-        Dim amount As Integer = 1
-        adder(id, name, price, amount)
+        adder(8)
+        setLabel(8, Label8)
     End Sub
 
     Private Sub Button9_Click(sender As Object, e As EventArgs) Handles Button9.Click
-        Dim id As Integer = 9
-        Dim name As String = "Canon DSLR Camera"
-        Dim price As Double = 42000.0
-        Dim amount As Integer = 1
-        adder(id, name, price, amount)
+        adder(9)
+        setLabel(9, Label9)
     End Sub
 
     Private Sub Button10_Click(sender As Object, e As EventArgs) Handles Button10.Click
-        Dim id As Integer = 10
-        Dim name As String = "Xbox Series X"
-        Dim price As Double = 35000.0
-        Dim amount As Integer = 1
-        adder(id, name, price, amount)
-
+        adder(10)
+        setLabel(10, Label10)
     End Sub
 
     Private Sub Button11_Click(sender As Object, e As EventArgs) Handles Button11.Click
-        Dim id As Integer = 11
-        Dim name As String = "iPhone 13 Pro"
-        Dim price As Double = 58000.0
-        Dim amount As Integer = 1
-        adder(id, name, price, amount)
+        adder(11)
+        setLabel(11, Label11)
     End Sub
 
     Private Sub Button12_Click(sender As Object, e As EventArgs) Handles Button12.Click
-        Dim id As Integer = 12
-        Dim name As String = "Bluetooth Headphones"
-        Dim price As Double = 4500.0
-        Dim amount As Integer = 1
-        adder(id, name, price, amount)
+        adder(12)
+        setLabel(12, Label12)
     End Sub
 
     Private Sub Button13_Click(sender As Object, e As EventArgs) Handles Button13.Click
-        Dim id As Integer = 13
-        Dim name As String = "Victorian Clock"
-        Dim price As Double = 7000.0
-        Dim amount As Integer = 1
-        adder(id, name, price, amount)
+        adder(13)
+        setLabel(13, Label13)
     End Sub
 
     Private Sub Button14_Click(sender As Object, e As EventArgs) Handles Button14.Click
-        Dim id As Integer = 14
-        Dim name As String = "Vintage Radio"
-        Dim price As Double = 4800.0
-        Dim amount As Integer = 1
-        adder(id, name, price, amount)
+        adder(14)
+        setLabel(14, Label14)
     End Sub
 
     Private Sub Button15_Click(sender As Object, e As EventArgs) Handles Button15.Click
-        Dim id As Integer = 15
-        Dim name As String = "Typewriter Remington"
-        Dim price As Double = 5300.0
-        Dim amount As Integer = 1
-        adder(id, name, price, amount)
+        adder(15)
+        setLabel(15, Label15)
     End Sub
 
     Private Sub Button16_Click(sender As Object, e As EventArgs) Handles Button16.Click
-        Dim id As Integer = 16
-        Dim name As String = "Antique Map"
-        Dim price As Double = 3000.0
-        Dim amount As Integer = 1
-        adder(id, name, price, amount)
+        adder(16)
+        setLabel(16, Label16)
     End Sub
 
     Private Sub Button17_Click(sender As Object, e As EventArgs) Handles Button17.Click
-        Dim id As Integer = 17
-        Dim name As String = "Oil Lamp"
-        Dim price As Double = 1600.0
-        Dim amount As Integer = 1
-        adder(id, name, price, amount)
-
+        adder(17)
+        setLabel(17, Label17)
     End Sub
 
     Private Sub Button18_Click(sender As Object, e As EventArgs) Handles Button18.Click
-        Dim id As Integer = 18
-        Dim name As String = "Porcelain Tea Set"
-        Dim price As Double = 4500.0
-        Dim amount As Integer = 1
-        adder(id, name, price, amount)
+        adder(18)
+        setLabel(18, Label18)
     End Sub
 
     Private Sub Button19_Click(sender As Object, e As EventArgs) Handles Button19.Click
-        Dim id As Integer = 19
-        Dim name As String = "Mountain Bike"
-        Dim price As Double = 8500.0
-        Dim amount As Integer = 1
-        adder(id, name, price, amount)
+        adder(19)
+        setLabel(19, Label19)
     End Sub
 
     Private Sub Button20_Click(sender As Object, e As EventArgs) Handles Button20.Click
-        Dim id As Integer = 20
-        Dim name As String = "Leather Jacket"
-        Dim price As Double = 3000.0
-        Dim amount As Integer = 1
-        adder(id, name, price, amount)
+        adder(20)
+        setLabel(20, Label20)
     End Sub
 
     Private Sub Button21_Click(sender As Object, e As EventArgs) Handles Button21.Click
-        Dim id As Integer = 21
-        Dim name As String = "Electric Guitar"
-        Dim price As Double = 9200.0
-        Dim amount As Integer = 1
-        adder(id, name, price, amount)
+        adder(21)
+        setLabel(21, Label21)
     End Sub
 
     Private Sub Button22_Click(sender As Object, e As EventArgs) Handles Button22.Click
-        Dim id As Integer = 22
-        Dim name As String = "Designer Handbag"
-        Dim price As Double = 15000.0
-        Dim amount As Integer = 1
-        adder(id, name, price, amount)
+        adder(22)
+        setLabel(22, Label22)
     End Sub
 
     Private Sub Button23_Click(sender As Object, e As EventArgs) Handles Button23.Click
-        Dim id As Integer = 23
-        Dim name As String = "Luggage Set"
-        Dim price As Double = 4000.0
-        Dim amount As Integer = 1
-        adder(id, name, price, amount)
+        adder(23)
+        setLabel(23, Label23)
     End Sub
 
     Private Sub Button24_Click(sender As Object, e As EventArgs) Handles Button24.Click
-        Dim id As Integer = 24
-        Dim name As String = "Treadmill"
-        Dim price As Double = 23000.0
-        Dim amount As Integer = 1
-        adder(id, name, price, amount)
+        adder(24)
+        setLabel(24, Label24)
     End Sub
 
 End Class
