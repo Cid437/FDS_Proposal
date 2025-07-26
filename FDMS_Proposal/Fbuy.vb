@@ -18,11 +18,11 @@ Public Class Fbuy
             If (i > 0) Then
                 MsgBox("Item '" & name & "' added to cart")
             Else
-                MsgBox("item is already in the cart")
+                MsgBox("Something went wrong, please check your cart")
 
             End If
         Catch ex As MySqlException
-            MsgBox("Item not added")
+            MsgBox("Item might already be in cart")
             conn.Close()
         End Try
         conn.Close()
@@ -240,4 +240,5 @@ Public Class Fbuy
         Dim amount As Integer = 1
         adder(id, name, price, amount)
     End Sub
+
 End Class

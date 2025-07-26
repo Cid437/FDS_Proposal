@@ -134,6 +134,7 @@ Partial Class Fbuy
         'TabPage1
         '
         Me.TabPage1.AutoScroll = True
+        Me.TabPage1.BackgroundImage = Global.FDMS_Proposal.My.Resources.Resources.dagat
         Me.TabPage1.Controls.Add(Me.Button4)
         Me.TabPage1.Controls.Add(Me.Button5)
         Me.TabPage1.Controls.Add(Me.Button6)
@@ -162,7 +163,7 @@ Partial Class Fbuy
         Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Button4.Font = New System.Drawing.Font("Lucida Fax", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button4.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Button4.Location = New System.Drawing.Point(600, 647)
+        Me.Button4.Location = New System.Drawing.Point(600, 617)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(90, 30)
         Me.Button4.TabIndex = 13
@@ -175,7 +176,7 @@ Partial Class Fbuy
         Me.Button5.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Button5.Font = New System.Drawing.Font("Lucida Fax", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button5.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Button5.Location = New System.Drawing.Point(343, 647)
+        Me.Button5.Location = New System.Drawing.Point(343, 617)
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(90, 30)
         Me.Button5.TabIndex = 12
@@ -188,7 +189,7 @@ Partial Class Fbuy
         Me.Button6.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Button6.Font = New System.Drawing.Font("Lucida Fax", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button6.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Button6.Location = New System.Drawing.Point(85, 647)
+        Me.Button6.Location = New System.Drawing.Point(85, 617)
         Me.Button6.Name = "Button6"
         Me.Button6.Size = New System.Drawing.Size(90, 30)
         Me.Button6.TabIndex = 11
@@ -201,7 +202,7 @@ Partial Class Fbuy
         Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Button3.Font = New System.Drawing.Font("Lucida Fax", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button3.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Button3.Location = New System.Drawing.Point(601, 337)
+        Me.Button3.Location = New System.Drawing.Point(601, 307)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(90, 30)
         Me.Button3.TabIndex = 10
@@ -214,7 +215,7 @@ Partial Class Fbuy
         Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Button2.Font = New System.Drawing.Font("Lucida Fax", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Button2.Location = New System.Drawing.Point(344, 337)
+        Me.Button2.Location = New System.Drawing.Point(344, 307)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(90, 30)
         Me.Button2.TabIndex = 9
@@ -227,7 +228,7 @@ Partial Class Fbuy
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Button1.Font = New System.Drawing.Font("Lucida Fax", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Button1.Location = New System.Drawing.Point(86, 337)
+        Me.Button1.Location = New System.Drawing.Point(86, 307)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(90, 30)
         Me.Button1.TabIndex = 8
@@ -238,7 +239,8 @@ Partial Class Fbuy
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Imprint MT Shadow", 18.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(333, 57)
+        Me.Label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Label3.Location = New System.Drawing.Point(331, 31)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(114, 28)
         Me.Label3.TabIndex = 7
@@ -247,8 +249,8 @@ Partial Class Fbuy
         'PictureBox4
         '
         Me.PictureBox4.BackColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.PictureBox4.Image = Global.FDMS_Proposal.My.Resources.Resources.DCPT_Items
-        Me.PictureBox4.Location = New System.Drawing.Point(537, 419)
+        Me.PictureBox4.Image = Global.FDMS_Proposal.My.Resources.Resources._4
+        Me.PictureBox4.Location = New System.Drawing.Point(537, 389)
         Me.PictureBox4.Name = "PictureBox4"
         Me.PictureBox4.Size = New System.Drawing.Size(217, 267)
         Me.PictureBox4.TabIndex = 6
@@ -257,8 +259,8 @@ Partial Class Fbuy
         'PictureBox5
         '
         Me.PictureBox5.BackColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.PictureBox5.Image = Global.FDMS_Proposal.My.Resources.Resources.DCPT_Items
-        Me.PictureBox5.Location = New System.Drawing.Point(279, 419)
+        Me.PictureBox5.Image = Global.FDMS_Proposal.My.Resources.Resources._5
+        Me.PictureBox5.Location = New System.Drawing.Point(279, 389)
         Me.PictureBox5.Name = "PictureBox5"
         Me.PictureBox5.Size = New System.Drawing.Size(217, 267)
         Me.PictureBox5.TabIndex = 5
@@ -267,8 +269,8 @@ Partial Class Fbuy
         'PictureBox6
         '
         Me.PictureBox6.BackColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.PictureBox6.Image = Global.FDMS_Proposal.My.Resources.Resources.DCPT_Items
-        Me.PictureBox6.Location = New System.Drawing.Point(20, 419)
+        Me.PictureBox6.Image = Global.FDMS_Proposal.My.Resources.Resources._6
+        Me.PictureBox6.Location = New System.Drawing.Point(20, 389)
         Me.PictureBox6.Name = "PictureBox6"
         Me.PictureBox6.Size = New System.Drawing.Size(217, 267)
         Me.PictureBox6.TabIndex = 4
@@ -277,8 +279,8 @@ Partial Class Fbuy
         'PictureBox3
         '
         Me.PictureBox3.BackColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.PictureBox3.Image = Global.FDMS_Proposal.My.Resources.Resources.DCPT_Items
-        Me.PictureBox3.Location = New System.Drawing.Point(537, 109)
+        Me.PictureBox3.Image = Global.FDMS_Proposal.My.Resources.Resources._3
+        Me.PictureBox3.Location = New System.Drawing.Point(537, 79)
         Me.PictureBox3.Name = "PictureBox3"
         Me.PictureBox3.Size = New System.Drawing.Size(217, 267)
         Me.PictureBox3.TabIndex = 3
@@ -287,8 +289,8 @@ Partial Class Fbuy
         'PictureBox1
         '
         Me.PictureBox1.BackColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.PictureBox1.Image = Global.FDMS_Proposal.My.Resources.Resources.DCPT_Items
-        Me.PictureBox1.Location = New System.Drawing.Point(279, 109)
+        Me.PictureBox1.Image = Global.FDMS_Proposal.My.Resources.Resources._2
+        Me.PictureBox1.Location = New System.Drawing.Point(279, 79)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(217, 267)
         Me.PictureBox1.TabIndex = 2
@@ -297,8 +299,8 @@ Partial Class Fbuy
         'PictureBox2
         '
         Me.PictureBox2.BackColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.PictureBox2.Image = Global.FDMS_Proposal.My.Resources.Resources.DCPT_Items
-        Me.PictureBox2.Location = New System.Drawing.Point(20, 109)
+        Me.PictureBox2.Image = Global.FDMS_Proposal.My.Resources.Resources._1
+        Me.PictureBox2.Location = New System.Drawing.Point(20, 79)
         Me.PictureBox2.Name = "PictureBox2"
         Me.PictureBox2.Size = New System.Drawing.Size(217, 267)
         Me.PictureBox2.TabIndex = 1
@@ -307,6 +309,7 @@ Partial Class Fbuy
         'TabPage3
         '
         Me.TabPage3.AutoScroll = True
+        Me.TabPage3.BackgroundImage = Global.FDMS_Proposal.My.Resources.Resources.dagat
         Me.TabPage3.Controls.Add(Me.Button10)
         Me.TabPage3.Controls.Add(Me.Button11)
         Me.TabPage3.Controls.Add(Me.Button12)
@@ -334,7 +337,7 @@ Partial Class Fbuy
         Me.Button10.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Button10.Font = New System.Drawing.Font("Lucida Fax", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button10.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Button10.Location = New System.Drawing.Point(599, 618)
+        Me.Button10.Location = New System.Drawing.Point(597, 638)
         Me.Button10.Name = "Button10"
         Me.Button10.Size = New System.Drawing.Size(90, 30)
         Me.Button10.TabIndex = 20
@@ -347,7 +350,7 @@ Partial Class Fbuy
         Me.Button11.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Button11.Font = New System.Drawing.Font("Lucida Fax", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button11.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Button11.Location = New System.Drawing.Point(342, 618)
+        Me.Button11.Location = New System.Drawing.Point(340, 638)
         Me.Button11.Name = "Button11"
         Me.Button11.Size = New System.Drawing.Size(90, 30)
         Me.Button11.TabIndex = 19
@@ -360,7 +363,7 @@ Partial Class Fbuy
         Me.Button12.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Button12.Font = New System.Drawing.Font("Lucida Fax", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button12.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Button12.Location = New System.Drawing.Point(84, 618)
+        Me.Button12.Location = New System.Drawing.Point(82, 638)
         Me.Button12.Name = "Button12"
         Me.Button12.Size = New System.Drawing.Size(90, 30)
         Me.Button12.TabIndex = 18
@@ -373,7 +376,7 @@ Partial Class Fbuy
         Me.Button7.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Button7.Font = New System.Drawing.Font("Lucida Fax", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button7.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Button7.Location = New System.Drawing.Point(599, 305)
+        Me.Button7.Location = New System.Drawing.Point(597, 325)
         Me.Button7.Name = "Button7"
         Me.Button7.Size = New System.Drawing.Size(90, 30)
         Me.Button7.TabIndex = 17
@@ -386,7 +389,7 @@ Partial Class Fbuy
         Me.Button8.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Button8.Font = New System.Drawing.Font("Lucida Fax", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button8.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Button8.Location = New System.Drawing.Point(342, 305)
+        Me.Button8.Location = New System.Drawing.Point(340, 325)
         Me.Button8.Name = "Button8"
         Me.Button8.Size = New System.Drawing.Size(90, 30)
         Me.Button8.TabIndex = 16
@@ -399,7 +402,7 @@ Partial Class Fbuy
         Me.Button9.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Button9.Font = New System.Drawing.Font("Lucida Fax", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button9.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Button9.Location = New System.Drawing.Point(84, 305)
+        Me.Button9.Location = New System.Drawing.Point(82, 325)
         Me.Button9.Name = "Button9"
         Me.Button9.Size = New System.Drawing.Size(90, 30)
         Me.Button9.TabIndex = 15
@@ -410,7 +413,8 @@ Partial Class Fbuy
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Imprint MT Shadow", 18.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(333, 28)
+        Me.Label4.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.Label4.Location = New System.Drawing.Point(322, 43)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(139, 28)
         Me.Label4.TabIndex = 11
@@ -419,8 +423,8 @@ Partial Class Fbuy
         'PictureBox16
         '
         Me.PictureBox16.BackColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.PictureBox16.Image = Global.FDMS_Proposal.My.Resources.Resources.DCPT_Items
-        Me.PictureBox16.Location = New System.Drawing.Point(537, 389)
+        Me.PictureBox16.Image = Global.FDMS_Proposal.My.Resources.Resources._10
+        Me.PictureBox16.Location = New System.Drawing.Point(535, 409)
         Me.PictureBox16.Name = "PictureBox16"
         Me.PictureBox16.Size = New System.Drawing.Size(217, 267)
         Me.PictureBox16.TabIndex = 14
@@ -429,8 +433,8 @@ Partial Class Fbuy
         'PictureBox17
         '
         Me.PictureBox17.BackColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.PictureBox17.Image = Global.FDMS_Proposal.My.Resources.Resources.DCPT_Items
-        Me.PictureBox17.Location = New System.Drawing.Point(279, 389)
+        Me.PictureBox17.Image = Global.FDMS_Proposal.My.Resources.Resources._11
+        Me.PictureBox17.Location = New System.Drawing.Point(277, 409)
         Me.PictureBox17.Name = "PictureBox17"
         Me.PictureBox17.Size = New System.Drawing.Size(217, 267)
         Me.PictureBox17.TabIndex = 13
@@ -439,8 +443,8 @@ Partial Class Fbuy
         'PictureBox18
         '
         Me.PictureBox18.BackColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.PictureBox18.Image = Global.FDMS_Proposal.My.Resources.Resources.DCPT_Items
-        Me.PictureBox18.Location = New System.Drawing.Point(20, 389)
+        Me.PictureBox18.Image = Global.FDMS_Proposal.My.Resources.Resources._12
+        Me.PictureBox18.Location = New System.Drawing.Point(18, 409)
         Me.PictureBox18.Name = "PictureBox18"
         Me.PictureBox18.Size = New System.Drawing.Size(217, 267)
         Me.PictureBox18.TabIndex = 12
@@ -449,8 +453,8 @@ Partial Class Fbuy
         'PictureBox7
         '
         Me.PictureBox7.BackColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.PictureBox7.Image = Global.FDMS_Proposal.My.Resources.Resources.DCPT_Items
-        Me.PictureBox7.Location = New System.Drawing.Point(537, 80)
+        Me.PictureBox7.Image = Global.FDMS_Proposal.My.Resources.Resources._7
+        Me.PictureBox7.Location = New System.Drawing.Point(535, 100)
         Me.PictureBox7.Name = "PictureBox7"
         Me.PictureBox7.Size = New System.Drawing.Size(217, 267)
         Me.PictureBox7.TabIndex = 10
@@ -459,8 +463,8 @@ Partial Class Fbuy
         'PictureBox8
         '
         Me.PictureBox8.BackColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.PictureBox8.Image = Global.FDMS_Proposal.My.Resources.Resources.DCPT_Items
-        Me.PictureBox8.Location = New System.Drawing.Point(279, 80)
+        Me.PictureBox8.Image = Global.FDMS_Proposal.My.Resources.Resources._8
+        Me.PictureBox8.Location = New System.Drawing.Point(277, 100)
         Me.PictureBox8.Name = "PictureBox8"
         Me.PictureBox8.Size = New System.Drawing.Size(217, 267)
         Me.PictureBox8.TabIndex = 9
@@ -469,8 +473,8 @@ Partial Class Fbuy
         'PictureBox9
         '
         Me.PictureBox9.BackColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.PictureBox9.Image = Global.FDMS_Proposal.My.Resources.Resources.DCPT_Items
-        Me.PictureBox9.Location = New System.Drawing.Point(20, 80)
+        Me.PictureBox9.Image = Global.FDMS_Proposal.My.Resources.Resources._9
+        Me.PictureBox9.Location = New System.Drawing.Point(18, 100)
         Me.PictureBox9.Name = "PictureBox9"
         Me.PictureBox9.Size = New System.Drawing.Size(217, 267)
         Me.PictureBox9.TabIndex = 8
@@ -479,6 +483,7 @@ Partial Class Fbuy
         'TabPage4
         '
         Me.TabPage4.AutoScroll = True
+        Me.TabPage4.BackgroundImage = Global.FDMS_Proposal.My.Resources.Resources.dagat
         Me.TabPage4.Controls.Add(Me.Button16)
         Me.TabPage4.Controls.Add(Me.Button17)
         Me.TabPage4.Controls.Add(Me.Button18)
@@ -506,7 +511,7 @@ Partial Class Fbuy
         Me.Button16.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Button16.Font = New System.Drawing.Font("Lucida Fax", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button16.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Button16.Location = New System.Drawing.Point(601, 605)
+        Me.Button16.Location = New System.Drawing.Point(600, 613)
         Me.Button16.Name = "Button16"
         Me.Button16.Size = New System.Drawing.Size(90, 30)
         Me.Button16.TabIndex = 20
@@ -519,7 +524,7 @@ Partial Class Fbuy
         Me.Button17.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Button17.Font = New System.Drawing.Font("Lucida Fax", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button17.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Button17.Location = New System.Drawing.Point(344, 605)
+        Me.Button17.Location = New System.Drawing.Point(343, 613)
         Me.Button17.Name = "Button17"
         Me.Button17.Size = New System.Drawing.Size(90, 30)
         Me.Button17.TabIndex = 19
@@ -532,7 +537,7 @@ Partial Class Fbuy
         Me.Button18.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Button18.Font = New System.Drawing.Font("Lucida Fax", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button18.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Button18.Location = New System.Drawing.Point(86, 605)
+        Me.Button18.Location = New System.Drawing.Point(85, 613)
         Me.Button18.Name = "Button18"
         Me.Button18.Size = New System.Drawing.Size(90, 30)
         Me.Button18.TabIndex = 18
@@ -545,7 +550,7 @@ Partial Class Fbuy
         Me.Button13.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Button13.Font = New System.Drawing.Font("Lucida Fax", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button13.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Button13.Location = New System.Drawing.Point(601, 306)
+        Me.Button13.Location = New System.Drawing.Point(600, 314)
         Me.Button13.Name = "Button13"
         Me.Button13.Size = New System.Drawing.Size(90, 30)
         Me.Button13.TabIndex = 17
@@ -558,7 +563,7 @@ Partial Class Fbuy
         Me.Button14.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Button14.Font = New System.Drawing.Font("Lucida Fax", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button14.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Button14.Location = New System.Drawing.Point(344, 306)
+        Me.Button14.Location = New System.Drawing.Point(343, 314)
         Me.Button14.Name = "Button14"
         Me.Button14.Size = New System.Drawing.Size(90, 30)
         Me.Button14.TabIndex = 16
@@ -571,7 +576,7 @@ Partial Class Fbuy
         Me.Button15.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Button15.Font = New System.Drawing.Font("Lucida Fax", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button15.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Button15.Location = New System.Drawing.Point(86, 306)
+        Me.Button15.Location = New System.Drawing.Point(85, 314)
         Me.Button15.Name = "Button15"
         Me.Button15.Size = New System.Drawing.Size(90, 30)
         Me.Button15.TabIndex = 15
@@ -582,7 +587,8 @@ Partial Class Fbuy
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Imprint MT Shadow", 18.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(333, 28)
+        Me.Label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Label5.Location = New System.Drawing.Point(321, 35)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(113, 28)
         Me.Label5.TabIndex = 11
@@ -591,8 +597,8 @@ Partial Class Fbuy
         'PictureBox19
         '
         Me.PictureBox19.BackColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.PictureBox19.Image = Global.FDMS_Proposal.My.Resources.Resources.DCPT_Items
-        Me.PictureBox19.Location = New System.Drawing.Point(537, 376)
+        Me.PictureBox19.Image = Global.FDMS_Proposal.My.Resources.Resources._16
+        Me.PictureBox19.Location = New System.Drawing.Point(536, 384)
         Me.PictureBox19.Name = "PictureBox19"
         Me.PictureBox19.Size = New System.Drawing.Size(217, 267)
         Me.PictureBox19.TabIndex = 14
@@ -601,8 +607,8 @@ Partial Class Fbuy
         'PictureBox20
         '
         Me.PictureBox20.BackColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.PictureBox20.Image = Global.FDMS_Proposal.My.Resources.Resources.DCPT_Items
-        Me.PictureBox20.Location = New System.Drawing.Point(279, 376)
+        Me.PictureBox20.Image = Global.FDMS_Proposal.My.Resources.Resources._17
+        Me.PictureBox20.Location = New System.Drawing.Point(278, 384)
         Me.PictureBox20.Name = "PictureBox20"
         Me.PictureBox20.Size = New System.Drawing.Size(217, 267)
         Me.PictureBox20.TabIndex = 13
@@ -611,8 +617,8 @@ Partial Class Fbuy
         'PictureBox21
         '
         Me.PictureBox21.BackColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.PictureBox21.Image = Global.FDMS_Proposal.My.Resources.Resources.DCPT_Items
-        Me.PictureBox21.Location = New System.Drawing.Point(20, 376)
+        Me.PictureBox21.Image = Global.FDMS_Proposal.My.Resources.Resources._18
+        Me.PictureBox21.Location = New System.Drawing.Point(19, 384)
         Me.PictureBox21.Name = "PictureBox21"
         Me.PictureBox21.Size = New System.Drawing.Size(217, 267)
         Me.PictureBox21.TabIndex = 12
@@ -621,8 +627,8 @@ Partial Class Fbuy
         'PictureBox10
         '
         Me.PictureBox10.BackColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.PictureBox10.Image = Global.FDMS_Proposal.My.Resources.Resources.DCPT_Items
-        Me.PictureBox10.Location = New System.Drawing.Point(537, 80)
+        Me.PictureBox10.Image = Global.FDMS_Proposal.My.Resources.Resources._13
+        Me.PictureBox10.Location = New System.Drawing.Point(536, 88)
         Me.PictureBox10.Name = "PictureBox10"
         Me.PictureBox10.Size = New System.Drawing.Size(217, 267)
         Me.PictureBox10.TabIndex = 10
@@ -631,8 +637,8 @@ Partial Class Fbuy
         'PictureBox11
         '
         Me.PictureBox11.BackColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.PictureBox11.Image = Global.FDMS_Proposal.My.Resources.Resources.DCPT_Items
-        Me.PictureBox11.Location = New System.Drawing.Point(279, 80)
+        Me.PictureBox11.Image = Global.FDMS_Proposal.My.Resources.Resources._14
+        Me.PictureBox11.Location = New System.Drawing.Point(278, 88)
         Me.PictureBox11.Name = "PictureBox11"
         Me.PictureBox11.Size = New System.Drawing.Size(217, 267)
         Me.PictureBox11.TabIndex = 9
@@ -641,8 +647,8 @@ Partial Class Fbuy
         'PictureBox12
         '
         Me.PictureBox12.BackColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.PictureBox12.Image = Global.FDMS_Proposal.My.Resources.Resources.DCPT_Items
-        Me.PictureBox12.Location = New System.Drawing.Point(20, 80)
+        Me.PictureBox12.Image = Global.FDMS_Proposal.My.Resources.Resources._15
+        Me.PictureBox12.Location = New System.Drawing.Point(19, 88)
         Me.PictureBox12.Name = "PictureBox12"
         Me.PictureBox12.Size = New System.Drawing.Size(217, 267)
         Me.PictureBox12.TabIndex = 8
@@ -651,6 +657,7 @@ Partial Class Fbuy
         'TabPage5
         '
         Me.TabPage5.AutoScroll = True
+        Me.TabPage5.BackgroundImage = Global.FDMS_Proposal.My.Resources.Resources.dagat
         Me.TabPage5.Controls.Add(Me.Button22)
         Me.TabPage5.Controls.Add(Me.Button23)
         Me.TabPage5.Controls.Add(Me.Button24)
@@ -678,7 +685,7 @@ Partial Class Fbuy
         Me.Button22.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Button22.Font = New System.Drawing.Font("Lucida Fax", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button22.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Button22.Location = New System.Drawing.Point(605, 614)
+        Me.Button22.Location = New System.Drawing.Point(600, 593)
         Me.Button22.Name = "Button22"
         Me.Button22.Size = New System.Drawing.Size(90, 30)
         Me.Button22.TabIndex = 20
@@ -691,7 +698,7 @@ Partial Class Fbuy
         Me.Button23.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Button23.Font = New System.Drawing.Font("Lucida Fax", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button23.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Button23.Location = New System.Drawing.Point(348, 614)
+        Me.Button23.Location = New System.Drawing.Point(343, 593)
         Me.Button23.Name = "Button23"
         Me.Button23.Size = New System.Drawing.Size(90, 30)
         Me.Button23.TabIndex = 19
@@ -704,7 +711,7 @@ Partial Class Fbuy
         Me.Button24.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Button24.Font = New System.Drawing.Font("Lucida Fax", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button24.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Button24.Location = New System.Drawing.Point(90, 614)
+        Me.Button24.Location = New System.Drawing.Point(85, 593)
         Me.Button24.Name = "Button24"
         Me.Button24.Size = New System.Drawing.Size(90, 30)
         Me.Button24.TabIndex = 18
@@ -717,7 +724,7 @@ Partial Class Fbuy
         Me.Button19.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Button19.Font = New System.Drawing.Font("Lucida Fax", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button19.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Button19.Location = New System.Drawing.Point(610, 313)
+        Me.Button19.Location = New System.Drawing.Point(605, 292)
         Me.Button19.Name = "Button19"
         Me.Button19.Size = New System.Drawing.Size(90, 30)
         Me.Button19.TabIndex = 17
@@ -730,7 +737,7 @@ Partial Class Fbuy
         Me.Button20.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Button20.Font = New System.Drawing.Font("Lucida Fax", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button20.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Button20.Location = New System.Drawing.Point(348, 313)
+        Me.Button20.Location = New System.Drawing.Point(343, 292)
         Me.Button20.Name = "Button20"
         Me.Button20.Size = New System.Drawing.Size(90, 30)
         Me.Button20.TabIndex = 16
@@ -743,7 +750,7 @@ Partial Class Fbuy
         Me.Button21.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Button21.Font = New System.Drawing.Font("Lucida Fax", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button21.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Button21.Location = New System.Drawing.Point(90, 313)
+        Me.Button21.Location = New System.Drawing.Point(85, 292)
         Me.Button21.Name = "Button21"
         Me.Button21.Size = New System.Drawing.Size(90, 30)
         Me.Button21.TabIndex = 15
@@ -754,7 +761,8 @@ Partial Class Fbuy
         '
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Imprint MT Shadow", 18.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(334, 33)
+        Me.Label6.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Label6.Location = New System.Drawing.Point(332, 12)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(89, 28)
         Me.Label6.TabIndex = 11
@@ -763,8 +771,8 @@ Partial Class Fbuy
         'PictureBox22
         '
         Me.PictureBox22.BackColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.PictureBox22.Image = Global.FDMS_Proposal.My.Resources.Resources.DCPT_Items
-        Me.PictureBox22.Location = New System.Drawing.Point(538, 387)
+        Me.PictureBox22.Image = Global.FDMS_Proposal.My.Resources.Resources._22
+        Me.PictureBox22.Location = New System.Drawing.Point(533, 366)
         Me.PictureBox22.Name = "PictureBox22"
         Me.PictureBox22.Size = New System.Drawing.Size(217, 267)
         Me.PictureBox22.TabIndex = 14
@@ -773,8 +781,8 @@ Partial Class Fbuy
         'PictureBox23
         '
         Me.PictureBox23.BackColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.PictureBox23.Image = Global.FDMS_Proposal.My.Resources.Resources.DCPT_Items
-        Me.PictureBox23.Location = New System.Drawing.Point(280, 387)
+        Me.PictureBox23.Image = Global.FDMS_Proposal.My.Resources.Resources._23
+        Me.PictureBox23.Location = New System.Drawing.Point(275, 366)
         Me.PictureBox23.Name = "PictureBox23"
         Me.PictureBox23.Size = New System.Drawing.Size(217, 267)
         Me.PictureBox23.TabIndex = 13
@@ -783,8 +791,8 @@ Partial Class Fbuy
         'PictureBox24
         '
         Me.PictureBox24.BackColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.PictureBox24.Image = Global.FDMS_Proposal.My.Resources.Resources.DCPT_Items
-        Me.PictureBox24.Location = New System.Drawing.Point(21, 387)
+        Me.PictureBox24.Image = Global.FDMS_Proposal.My.Resources.Resources._24
+        Me.PictureBox24.Location = New System.Drawing.Point(16, 366)
         Me.PictureBox24.Name = "PictureBox24"
         Me.PictureBox24.Size = New System.Drawing.Size(217, 267)
         Me.PictureBox24.TabIndex = 12
@@ -793,8 +801,8 @@ Partial Class Fbuy
         'PictureBox13
         '
         Me.PictureBox13.BackColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.PictureBox13.Image = Global.FDMS_Proposal.My.Resources.Resources.DCPT_Items
-        Me.PictureBox13.Location = New System.Drawing.Point(538, 85)
+        Me.PictureBox13.Image = Global.FDMS_Proposal.My.Resources.Resources._19
+        Me.PictureBox13.Location = New System.Drawing.Point(536, 64)
         Me.PictureBox13.Name = "PictureBox13"
         Me.PictureBox13.Size = New System.Drawing.Size(217, 267)
         Me.PictureBox13.TabIndex = 10
@@ -803,8 +811,8 @@ Partial Class Fbuy
         'PictureBox14
         '
         Me.PictureBox14.BackColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.PictureBox14.Image = Global.FDMS_Proposal.My.Resources.Resources.DCPT_Items
-        Me.PictureBox14.Location = New System.Drawing.Point(280, 85)
+        Me.PictureBox14.Image = Global.FDMS_Proposal.My.Resources.Resources._20
+        Me.PictureBox14.Location = New System.Drawing.Point(278, 64)
         Me.PictureBox14.Name = "PictureBox14"
         Me.PictureBox14.Size = New System.Drawing.Size(217, 267)
         Me.PictureBox14.TabIndex = 9
@@ -813,8 +821,8 @@ Partial Class Fbuy
         'PictureBox15
         '
         Me.PictureBox15.BackColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.PictureBox15.Image = Global.FDMS_Proposal.My.Resources.Resources.DCPT_Items
-        Me.PictureBox15.Location = New System.Drawing.Point(21, 85)
+        Me.PictureBox15.Image = Global.FDMS_Proposal.My.Resources.Resources._21
+        Me.PictureBox15.Location = New System.Drawing.Point(19, 64)
         Me.PictureBox15.Name = "PictureBox15"
         Me.PictureBox15.Size = New System.Drawing.Size(217, 267)
         Me.PictureBox15.TabIndex = 8
