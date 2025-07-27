@@ -1,7 +1,9 @@
 ﻿Imports MySql.Data.MySqlClient
 Public Class FLogin
     Dim conn As MySqlConnection = New MySqlConnection("Data Source=localhost;Database=DCPT;User=root;Password=;")
+    ' "Data Source=localhost;Database=DCPT;User=root;Password=;" - Donn server
     'Public dbconn As New MySqlConnection
+    ' hmm
     Public sql As String
     Public dbcomm As MySqlCommand
     Public dbread As MySqlDataReader
