@@ -5,6 +5,7 @@ Public Class FLogin
     'Public dbconn As New MySqlConnection
     ' hmm
     'SIGE DONN
+    ' GGG
     Public sql As String
     Public dbcomm As MySqlCommand
     Public dbread As MySqlDataReader
