@@ -62,7 +62,7 @@ Public Class FLogin
 
                 If role = adminconfirm Then
                     MsgBox("Welcome, admin '" & loggedInUser & "'!")
-                    Fstaff.Show()
+                    Fadmin.Show()
                     Me.Hide()
                 ElseIf role = staffconfirm Then
                     MsgBox("Welcome, staff '" & loggedInUser & "'!")
