@@ -4,6 +4,7 @@ Public Class FLogin
     ' "Data Source=localhost;Database=DCPT;User=root;Password=;" - Donn server
     'Public dbconn As New MySqlConnection
     ' hmm
+    'SIGE DONN
     Public sql As String
     Public dbcomm As MySqlCommand
     Public dbread As MySqlDataReader
@@ -103,5 +104,9 @@ Public Class FLogin
             MsgBox("Please try another password/name")
         End Try
         conn.Close()
+    End Sub
+
+    Private Sub FLogin_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
     End Sub
 End Class
