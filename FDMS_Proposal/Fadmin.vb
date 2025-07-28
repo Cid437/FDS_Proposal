@@ -141,7 +141,7 @@ Public Class Fadmin
 
 
             If ans = DialogResult.Yes Then
-                conn.Open()
+
                 sql = $"DELETE FROM acs WHERE account_id = {id}"
                 dbcomm = New MySqlCommand(sql, conn)
                 Dim i As Integer = dbcomm.ExecuteNonQuery
