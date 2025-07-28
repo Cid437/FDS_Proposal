@@ -66,6 +66,11 @@ Public Class FCart
         FLogin.Show()
     End Sub
 
+    Private Sub Pawn_Click(sender As Object, e As EventArgs) Handles Pawn.Click
+        Fpawn.Show()
+        Me.Hide()
+    End Sub
+
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         'remove button
         Dim id = TextBox1.Text

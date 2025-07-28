@@ -15,7 +15,6 @@ Public Class FLogin
     Private Sub buy_Click(sender As Object, e As EventArgs) Handles buy.Click
         Me.Hide()
         Fbuy.Show()
-
     End Sub
 
     Private Sub home_Click(sender As Object, e As EventArgs) Handles home.Click
@@ -31,6 +30,11 @@ Public Class FLogin
     Private Sub cart_Click(sender As Object, e As EventArgs) Handles cart.Click
         Me.Hide()
         FCart.Show()
+    End Sub
+
+    Private Sub Pawn_Click(sender As Object, e As EventArgs) Handles Pawn.Click
+        Fpawn.Show()
+        Me.Hide()
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
@@ -107,7 +111,4 @@ Public Class FLogin
         conn.Close()
     End Sub
 
-    Private Sub FLogin_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
-    End Sub
 End Class

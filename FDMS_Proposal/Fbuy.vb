@@ -113,7 +113,11 @@ Public Class Fbuy
     Private Sub cart_Click(sender As Object, e As EventArgs) Handles cart.Click
         Me.Hide()
         FCart.Show()
+    End Sub
 
+    Private Sub Pawn_Click(sender As Object, e As EventArgs) Handles Pawn.Click
+        Fpawn.Show()
+        Me.Hide()
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click

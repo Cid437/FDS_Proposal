@@ -162,6 +162,12 @@
     <Compile Include="Fbuy.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Fpawn.Designer.vb">
+      <DependentUpon>Fpawn.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Fpawn.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Fstaff.Designer.vb">
       <DependentUpon>Fstaff.vb</DependentUpon>
     </Compile>
@@ -213,6 +219,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Fbuy.resx">
       <DependentUpon>Fbuy.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fpawn.resx">
+      <DependentUpon>Fpawn.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Fstaff.resx">
       <DependentUpon>Fstaff.vb</DependentUpon>

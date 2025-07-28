@@ -47,11 +47,8 @@
         FCart.Show()
     End Sub
 
-    Private Sub home_Click(sender As Object, e As EventArgs) Handles home.Click
-
-    End Sub
-
-    Private Sub pawn_Click(sender As Object, e As EventArgs) Handles pawn.Click
-
+    Private Sub Pawn_Click(sender As Object, e As EventArgs) Handles pawn.Click
+        Fpawn.Show()
+        Me.Hide()
     End Sub
 End Class
