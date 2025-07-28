@@ -220,12 +220,12 @@ Public Class FCart
                 Dim qty As Integer = reader("cart_amount")
                 Dim subtotal As Decimal = price * qty
 
-                message &= qty & " x " & name & " = ₱" & subtotal & vbCrLf
+                message &= qty & " x " & name & " = " & subtotal & vbCrLf
                 total += subtotal
             End While
             reader.Close()
 
-            message &= vbCrLf & "Total: ₱" & total
+            message &= vbCrLf & "Total: " & total
             MsgBox(message, MsgBoxStyle.Information, "Purchase Summary")
 
             sql = "INSERT INTO order_description (account_id, date_ordered , price, order_description) VALUES ('" & loggedInID & "','" & today & "','" & total & "', '" & message & "')"
