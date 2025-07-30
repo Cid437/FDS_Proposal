@@ -58,7 +58,7 @@ Public Class Fpawn
         Dim category = ComboBox1.SelectedItem
         Dim process = "Ongoing"
         Dim id = loggedInID
-
+        'll
         If loggedInUser = "" Then
             MsgBox("Please log in first.")
             Me.Hide()
