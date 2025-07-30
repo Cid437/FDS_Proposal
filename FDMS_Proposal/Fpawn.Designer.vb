@@ -186,11 +186,11 @@ Partial Class Fpawn
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label3.Location = New System.Drawing.Point(58, 260)
+        Me.Label3.Location = New System.Drawing.Point(55, 260)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(75, 16)
+        Me.Label3.Size = New System.Drawing.Size(79, 16)
         Me.Label3.TabIndex = 7
-        Me.Label3.Text = "Colateral:"
+        Me.Label3.Text = "Collateral:"
         '
         'TextBox1
         '

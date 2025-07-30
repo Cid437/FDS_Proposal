@@ -87,20 +87,21 @@ Public Class Fstaff
         Dim category = TextBox3.Text
         Dim price = TextBox4.Text
         Dim quantity = TextBox5.Text
-        Dim description = TextBox6.Text Try
+        Dim description = TextBox6.Text
+        Try
             conn.Open()
-        sql = "INSERT INTO items (item_id, item_name, item_category, item_price, item_quantity, item_description) VALUES ('" & id & "','" & Name & "','" & category & "','" & price & "','" & quantity & "','" & description & "')"
-        dbcomm = New MySqlCommand(sql, conn)
-        Dim i As Integer = dbcomm.ExecuteNonQuery
+            sql = "INSERT INTO items (item_id, item_name, item_category, item_price, item_quantity, item_description) VALUES ('" & id & "','" & Name & "','" & category & "','" & price & "','" & quantity & "','" & description & "')"
+            dbcomm = New MySqlCommand(sql, conn)
+            Dim i As Integer = dbcomm.ExecuteNonQuery
 
-        If (i > 0) Then
-            MsgBox("Item added")
-        Else
-            MsgBox("item not added")
+            If (i > 0) Then
+                MsgBox("Item added")
+            Else
+                MsgBox("item not added")
 
-        End If
+            End If
         Catch ex As MySqlException
-        MsgBox("Item not created")
+            MsgBox("Item not created")
         conn.Close()
         End Try
         conn.Close()
