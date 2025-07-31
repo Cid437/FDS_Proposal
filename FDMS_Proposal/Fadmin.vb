@@ -36,6 +36,9 @@ Public Class Fadmin
     End Sub
 
     Private Sub Fadmin_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+
+
         resetgrid()
     End Sub
 
@@ -185,5 +188,9 @@ Public Class Fadmin
         conn.Close()
         resetgrid()
         textboxreset()
+    End Sub
+
+    Private Sub Label4_Click(sender As Object, e As EventArgs) Handles Label4.Click
+
     End Sub
 End Class

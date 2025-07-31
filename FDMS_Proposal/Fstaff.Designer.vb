@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Fstaff
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class Fstaff
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.TabControl1 = New System.Windows.Forms.TabControl()
@@ -46,7 +46,6 @@ Partial Class Fstaff
         Me.Button8 = New System.Windows.Forms.Button()
         Me.Button7 = New System.Windows.Forms.Button()
         Me.Button6 = New System.Windows.Forms.Button()
-        Me.TextBox7 = New System.Windows.Forms.TextBox()
         Me.DataGridView2 = New System.Windows.Forms.DataGridView()
         Me.TabPage5 = New System.Windows.Forms.TabPage()
         Me.TabControl2 = New System.Windows.Forms.TabControl()
@@ -66,7 +65,7 @@ Partial Class Fstaff
         Me.Button1.BackColor = System.Drawing.Color.White
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Button1.Location = New System.Drawing.Point(16, 15)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(4)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(100, 28)
         Me.Button1.TabIndex = 0
@@ -79,7 +78,7 @@ Partial Class Fstaff
         Me.TabControl1.Controls.Add(Me.TabPage2)
         Me.TabControl1.Controls.Add(Me.TabPage5)
         Me.TabControl1.Location = New System.Drawing.Point(31, 70)
-        Me.TabControl1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TabControl1.Margin = New System.Windows.Forms.Padding(4)
         Me.TabControl1.Name = "TabControl1"
         Me.TabControl1.SelectedIndex = 0
         Me.TabControl1.Size = New System.Drawing.Size(983, 453)
@@ -107,9 +106,9 @@ Partial Class Fstaff
         Me.TabPage1.Controls.Add(Me.DataGridView1)
         Me.TabPage1.Controls.Add(Me.Button2)
         Me.TabPage1.Location = New System.Drawing.Point(4, 25)
-        Me.TabPage1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TabPage1.Margin = New System.Windows.Forms.Padding(4)
         Me.TabPage1.Name = "TabPage1"
-        Me.TabPage1.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TabPage1.Padding = New System.Windows.Forms.Padding(4)
         Me.TabPage1.Size = New System.Drawing.Size(975, 424)
         Me.TabPage1.TabIndex = 0
         Me.TabPage1.Text = "Items"
@@ -118,7 +117,7 @@ Partial Class Fstaff
         'TextBox6
         '
         Me.TextBox6.Location = New System.Drawing.Point(276, 309)
-        Me.TextBox6.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TextBox6.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox6.Multiline = True
         Me.TextBox6.Name = "TextBox6"
         Me.TextBox6.Size = New System.Drawing.Size(132, 94)
@@ -149,7 +148,7 @@ Partial Class Fstaff
         'TextBox5
         '
         Me.TextBox5.Location = New System.Drawing.Point(276, 256)
-        Me.TextBox5.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TextBox5.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox5.Name = "TextBox5"
         Me.TextBox5.Size = New System.Drawing.Size(132, 22)
         Me.TextBox5.TabIndex = 20
@@ -168,7 +167,7 @@ Partial Class Fstaff
         'TextBox4
         '
         Me.TextBox4.Location = New System.Drawing.Point(276, 208)
-        Me.TextBox4.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TextBox4.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox4.Name = "TextBox4"
         Me.TextBox4.Size = New System.Drawing.Size(132, 22)
         Me.TextBox4.TabIndex = 18
@@ -176,7 +175,7 @@ Partial Class Fstaff
         'Button5
         '
         Me.Button5.Location = New System.Drawing.Point(55, 282)
-        Me.Button5.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button5.Margin = New System.Windows.Forms.Padding(4)
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(81, 32)
         Me.Button5.TabIndex = 17
@@ -219,7 +218,7 @@ Partial Class Fstaff
         'TextBox3
         '
         Me.TextBox3.Location = New System.Drawing.Point(276, 159)
-        Me.TextBox3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TextBox3.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox3.Name = "TextBox3"
         Me.TextBox3.Size = New System.Drawing.Size(132, 22)
         Me.TextBox3.TabIndex = 13
@@ -227,7 +226,7 @@ Partial Class Fstaff
         'Button4
         '
         Me.Button4.Location = New System.Drawing.Point(53, 224)
-        Me.Button4.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button4.Margin = New System.Windows.Forms.Padding(4)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(81, 32)
         Me.Button4.TabIndex = 12
@@ -237,7 +236,7 @@ Partial Class Fstaff
         'TextBox2
         '
         Me.TextBox2.Location = New System.Drawing.Point(276, 85)
-        Me.TextBox2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TextBox2.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox2.Multiline = True
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(132, 52)
@@ -246,7 +245,7 @@ Partial Class Fstaff
         'Button3
         '
         Me.Button3.Location = New System.Drawing.Point(55, 167)
-        Me.Button3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button3.Margin = New System.Windows.Forms.Padding(4)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(81, 32)
         Me.Button3.TabIndex = 10
@@ -256,7 +255,7 @@ Partial Class Fstaff
         'TextBox1
         '
         Me.TextBox1.Location = New System.Drawing.Point(276, 39)
-        Me.TextBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TextBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(132, 22)
         Me.TextBox1.TabIndex = 9
@@ -268,7 +267,7 @@ Partial Class Fstaff
         Me.DataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridView1.Location = New System.Drawing.Point(489, 21)
-        Me.DataGridView1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.DataGridView1.Margin = New System.Windows.Forms.Padding(4)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.RowHeadersWidth = 51
         Me.DataGridView1.Size = New System.Drawing.Size(448, 380)
@@ -277,7 +276,7 @@ Partial Class Fstaff
         'Button2
         '
         Me.Button2.Location = New System.Drawing.Point(55, 106)
-        Me.Button2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button2.Margin = New System.Windows.Forms.Padding(4)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(104, 32)
         Me.Button2.TabIndex = 7
@@ -291,12 +290,11 @@ Partial Class Fstaff
         Me.TabPage2.Controls.Add(Me.Button8)
         Me.TabPage2.Controls.Add(Me.Button7)
         Me.TabPage2.Controls.Add(Me.Button6)
-        Me.TabPage2.Controls.Add(Me.TextBox7)
         Me.TabPage2.Controls.Add(Me.DataGridView2)
         Me.TabPage2.Location = New System.Drawing.Point(4, 25)
-        Me.TabPage2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TabPage2.Margin = New System.Windows.Forms.Padding(4)
         Me.TabPage2.Name = "TabPage2"
-        Me.TabPage2.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TabPage2.Padding = New System.Windows.Forms.Padding(4)
         Me.TabPage2.Size = New System.Drawing.Size(975, 424)
         Me.TabPage2.TabIndex = 1
         Me.TabPage2.Text = "Pawns"
@@ -304,8 +302,8 @@ Partial Class Fstaff
         '
         'Button8
         '
-        Me.Button8.Location = New System.Drawing.Point(127, 251)
-        Me.Button8.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button8.Location = New System.Drawing.Point(86, 306)
+        Me.Button8.Margin = New System.Windows.Forms.Padding(4)
         Me.Button8.Name = "Button8"
         Me.Button8.Size = New System.Drawing.Size(100, 28)
         Me.Button8.TabIndex = 4
@@ -314,8 +312,8 @@ Partial Class Fstaff
         '
         'Button7
         '
-        Me.Button7.Location = New System.Drawing.Point(127, 198)
-        Me.Button7.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button7.Location = New System.Drawing.Point(86, 205)
+        Me.Button7.Margin = New System.Windows.Forms.Padding(4)
         Me.Button7.Name = "Button7"
         Me.Button7.Size = New System.Drawing.Size(100, 28)
         Me.Button7.TabIndex = 3
@@ -324,31 +322,22 @@ Partial Class Fstaff
         '
         'Button6
         '
-        Me.Button6.Location = New System.Drawing.Point(127, 149)
-        Me.Button6.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button6.Location = New System.Drawing.Point(86, 113)
+        Me.Button6.Margin = New System.Windows.Forms.Padding(4)
         Me.Button6.Name = "Button6"
         Me.Button6.Size = New System.Drawing.Size(100, 28)
         Me.Button6.TabIndex = 2
         Me.Button6.Text = "Search"
         Me.Button6.UseVisualStyleBackColor = True
         '
-        'TextBox7
-        '
-        Me.TextBox7.Location = New System.Drawing.Point(516, 247)
-        Me.TextBox7.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
-        Me.TextBox7.Multiline = True
-        Me.TextBox7.Name = "TextBox7"
-        Me.TextBox7.Size = New System.Drawing.Size(412, 146)
-        Me.TextBox7.TabIndex = 1
-        '
         'DataGridView2
         '
         Me.DataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView2.Location = New System.Drawing.Point(516, 42)
-        Me.DataGridView2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.DataGridView2.Location = New System.Drawing.Point(351, 73)
+        Me.DataGridView2.Margin = New System.Windows.Forms.Padding(4)
         Me.DataGridView2.Name = "DataGridView2"
         Me.DataGridView2.RowHeadersWidth = 51
-        Me.DataGridView2.Size = New System.Drawing.Size(413, 185)
+        Me.DataGridView2.Size = New System.Drawing.Size(616, 343)
         Me.DataGridView2.TabIndex = 0
         '
         'TabPage5
@@ -356,9 +345,9 @@ Partial Class Fstaff
         Me.TabPage5.BackgroundImage = Global.FDMS_Proposal.My.Resources.Resources.Fstaff
         Me.TabPage5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.TabPage5.Location = New System.Drawing.Point(4, 25)
-        Me.TabPage5.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TabPage5.Margin = New System.Windows.Forms.Padding(4)
         Me.TabPage5.Name = "TabPage5"
-        Me.TabPage5.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TabPage5.Padding = New System.Windows.Forms.Padding(4)
         Me.TabPage5.Size = New System.Drawing.Size(975, 424)
         Me.TabPage5.TabIndex = 2
         Me.TabPage5.Text = "Customer help"
@@ -369,7 +358,7 @@ Partial Class Fstaff
         Me.TabControl2.Controls.Add(Me.TabPage3)
         Me.TabControl2.Controls.Add(Me.TabPage4)
         Me.TabControl2.Location = New System.Drawing.Point(31, 73)
-        Me.TabControl2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TabControl2.Margin = New System.Windows.Forms.Padding(4)
         Me.TabControl2.Name = "TabControl2"
         Me.TabControl2.SelectedIndex = 0
         Me.TabControl2.Size = New System.Drawing.Size(983, 450)
@@ -380,9 +369,9 @@ Partial Class Fstaff
         Me.TabPage3.BackgroundImage = Global.FDMS_Proposal.My.Resources.Resources.Fstaff
         Me.TabPage3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.TabPage3.Location = New System.Drawing.Point(4, 25)
-        Me.TabPage3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TabPage3.Margin = New System.Windows.Forms.Padding(4)
         Me.TabPage3.Name = "TabPage3"
-        Me.TabPage3.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TabPage3.Padding = New System.Windows.Forms.Padding(4)
         Me.TabPage3.Size = New System.Drawing.Size(975, 421)
         Me.TabPage3.TabIndex = 0
         Me.TabPage3.Text = "Accounts"
@@ -393,9 +382,9 @@ Partial Class Fstaff
         Me.TabPage4.BackgroundImage = Global.FDMS_Proposal.My.Resources.Resources.Fstaff
         Me.TabPage4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.TabPage4.Location = New System.Drawing.Point(4, 25)
-        Me.TabPage4.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TabPage4.Margin = New System.Windows.Forms.Padding(4)
         Me.TabPage4.Name = "TabPage4"
-        Me.TabPage4.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TabPage4.Padding = New System.Windows.Forms.Padding(4)
         Me.TabPage4.Size = New System.Drawing.Size(975, 421)
         Me.TabPage4.TabIndex = 1
         Me.TabPage4.Text = "Staff"
@@ -424,7 +413,7 @@ Partial Class Fstaff
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.TabControl2)
         Me.Controls.Add(Me.Button9)
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "Fstaff"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Fstaff"
@@ -433,7 +422,6 @@ Partial Class Fstaff
         Me.TabPage1.PerformLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabPage2.ResumeLayout(False)
-        Me.TabPage2.PerformLayout()
         CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabControl2.ResumeLayout(False)
         Me.ResumeLayout(False)
@@ -457,7 +445,6 @@ Partial Class Fstaff
     Friend WithEvents DataGridView1 As DataGridView
     Friend WithEvents Button2 As Button
     Friend WithEvents TabPage2 As TabPage
-    Friend WithEvents TextBox7 As TextBox
     Friend WithEvents DataGridView2 As DataGridView
     Friend WithEvents Button8 As Button
     Friend WithEvents Button7 As Button

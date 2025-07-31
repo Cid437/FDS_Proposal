@@ -38,13 +38,8 @@ Public Class FLogin
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-
-        If TextBox1.Text = "1" Then
-            TextBox1.Text = ""
-            TextBox2.Text = ""
-            Fstaff.Show()
-            Me.Hide()
-        End If
+        Dim id = loggedInUser
+        Fadmin.Label4.Text = id & "!!!"
 
         Dim name = TextBox1.Text
         Dim password = TextBox2.Text

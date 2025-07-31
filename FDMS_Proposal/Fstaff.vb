@@ -44,8 +44,31 @@ Public Class Fstaff
 
         End Try
         conn.Close()
+
+
+        reloadPawnRequestData()
     End Sub
 
+    Private Sub reloadPawnRequestData()
+        Try
+            conn.Open()
+            sql = "SELECT * FROM pawn_request"
+
+            Dim DataAdapter2 As New MySqlDataAdapter(sql, conn)
+            Dim ds2 As New DataSet()
+            DataAdapter2.Fill(ds2, "pawn_request")
+            DataGridView2.DataSource = ds2
+            DataGridView2.DataMember = "pawn_request"
+
+        Catch ex As Exception
+            MsgBox("Error in collecting data from the Database. Error is: " & ex.Message)
+
+        Finally
+            If conn.State = ConnectionState.Open Then
+                conn.Close()
+            End If
+        End Try
+    End Sub
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         If MessageBox.Show("Are you sure you want to log out?", "", MessageBoxButtons.YesNo) = DialogResult.Yes Then
             FLogin.Show()
@@ -171,11 +194,83 @@ Public Class Fstaff
         Button1.Show()
     End Sub
 
-    Private Sub DataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellContentClick
+    Private Sub TabPage2_Click(sender As Object, e As EventArgs) Handles TabPage2.Click
 
     End Sub
 
-    Private Sub TabPage1_Click(sender As Object, e As EventArgs) Handles TabPage1.Click
+    Private Sub DataGridView2_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView2.CellContentClick
 
+    End Sub
+
+    Private Sub Button8_Click(sender As Object, e As EventArgs) Handles Button8.Click
+
+
+        If DataGridView2.SelectedRows.Count = 0 Then
+            MsgBox("Please select a request from the table first.")
+            Return
+        End If
+
+        Dim monthsInput As String
+        monthsInput = InputBox("Enter the loan duration in months (1, 6, or 12):", "Pawn Duration")
+
+        Dim monthsToAdd As Integer
+        Select Case monthsInput
+            Case "1"
+                monthsToAdd = 1
+            Case "6"
+                monthsToAdd = 6
+            Case "12"
+                monthsToAdd = 12
+            Case Else
+                MsgBox("Invalid input. Please enter only 1, 6, or 12.", MsgBoxStyle.Exclamation)
+                Return
+        End Select
+
+        Dim selectedRow As DataGridViewRow = DataGridView2.SelectedRows(0)
+
+
+        Dim requestId = selectedRow.Cells("request_id").Value
+        Dim accountId = selectedRow.Cells("account_id").Value
+        Dim collateralName = selectedRow.Cells("collateral_name").Value
+        Dim collateralCategory = selectedRow.Cells("collateral_category").Value
+        Dim requestedAmount = selectedRow.Cells("requested_ammount").Value
+        Dim processStatus = selectedRow.Cells("process").Value
+
+
+        Dim pawnDate As DateTime = Date.Now
+        Dim maturityDate As DateTime = pawnDate.AddMonths(monthsToAdd)
+
+        Dim dbcomm As MySqlCommand
+        Dim sql As String
+
+        Try
+            conn.Open()
+
+
+            sql = "INSERT INTO transaction (request_id, account_id, collateral, collateral_category, pawned_ammount, date_pawned, date_due, t_status) VALUES ('" & requestId & "', '" & accountId & "', '" & collateralName & "', '" & collateralCategory & "', '" & requestedAmount & "', '" & pawnDate.ToString("yyyy-MM-dd HH:mm:ss") & "', '" & maturityDate.ToString("yyyy-MM-dd HH:mm:ss") & "', '" & processStatus & "')"
+
+            dbcomm = New MySqlCommand(sql, conn)
+            Dim i As Integer = dbcomm.ExecuteNonQuery()
+
+            If (i > 0) Then
+
+                sql = "DELETE FROM pawn_request WHERE request_id = '" & requestId & "'"
+                dbcomm = New MySqlCommand(sql, conn)
+                dbcomm.ExecuteNonQuery()
+
+                MsgBox("Request Accepted")
+            Else
+                MsgBox("Accepting failed. The new transaction could not be created.")
+            End If
+
+        Catch ex As Exception
+            MsgBox("An error occurred during the transfer: " & ex.Message)
+        Finally
+            If conn.State = ConnectionState.Open Then
+                conn.Close()
+            End If
+        End Try
+
+        reloadPawnRequestData()
     End Sub
 End Class

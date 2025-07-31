@@ -9,6 +9,23 @@ Public Class FCart
     Public ds As DataSet
 
     Private Sub FCart_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Dim id As Integer
+        id = loggedInID
+        If id = 0 Then
+            Try
+                conn.Open()
+                sql = $"DELETE FROM carts; "
+                dbcomm = New MySqlCommand(sql, conn)
+                Dim i As Integer = dbcomm.ExecuteNonQuery
+
+
+            Catch ex As MySqlException
+                MsgBox(ex.Message)
+            End Try
+            conn.Close()
+
+        End If
+
         Try
             conn.Open()
             sql = "SELECT * FROM carts ORDER BY item_id"
