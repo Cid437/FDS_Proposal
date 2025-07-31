@@ -18,7 +18,7 @@ Public Class FCart
                 dbcomm = New MySqlCommand(sql, conn)
                 Dim i As Integer = dbcomm.ExecuteNonQuery
 
-
+                'lol
             Catch ex As MySqlException
                 MsgBox(ex.Message)
             End Try
