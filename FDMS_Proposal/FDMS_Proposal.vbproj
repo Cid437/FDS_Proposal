@@ -143,6 +143,12 @@
     <Compile Include="FCart.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Fhelp.Designer.vb">
+      <DependentUpon>Fhelp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Fhelp.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FLogin.Designer.vb">
       <DependentUpon>FLogin.vb</DependentUpon>
     </Compile>
@@ -210,6 +216,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FCart.resx">
       <DependentUpon>FCart.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fhelp.resx">
+      <DependentUpon>Fhelp.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FLogin.resx">
       <DependentUpon>FLogin.vb</DependentUpon>
@@ -427,6 +436,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fhelp.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
