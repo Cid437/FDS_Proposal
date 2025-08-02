@@ -12,7 +12,13 @@ Public Class Fadmin
         TextBox1.Text = ""
         TextBox2.Text = ""
         TextBox3.Text = ""
+        ComboBox1.Text = ""
+    End Sub
+    Private Sub textboxreset2()
         TextBox4.Text = ""
+        TextBox5.Text = ""
+        TextBox6.Text = ""
+        TextBox7.Text = ""
     End Sub
 
 
@@ -23,9 +29,28 @@ Public Class Fadmin
 
             DataAdapter1 = New MySqlDataAdapter(sql, conn)
             ds = New DataSet()
-            DataAdapter1.Fill(ds, "staffs")
+            DataAdapter1.Fill(ds, "accounts")
             DataGridView1.DataSource = ds
-            DataGridView1.DataMember = "staffs"
+            DataGridView1.DataMember = "accounts"
+
+
+        Catch ex As Exception
+            MsgBox("Error in collecting data from Database. Error is :" & ex.Message)
+
+        End Try
+        conn.Close()
+    End Sub
+
+    Private Sub resetgrid2()
+        Try
+            conn.Open()
+            sql = "SELECT * FROM acs WHERE role = 'staff'"
+
+            DataAdapter1 = New MySqlDataAdapter(sql, conn)
+            ds = New DataSet()
+            DataAdapter1.Fill(ds, "staffs")
+            DataGridView2.DataSource = ds
+            DataGridView2.DataMember = "staffs"
 
 
         Catch ex As Exception
@@ -36,9 +61,7 @@ Public Class Fadmin
     End Sub
 
     Private Sub Fadmin_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
-
-
+        resetgrid2()
         resetgrid()
     End Sub
 
@@ -55,7 +78,7 @@ Public Class Fadmin
             TextBox1.Text = ""
             TextBox2.Text = ""
             TextBox3.Text = ""
-            TextBox4.Text = ""
+            ComboBox1.Text = ""
             Me.Hide()
         End If
     End Sub
@@ -75,7 +98,7 @@ Public Class Fadmin
             account_id = Val(TextBox1.Text)
             name = TextBox2.Text.Trim()
             password = TextBox3.Text.Trim()
-            role = TextBox4.Text.Trim()
+            role = ComboBox1.Text.Trim()
 
             Dim sql As String = ""
 
@@ -85,7 +108,7 @@ Public Class Fadmin
                 sql = "SELECT * FROM acs WHERE name LIKE '%" & name & "%'"
             ElseIf TextBox3.Text <> "" Then
                 sql = "SELECT * FROM acs WHERE password = '" & password & "'"
-            ElseIf TextBox4.Text <> "" Then
+            ElseIf ComboBox1.Text <> "" Then
                 sql = "SELECT * FROM acs WHERE role = '" & role & "'"
 
             Else
@@ -110,7 +133,7 @@ Public Class Fadmin
         Dim account_id = TextBox1.Text
         Dim Name = TextBox2.Text
         Dim Password = TextBox3.Text
-        Dim Role = TextBox4.Text
+        Dim Role = ComboBox1.Text
 
         Try
             conn.Open()
@@ -134,41 +157,61 @@ Public Class Fadmin
     End Sub
 
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
-        Try
-            conn.Open()
-            Dim id As String = InputBox("enter account id to be deleted", "delete record")
-            Dim ans = MessageBox.Show("do you want to delete this account?", "account deleted", MessageBoxButtons.YesNoCancel)
-            If id = "" Then
-                conn.Close()
-            End If
+        ' First, check if a row is selected in the grid.
+        If DataGridView1.SelectedRows.Count = 0 Then
+            MsgBox("Please select the row of the account you want to delete .", MsgBoxStyle.Information)
+            Return ' Exit the sub if no row is selected.
+        End If
 
+        ' Get the selected row.
+        Dim selectedRow As DataGridViewRow = DataGridView1.SelectedRows(0)
 
-            If ans = DialogResult.Yes Then
+        ' Get the ID from the "request_id" cell of that row.
+        Dim idToDelete = selectedRow.Cells("account_id").Value
 
-                sql = $"DELETE FROM acs WHERE account_id = {id}"
+        ' Ask for confirmation before deleting. This is a critical safety step.
+        Dim ans = MessageBox.Show("Are you sure you want to permanently delete this account?", "Confirm Deletion", MessageBoxButtons.YesNo, MessageBoxIcon.Warning)
+
+        ' Proceed only if the user clicks "Yes".
+        If ans = DialogResult.Yes Then
+            Dim sql As String
+            Dim dbcomm As MySqlCommand
+
+            Try
+                conn.Open()
+
+                ' Create the SQL DELETE command using the ID from the selected row.
+                sql = "DELETE FROM acs WHERE account_id = '" & idToDelete & "'"
+
                 dbcomm = New MySqlCommand(sql, conn)
-                Dim i As Integer = dbcomm.ExecuteNonQuery
+                Dim i As Integer = dbcomm.ExecuteNonQuery() ' Execute the delete command.
 
                 If (i > 0) Then
-                    MsgBox("account deleted")
+                    MsgBox("Request deleted successfully.")
                 Else
-                    MsgBox("account not deleted")
-
+                    MsgBox("Request not deleted. It might have been removed already.")
                 End If
-            End If
-        Catch ex As MySqlException
-            MsgBox("Check your inputted data")
-        End Try
-        conn.Close()
-        resetgrid()
-        textboxreset()
+
+            Catch ex As Exception
+                MsgBox("An error occurred while trying to delete the account: " & ex.Message)
+            Finally
+                ' This 'Finally' block ensures the connection is always closed,
+                ' even if an error happened.
+                If conn.State = ConnectionState.Open Then
+                    conn.Close()
+                End If
+            End Try
+
+            ' Refresh the DataGridView to show the updated data.
+            resetgrid()
+        End If
     End Sub
 
     Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
         Dim account_id = TextBox1.Text.Trim()
         Dim Name = TextBox2.Text.Trim()
         Dim Password = TextBox3.Text.Trim()
-        Dim Role = TextBox4.Text.Trim()
+        Dim Role = ComboBox1.Text.Trim()
 
         Try
             conn.Open()
@@ -192,5 +235,120 @@ Public Class Fadmin
 
     Private Sub Label4_Click(sender As Object, e As EventArgs) Handles Label4.Click
 
+    End Sub
+
+    Private Sub DataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellContentClick
+
+    End Sub
+
+    Private Sub Button10_Click(sender As Object, e As EventArgs) Handles Button10.Click
+        resetgrid()
+    End Sub
+
+    Private Sub TabPage2_Click(sender As Object, e As EventArgs) Handles TabPage2.Click
+
+    End Sub
+
+    Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
+        Dim accountId = TextBox4.Text.Trim()
+        Dim name = TextBox5.Text.Trim()
+        Dim password = TextBox6.Text.Trim()
+        Dim salary = TextBox7.Text.Trim()
+
+        If accountId = "" Or name = "" Or password = "" Or salary = "" Then
+            MsgBox("Please fill out all fields.")
+            Return
+        End If
+
+
+        Try
+            conn.Open()
+
+            ' First INSERT for the 'acs' table
+            sql = "INSERT INTO acs (account_id, name, password, role) VALUES ('" & accountId & "', '" & name & "', '" & password & "', 'staff')"
+            dbcomm = New MySqlCommand(sql, conn)
+            dbcomm.ExecuteNonQuery()
+
+            ' Second INSERT for the 'staffs' table
+            sql = "INSERT INTO staffs (accout_id, name, staff_salary) VALUES ('" & accountId & "', '" & name & "', " & salary & ")"
+            dbcomm = New MySqlCommand(sql, conn)
+            Dim i As Integer = dbcomm.ExecuteNonQuery()
+
+            If (i > 0) Then
+                MsgBox("Staff account created successfully.")
+            Else
+                MsgBox("Failed to create staff account.")
+            End If
+
+        Catch ex As Exception
+            MsgBox("An error occurred: " & ex.Message)
+        Finally
+            If conn.State = ConnectionState.Open Then
+                conn.Close()
+            End If
+        End Try
+        resetgrid()
+        resetgrid2()
+        textboxreset2()
+    End Sub
+
+    Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
+        If DataGridView2.SelectedRows.Count = 0 Then
+            MsgBox("Please select the row of the account you want to delete .", MsgBoxStyle.Information)
+            Return ' Exit the sub if no row is selected.
+        End If
+
+        ' Get the selected row.
+        Dim selectedRow As DataGridViewRow = DataGridView2.SelectedRows(0)
+
+        ' Get the ID from the "request_id" cell of that row.
+        Dim idToDelete = selectedRow.Cells("account_id").Value
+
+        ' Ask for confirmation before deleting. This is a critical safety step.
+        Dim ans = MessageBox.Show("Are you sure you want to permanently delete this account?", "Confirm Deletion", MessageBoxButtons.YesNo, MessageBoxIcon.Warning)
+
+        ' Proceed only if the user clicks "Yes".
+        If ans = DialogResult.Yes Then
+            Dim sql As String
+            Dim dbcomm As MySqlCommand
+
+            Try
+                conn.Open()
+
+                ' Create the SQL DELETE command using the ID from the selected row.
+                sql = "DELETE FROM acs WHERE account_id = '" & idToDelete & "'"
+                dbcomm = New MySqlCommand(sql, conn)
+                dbcomm.ExecuteNonQuery()
+
+                sql = "DELETE FROM staffs WHERE accout_id = '" & idToDelete & "'"
+                dbcomm = New MySqlCommand(sql, conn)
+                Dim i As Integer = dbcomm.ExecuteNonQuery() ' Execute the delete command.
+
+
+                If (i > 0) Then
+                    MsgBox("Request deleted successfully.")
+                Else
+                    MsgBox("Request not deleted. It might have been removed already.")
+                End If
+
+            Catch ex As Exception
+                MsgBox("An error occurred while trying to delete the account: " & ex.Message)
+            Finally
+                ' This 'Finally' block ensures the connection is always closed,
+                ' even if an error happened.
+                If conn.State = ConnectionState.Open Then
+                    conn.Close()
+                End If
+            End Try
+
+            ' Refresh the DataGridView to show the updated data.
+            resetgrid()
+            resetgrid2()
+            textboxreset2()
+        End If
+    End Sub
+
+    Private Sub Button11_Click(sender As Object, e As EventArgs) Handles Button11.Click
+        resetgrid2()
     End Sub
 End Class
