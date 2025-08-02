@@ -32,6 +32,7 @@ Public Class Fpawn
         Me.Hide()
     End Sub
 
+
     Private Sub reloaddatagrid()
         Dim id = loggedInID
         Try
@@ -50,6 +51,12 @@ Public Class Fpawn
 
         End Try
         conn.Close()
+    End Sub
+
+    Private Sub textboxclear()
+        TextBox1.Text = ""
+        TextBox2.Text = ""
+        ComboBox1.Text = ""
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
@@ -83,10 +90,12 @@ Public Class Fpawn
         End Try
         conn.Close()
         reloaddatagrid()
+        textboxclear()
     End Sub
 
     Private Sub Fpawn_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         reloaddatagrid()
+        textboxclear()
     End Sub
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
@@ -106,7 +115,8 @@ Public Class Fpawn
     End Sub
 
     Private Sub help_Click(sender As Object, e As EventArgs) Handles help.Click
-
+        Me.Hide()
+        Fhelp.Show()
     End Sub
 
     Private Sub Pawn_Click(sender As Object, e As EventArgs) Handles Pawn.Click
@@ -174,6 +184,10 @@ Public Class Fpawn
     End Sub
 
     Private Sub TabPage2_Click(sender As Object, e As EventArgs) Handles TabPage2.Click
+
+    End Sub
+
+    Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
 
     End Sub
 End Class

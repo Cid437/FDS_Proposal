@@ -183,7 +183,7 @@ Public Class Fstaff
         reloaddatagrid()
     End Sub
 
-    Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
+    Private Sub Button6_Click(sender As Object, e As EventArgs)
 
     End Sub
 
@@ -272,5 +272,61 @@ Public Class Fstaff
         End Try
 
         reloadPawnRequestData()
+    End Sub
+
+    Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
+        ' First, check if any row is selected in the grid.
+        If DataGridView2.SelectedRows.Count = 0 Then
+            MsgBox("Please select a request from the list to reject.", MsgBoxStyle.Information)
+            Return
+        End If
+
+        Dim selectedRow As DataGridViewRow = DataGridView2.SelectedRows(0)
+
+        ' Get the ID and the current status from the selected row.
+        Dim requestIdToUpdate = selectedRow.Cells("request_id").Value
+        Dim currentStatus As String = selectedRow.Cells("process").Value.ToString()
+
+        ' It's good practice to check if the request is in a state that can be rejected.
+        If currentStatus <> "ongoing" Then
+            MsgBox("This request cannot be rejected because its status is already '" & currentStatus & "'.", MsgBoxStyle.Exclamation)
+            Return
+        End If
+
+        ' Ask for confirmation before making a permanent change.
+        Dim confirmation = MessageBox.Show("Are you sure you want to reject this request?", "Confirm Rejection", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
+
+        If confirmation = DialogResult.Yes Then
+            Dim sql As String
+            Dim dbcomm As MySqlCommand
+
+            Try
+                conn.Open()
+
+                ' Build the SQL command to update the 'process' field to 'rejected'
+                ' for the specific request_id.
+                ' Since request_id is a number, it does not need single quotes.
+                sql = "UPDATE pawn_request SET process = 'rejected' WHERE request_id = " & requestIdToUpdate
+
+                dbcomm = New MySqlCommand(sql, conn)
+                Dim i As Integer = dbcomm.ExecuteNonQuery()
+
+                If i > 0 Then
+                    MsgBox("Request has been rejected successfully.")
+                Else
+                    MsgBox("Update failed. The request was not found.")
+                End If
+
+            Catch ex As Exception
+                MsgBox("An error occurred during the update: " & ex.Message)
+            Finally
+                If conn.State = ConnectionState.Open Then
+                    conn.Close()
+                End If
+            End Try
+
+            ' Refresh the grid to show the updated status.
+            reloadPawnRequestData()
+        End If
     End Sub
 End Class

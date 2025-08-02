@@ -440,5 +440,11 @@
   <ItemGroup>
     <None Include="Resources\Fhelp.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mata sara.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mata bukas.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

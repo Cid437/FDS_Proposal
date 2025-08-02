@@ -106,4 +106,21 @@ Public Class FLogin
         conn.Close()
     End Sub
 
+    Private Sub help_Click(sender As Object, e As EventArgs) Handles help.Click
+        Me.Hide()
+        Fhelp.Show()
+    End Sub
+
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        Button3.Hide()
+        TextBox2.UseSystemPasswordChar = True
+        Button4.Show()
+
+    End Sub
+
+    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+        Button4.Hide()
+        Button3.Show()
+        TextBox2.UseSystemPasswordChar = False
+    End Sub
 End Class

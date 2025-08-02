@@ -197,10 +197,11 @@ Partial Class Fbuy
         Me.TabControl1.Controls.Add(Me.TabPage3)
         Me.TabControl1.Controls.Add(Me.TabPage4)
         Me.TabControl1.Controls.Add(Me.TabPage5)
-        Me.TabControl1.Location = New System.Drawing.Point(0, 100)
+        Me.TabControl1.Location = New System.Drawing.Point(0, 123)
+        Me.TabControl1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.TabControl1.Name = "TabControl1"
         Me.TabControl1.SelectedIndex = 0
-        Me.TabControl1.Size = New System.Drawing.Size(800, 353)
+        Me.TabControl1.Size = New System.Drawing.Size(1067, 434)
         Me.TabControl1.TabIndex = 3
         '
         'TabPage1
@@ -233,10 +234,11 @@ Partial Class Fbuy
         Me.TabPage1.Controls.Add(Me.PictureBox1)
         Me.TabPage1.Controls.Add(Me.PictureBox2)
         Me.TabPage1.Font = New System.Drawing.Font("Imprint MT Shadow", 9.75!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TabPage1.Location = New System.Drawing.Point(4, 22)
+        Me.TabPage1.Location = New System.Drawing.Point(4, 25)
+        Me.TabPage1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.TabPage1.Name = "TabPage1"
-        Me.TabPage1.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage1.Size = New System.Drawing.Size(792, 327)
+        Me.TabPage1.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TabPage1.Size = New System.Drawing.Size(1059, 405)
         Me.TabPage1.TabIndex = 0
         Me.TabPage1.Text = "Jewelry"
         Me.TabPage1.UseVisualStyleBackColor = True
@@ -247,9 +249,10 @@ Partial Class Fbuy
         Me.Label3.BackColor = System.Drawing.SystemColors.ActiveCaption
         Me.Label3.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.Black
-        Me.Label3.Location = New System.Drawing.Point(63, 128)
+        Me.Label3.Location = New System.Drawing.Point(84, 158)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(43, 15)
+        Me.Label3.Size = New System.Drawing.Size(56, 21)
         Me.Label3.TabIndex = 28
         Me.Label3.Text = "Label3"
         '
@@ -259,9 +262,10 @@ Partial Class Fbuy
         Me.Label2.BackColor = System.Drawing.SystemColors.ActiveCaption
         Me.Label2.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.Black
-        Me.Label2.Location = New System.Drawing.Point(322, 128)
+        Me.Label2.Location = New System.Drawing.Point(429, 158)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(43, 15)
+        Me.Label2.Size = New System.Drawing.Size(56, 21)
         Me.Label2.TabIndex = 27
         Me.Label2.Text = "Label2"
         '
@@ -271,9 +275,10 @@ Partial Class Fbuy
         Me.Label1.BackColor = System.Drawing.SystemColors.ActiveCaption
         Me.Label1.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.Black
-        Me.Label1.Location = New System.Drawing.Point(585, 128)
+        Me.Label1.Location = New System.Drawing.Point(780, 158)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(43, 15)
+        Me.Label1.Size = New System.Drawing.Size(56, 21)
         Me.Label1.TabIndex = 26
         Me.Label1.Text = "Label1"
         '
@@ -283,9 +288,10 @@ Partial Class Fbuy
         Me.Label4.BackColor = System.Drawing.SystemColors.ActiveCaption
         Me.Label4.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.Black
-        Me.Label4.Location = New System.Drawing.Point(585, 439)
+        Me.Label4.Location = New System.Drawing.Point(780, 540)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(43, 15)
+        Me.Label4.Size = New System.Drawing.Size(56, 21)
         Me.Label4.TabIndex = 25
         Me.Label4.Text = "Label4"
         '
@@ -295,9 +301,10 @@ Partial Class Fbuy
         Me.Label5.BackColor = System.Drawing.SystemColors.ActiveCaption
         Me.Label5.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.ForeColor = System.Drawing.Color.Black
-        Me.Label5.Location = New System.Drawing.Point(324, 439)
+        Me.Label5.Location = New System.Drawing.Point(432, 540)
+        Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(43, 15)
+        Me.Label5.Size = New System.Drawing.Size(56, 21)
         Me.Label5.TabIndex = 24
         Me.Label5.Text = "Label5"
         '
@@ -307,63 +314,70 @@ Partial Class Fbuy
         Me.Label6.BackColor = System.Drawing.SystemColors.ActiveCaption
         Me.Label6.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.ForeColor = System.Drawing.Color.Black
-        Me.Label6.Location = New System.Drawing.Point(69, 439)
+        Me.Label6.Location = New System.Drawing.Point(92, 540)
+        Me.Label6.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(43, 15)
+        Me.Label6.Size = New System.Drawing.Size(56, 21)
         Me.Label6.TabIndex = 23
         Me.Label6.Text = "Label6"
         '
         'PictureBox28
         '
         Me.PictureBox28.BackColor = System.Drawing.SystemColors.ActiveCaption
-        Me.PictureBox28.Location = New System.Drawing.Point(560, 436)
+        Me.PictureBox28.Location = New System.Drawing.Point(747, 537)
+        Me.PictureBox28.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.PictureBox28.Name = "PictureBox28"
-        Me.PictureBox28.Size = New System.Drawing.Size(180, 21)
+        Me.PictureBox28.Size = New System.Drawing.Size(240, 26)
         Me.PictureBox28.TabIndex = 22
         Me.PictureBox28.TabStop = False
         '
         'PictureBox29
         '
         Me.PictureBox29.BackColor = System.Drawing.SystemColors.ActiveCaption
-        Me.PictureBox29.Location = New System.Drawing.Point(294, 436)
+        Me.PictureBox29.Location = New System.Drawing.Point(392, 537)
+        Me.PictureBox29.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.PictureBox29.Name = "PictureBox29"
-        Me.PictureBox29.Size = New System.Drawing.Size(180, 21)
+        Me.PictureBox29.Size = New System.Drawing.Size(240, 26)
         Me.PictureBox29.TabIndex = 21
         Me.PictureBox29.TabStop = False
         '
         'PictureBox30
         '
         Me.PictureBox30.BackColor = System.Drawing.SystemColors.ActiveCaption
-        Me.PictureBox30.Location = New System.Drawing.Point(40, 436)
+        Me.PictureBox30.Location = New System.Drawing.Point(53, 537)
+        Me.PictureBox30.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.PictureBox30.Name = "PictureBox30"
-        Me.PictureBox30.Size = New System.Drawing.Size(180, 21)
+        Me.PictureBox30.Size = New System.Drawing.Size(240, 26)
         Me.PictureBox30.TabIndex = 20
         Me.PictureBox30.TabStop = False
         '
         'PictureBox27
         '
         Me.PictureBox27.BackColor = System.Drawing.SystemColors.ActiveCaption
-        Me.PictureBox27.Location = New System.Drawing.Point(560, 125)
+        Me.PictureBox27.Location = New System.Drawing.Point(747, 154)
+        Me.PictureBox27.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.PictureBox27.Name = "PictureBox27"
-        Me.PictureBox27.Size = New System.Drawing.Size(180, 21)
+        Me.PictureBox27.Size = New System.Drawing.Size(240, 26)
         Me.PictureBox27.TabIndex = 19
         Me.PictureBox27.TabStop = False
         '
         'PictureBox26
         '
         Me.PictureBox26.BackColor = System.Drawing.SystemColors.ActiveCaption
-        Me.PictureBox26.Location = New System.Drawing.Point(294, 125)
+        Me.PictureBox26.Location = New System.Drawing.Point(392, 154)
+        Me.PictureBox26.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.PictureBox26.Name = "PictureBox26"
-        Me.PictureBox26.Size = New System.Drawing.Size(180, 21)
+        Me.PictureBox26.Size = New System.Drawing.Size(240, 26)
         Me.PictureBox26.TabIndex = 18
         Me.PictureBox26.TabStop = False
         '
         'PictureBox25
         '
         Me.PictureBox25.BackColor = System.Drawing.SystemColors.ActiveCaption
-        Me.PictureBox25.Location = New System.Drawing.Point(40, 125)
+        Me.PictureBox25.Location = New System.Drawing.Point(53, 154)
+        Me.PictureBox25.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.PictureBox25.Name = "PictureBox25"
-        Me.PictureBox25.Size = New System.Drawing.Size(180, 21)
+        Me.PictureBox25.Size = New System.Drawing.Size(240, 26)
         Me.PictureBox25.TabIndex = 17
         Me.PictureBox25.TabStop = False
         '
@@ -373,9 +387,10 @@ Partial Class Fbuy
         Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Button4.Font = New System.Drawing.Font("Lucida Fax", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button4.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Button4.Location = New System.Drawing.Point(600, 617)
+        Me.Button4.Location = New System.Drawing.Point(800, 759)
+        Me.Button4.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(90, 30)
+        Me.Button4.Size = New System.Drawing.Size(120, 37)
         Me.Button4.TabIndex = 13
         Me.Button4.Text = "Add"
         Me.Button4.UseVisualStyleBackColor = False
@@ -386,9 +401,10 @@ Partial Class Fbuy
         Me.Button5.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Button5.Font = New System.Drawing.Font("Lucida Fax", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button5.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Button5.Location = New System.Drawing.Point(343, 617)
+        Me.Button5.Location = New System.Drawing.Point(457, 759)
+        Me.Button5.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(90, 30)
+        Me.Button5.Size = New System.Drawing.Size(120, 37)
         Me.Button5.TabIndex = 12
         Me.Button5.Text = "Add"
         Me.Button5.UseVisualStyleBackColor = False
@@ -399,9 +415,10 @@ Partial Class Fbuy
         Me.Button6.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Button6.Font = New System.Drawing.Font("Lucida Fax", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button6.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Button6.Location = New System.Drawing.Point(85, 617)
+        Me.Button6.Location = New System.Drawing.Point(113, 759)
+        Me.Button6.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(90, 30)
+        Me.Button6.Size = New System.Drawing.Size(120, 37)
         Me.Button6.TabIndex = 11
         Me.Button6.Text = "Add"
         Me.Button6.UseVisualStyleBackColor = False
@@ -412,9 +429,10 @@ Partial Class Fbuy
         Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Button3.Font = New System.Drawing.Font("Lucida Fax", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button3.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Button3.Location = New System.Drawing.Point(84, 307)
+        Me.Button3.Location = New System.Drawing.Point(112, 378)
+        Me.Button3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(90, 30)
+        Me.Button3.Size = New System.Drawing.Size(120, 37)
         Me.Button3.TabIndex = 10
         Me.Button3.Text = "Add"
         Me.Button3.UseVisualStyleBackColor = False
@@ -425,9 +443,10 @@ Partial Class Fbuy
         Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Button2.Font = New System.Drawing.Font("Lucida Fax", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Button2.Location = New System.Drawing.Point(344, 307)
+        Me.Button2.Location = New System.Drawing.Point(459, 378)
+        Me.Button2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(90, 30)
+        Me.Button2.Size = New System.Drawing.Size(120, 37)
         Me.Button2.TabIndex = 9
         Me.Button2.Text = "Add"
         Me.Button2.UseVisualStyleBackColor = False
@@ -438,9 +457,10 @@ Partial Class Fbuy
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Button1.Font = New System.Drawing.Font("Lucida Fax", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Button1.Location = New System.Drawing.Point(603, 307)
+        Me.Button1.Location = New System.Drawing.Point(804, 378)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(90, 30)
+        Me.Button1.Size = New System.Drawing.Size(120, 37)
         Me.Button1.TabIndex = 8
         Me.Button1.Text = "Add"
         Me.Button1.UseVisualStyleBackColor = False
@@ -450,9 +470,10 @@ Partial Class Fbuy
         Me.Jewelry.AutoSize = True
         Me.Jewelry.Font = New System.Drawing.Font("Imprint MT Shadow", 18.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Jewelry.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Jewelry.Location = New System.Drawing.Point(331, 16)
+        Me.Jewelry.Location = New System.Drawing.Point(441, 20)
+        Me.Jewelry.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Jewelry.Name = "Jewelry"
-        Me.Jewelry.Size = New System.Drawing.Size(114, 28)
+        Me.Jewelry.Size = New System.Drawing.Size(137, 35)
         Me.Jewelry.TabIndex = 7
         Me.Jewelry.Text = "Jewelries"
         '
@@ -460,9 +481,10 @@ Partial Class Fbuy
         '
         Me.PictureBox4.BackColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.PictureBox4.Image = Global.FDMS_Proposal.My.Resources.Resources._4
-        Me.PictureBox4.Location = New System.Drawing.Point(537, 389)
+        Me.PictureBox4.Location = New System.Drawing.Point(716, 479)
+        Me.PictureBox4.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.PictureBox4.Name = "PictureBox4"
-        Me.PictureBox4.Size = New System.Drawing.Size(217, 267)
+        Me.PictureBox4.Size = New System.Drawing.Size(289, 329)
         Me.PictureBox4.TabIndex = 6
         Me.PictureBox4.TabStop = False
         '
@@ -470,9 +492,10 @@ Partial Class Fbuy
         '
         Me.PictureBox5.BackColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.PictureBox5.Image = Global.FDMS_Proposal.My.Resources.Resources._5
-        Me.PictureBox5.Location = New System.Drawing.Point(279, 389)
+        Me.PictureBox5.Location = New System.Drawing.Point(372, 479)
+        Me.PictureBox5.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.PictureBox5.Name = "PictureBox5"
-        Me.PictureBox5.Size = New System.Drawing.Size(217, 267)
+        Me.PictureBox5.Size = New System.Drawing.Size(289, 329)
         Me.PictureBox5.TabIndex = 5
         Me.PictureBox5.TabStop = False
         '
@@ -480,9 +503,10 @@ Partial Class Fbuy
         '
         Me.PictureBox6.BackColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.PictureBox6.Image = Global.FDMS_Proposal.My.Resources.Resources._6
-        Me.PictureBox6.Location = New System.Drawing.Point(20, 389)
+        Me.PictureBox6.Location = New System.Drawing.Point(27, 479)
+        Me.PictureBox6.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.PictureBox6.Name = "PictureBox6"
-        Me.PictureBox6.Size = New System.Drawing.Size(217, 267)
+        Me.PictureBox6.Size = New System.Drawing.Size(289, 329)
         Me.PictureBox6.TabIndex = 4
         Me.PictureBox6.TabStop = False
         '
@@ -490,9 +514,10 @@ Partial Class Fbuy
         '
         Me.PictureBox3.BackColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.PictureBox3.Image = Global.FDMS_Proposal.My.Resources.Resources._3
-        Me.PictureBox3.Location = New System.Drawing.Point(20, 79)
+        Me.PictureBox3.Location = New System.Drawing.Point(27, 97)
+        Me.PictureBox3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.PictureBox3.Name = "PictureBox3"
-        Me.PictureBox3.Size = New System.Drawing.Size(217, 267)
+        Me.PictureBox3.Size = New System.Drawing.Size(289, 329)
         Me.PictureBox3.TabIndex = 3
         Me.PictureBox3.TabStop = False
         '
@@ -500,9 +525,10 @@ Partial Class Fbuy
         '
         Me.PictureBox1.BackColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.PictureBox1.Image = Global.FDMS_Proposal.My.Resources.Resources._2
-        Me.PictureBox1.Location = New System.Drawing.Point(279, 79)
+        Me.PictureBox1.Location = New System.Drawing.Point(372, 97)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(217, 267)
+        Me.PictureBox1.Size = New System.Drawing.Size(289, 329)
         Me.PictureBox1.TabIndex = 2
         Me.PictureBox1.TabStop = False
         '
@@ -510,9 +536,10 @@ Partial Class Fbuy
         '
         Me.PictureBox2.BackColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.PictureBox2.Image = Global.FDMS_Proposal.My.Resources.Resources._1
-        Me.PictureBox2.Location = New System.Drawing.Point(537, 79)
+        Me.PictureBox2.Location = New System.Drawing.Point(716, 97)
+        Me.PictureBox2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(217, 267)
+        Me.PictureBox2.Size = New System.Drawing.Size(289, 329)
         Me.PictureBox2.TabIndex = 1
         Me.PictureBox2.TabStop = False
         '
@@ -545,10 +572,11 @@ Partial Class Fbuy
         Me.TabPage3.Controls.Add(Me.PictureBox7)
         Me.TabPage3.Controls.Add(Me.PictureBox8)
         Me.TabPage3.Controls.Add(Me.PictureBox9)
-        Me.TabPage3.Location = New System.Drawing.Point(4, 22)
+        Me.TabPage3.Location = New System.Drawing.Point(4, 25)
+        Me.TabPage3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.TabPage3.Name = "TabPage3"
-        Me.TabPage3.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage3.Size = New System.Drawing.Size(792, 327)
+        Me.TabPage3.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TabPage3.Size = New System.Drawing.Size(1059, 405)
         Me.TabPage3.TabIndex = 2
         Me.TabPage3.Text = "Electronics"
         Me.TabPage3.UseVisualStyleBackColor = True
@@ -559,9 +587,10 @@ Partial Class Fbuy
         Me.Label10.BackColor = System.Drawing.SystemColors.ActiveCaption
         Me.Label10.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label10.ForeColor = System.Drawing.Color.Black
-        Me.Label10.Location = New System.Drawing.Point(582, 459)
+        Me.Label10.Location = New System.Drawing.Point(776, 565)
+        Me.Label10.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(50, 15)
+        Me.Label10.Size = New System.Drawing.Size(65, 21)
         Me.Label10.TabIndex = 32
         Me.Label10.Text = "Label10"
         '
@@ -571,9 +600,10 @@ Partial Class Fbuy
         Me.Label11.BackColor = System.Drawing.SystemColors.ActiveCaption
         Me.Label11.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label11.ForeColor = System.Drawing.Color.Black
-        Me.Label11.Location = New System.Drawing.Point(322, 459)
+        Me.Label11.Location = New System.Drawing.Point(429, 565)
+        Me.Label11.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(50, 15)
+        Me.Label11.Size = New System.Drawing.Size(65, 21)
         Me.Label11.TabIndex = 31
         Me.Label11.Text = "Label11"
         '
@@ -583,9 +613,10 @@ Partial Class Fbuy
         Me.Label12.BackColor = System.Drawing.SystemColors.ActiveCaption
         Me.Label12.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label12.ForeColor = System.Drawing.Color.Black
-        Me.Label12.Location = New System.Drawing.Point(67, 459)
+        Me.Label12.Location = New System.Drawing.Point(89, 565)
+        Me.Label12.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(50, 15)
+        Me.Label12.Size = New System.Drawing.Size(65, 21)
         Me.Label12.TabIndex = 30
         Me.Label12.Text = "Label12"
         '
@@ -595,9 +626,10 @@ Partial Class Fbuy
         Me.Label7.BackColor = System.Drawing.SystemColors.ActiveCaption
         Me.Label7.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label7.ForeColor = System.Drawing.Color.Black
-        Me.Label7.Location = New System.Drawing.Point(581, 150)
+        Me.Label7.Location = New System.Drawing.Point(775, 185)
+        Me.Label7.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(43, 15)
+        Me.Label7.Size = New System.Drawing.Size(56, 21)
         Me.Label7.TabIndex = 29
         Me.Label7.Text = "Label7"
         '
@@ -607,9 +639,10 @@ Partial Class Fbuy
         Me.Label8.BackColor = System.Drawing.SystemColors.ActiveCaption
         Me.Label8.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label8.ForeColor = System.Drawing.Color.Black
-        Me.Label8.Location = New System.Drawing.Point(318, 150)
+        Me.Label8.Location = New System.Drawing.Point(424, 185)
+        Me.Label8.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(43, 15)
+        Me.Label8.Size = New System.Drawing.Size(56, 21)
         Me.Label8.TabIndex = 28
         Me.Label8.Text = "Label8"
         '
@@ -619,63 +652,70 @@ Partial Class Fbuy
         Me.Label9.BackColor = System.Drawing.SystemColors.ActiveCaption
         Me.Label9.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label9.ForeColor = System.Drawing.Color.Black
-        Me.Label9.Location = New System.Drawing.Point(64, 150)
+        Me.Label9.Location = New System.Drawing.Point(85, 185)
+        Me.Label9.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(43, 15)
+        Me.Label9.Size = New System.Drawing.Size(56, 21)
         Me.Label9.TabIndex = 27
         Me.Label9.Text = "Label9"
         '
         'PictureBox34
         '
         Me.PictureBox34.BackColor = System.Drawing.SystemColors.ActiveCaption
-        Me.PictureBox34.Location = New System.Drawing.Point(560, 456)
+        Me.PictureBox34.Location = New System.Drawing.Point(747, 561)
+        Me.PictureBox34.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.PictureBox34.Name = "PictureBox34"
-        Me.PictureBox34.Size = New System.Drawing.Size(180, 21)
+        Me.PictureBox34.Size = New System.Drawing.Size(240, 26)
         Me.PictureBox34.TabIndex = 26
         Me.PictureBox34.TabStop = False
         '
         'PictureBox35
         '
         Me.PictureBox35.BackColor = System.Drawing.SystemColors.ActiveCaption
-        Me.PictureBox35.Location = New System.Drawing.Point(294, 456)
+        Me.PictureBox35.Location = New System.Drawing.Point(392, 561)
+        Me.PictureBox35.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.PictureBox35.Name = "PictureBox35"
-        Me.PictureBox35.Size = New System.Drawing.Size(180, 21)
+        Me.PictureBox35.Size = New System.Drawing.Size(240, 26)
         Me.PictureBox35.TabIndex = 25
         Me.PictureBox35.TabStop = False
         '
         'PictureBox36
         '
         Me.PictureBox36.BackColor = System.Drawing.SystemColors.ActiveCaption
-        Me.PictureBox36.Location = New System.Drawing.Point(40, 456)
+        Me.PictureBox36.Location = New System.Drawing.Point(53, 561)
+        Me.PictureBox36.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.PictureBox36.Name = "PictureBox36"
-        Me.PictureBox36.Size = New System.Drawing.Size(180, 21)
+        Me.PictureBox36.Size = New System.Drawing.Size(240, 26)
         Me.PictureBox36.TabIndex = 24
         Me.PictureBox36.TabStop = False
         '
         'PictureBox31
         '
         Me.PictureBox31.BackColor = System.Drawing.SystemColors.ActiveCaption
-        Me.PictureBox31.Location = New System.Drawing.Point(560, 147)
+        Me.PictureBox31.Location = New System.Drawing.Point(747, 181)
+        Me.PictureBox31.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.PictureBox31.Name = "PictureBox31"
-        Me.PictureBox31.Size = New System.Drawing.Size(180, 21)
+        Me.PictureBox31.Size = New System.Drawing.Size(240, 26)
         Me.PictureBox31.TabIndex = 23
         Me.PictureBox31.TabStop = False
         '
         'PictureBox32
         '
         Me.PictureBox32.BackColor = System.Drawing.SystemColors.ActiveCaption
-        Me.PictureBox32.Location = New System.Drawing.Point(294, 147)
+        Me.PictureBox32.Location = New System.Drawing.Point(392, 181)
+        Me.PictureBox32.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.PictureBox32.Name = "PictureBox32"
-        Me.PictureBox32.Size = New System.Drawing.Size(180, 21)
+        Me.PictureBox32.Size = New System.Drawing.Size(240, 26)
         Me.PictureBox32.TabIndex = 22
         Me.PictureBox32.TabStop = False
         '
         'PictureBox33
         '
         Me.PictureBox33.BackColor = System.Drawing.SystemColors.ActiveCaption
-        Me.PictureBox33.Location = New System.Drawing.Point(40, 147)
+        Me.PictureBox33.Location = New System.Drawing.Point(53, 181)
+        Me.PictureBox33.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.PictureBox33.Name = "PictureBox33"
-        Me.PictureBox33.Size = New System.Drawing.Size(180, 21)
+        Me.PictureBox33.Size = New System.Drawing.Size(240, 26)
         Me.PictureBox33.TabIndex = 21
         Me.PictureBox33.TabStop = False
         '
@@ -685,9 +725,10 @@ Partial Class Fbuy
         Me.Button10.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Button10.Font = New System.Drawing.Font("Lucida Fax", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button10.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Button10.Location = New System.Drawing.Point(597, 638)
+        Me.Button10.Location = New System.Drawing.Point(796, 785)
+        Me.Button10.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Button10.Name = "Button10"
-        Me.Button10.Size = New System.Drawing.Size(90, 30)
+        Me.Button10.Size = New System.Drawing.Size(120, 37)
         Me.Button10.TabIndex = 20
         Me.Button10.Text = "Add"
         Me.Button10.UseVisualStyleBackColor = False
@@ -698,9 +739,10 @@ Partial Class Fbuy
         Me.Button11.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Button11.Font = New System.Drawing.Font("Lucida Fax", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button11.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Button11.Location = New System.Drawing.Point(340, 638)
+        Me.Button11.Location = New System.Drawing.Point(453, 785)
+        Me.Button11.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Button11.Name = "Button11"
-        Me.Button11.Size = New System.Drawing.Size(90, 30)
+        Me.Button11.Size = New System.Drawing.Size(120, 37)
         Me.Button11.TabIndex = 19
         Me.Button11.Text = "Add"
         Me.Button11.UseVisualStyleBackColor = False
@@ -711,9 +753,10 @@ Partial Class Fbuy
         Me.Button12.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Button12.Font = New System.Drawing.Font("Lucida Fax", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button12.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Button12.Location = New System.Drawing.Point(82, 638)
+        Me.Button12.Location = New System.Drawing.Point(109, 785)
+        Me.Button12.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Button12.Name = "Button12"
-        Me.Button12.Size = New System.Drawing.Size(90, 30)
+        Me.Button12.Size = New System.Drawing.Size(120, 37)
         Me.Button12.TabIndex = 18
         Me.Button12.Text = "Add"
         Me.Button12.UseVisualStyleBackColor = False
@@ -724,9 +767,10 @@ Partial Class Fbuy
         Me.Button7.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Button7.Font = New System.Drawing.Font("Lucida Fax", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button7.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Button7.Location = New System.Drawing.Point(597, 325)
+        Me.Button7.Location = New System.Drawing.Point(796, 400)
+        Me.Button7.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Button7.Name = "Button7"
-        Me.Button7.Size = New System.Drawing.Size(90, 30)
+        Me.Button7.Size = New System.Drawing.Size(120, 37)
         Me.Button7.TabIndex = 17
         Me.Button7.Text = "Add"
         Me.Button7.UseVisualStyleBackColor = False
@@ -737,9 +781,10 @@ Partial Class Fbuy
         Me.Button8.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Button8.Font = New System.Drawing.Font("Lucida Fax", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button8.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Button8.Location = New System.Drawing.Point(340, 325)
+        Me.Button8.Location = New System.Drawing.Point(453, 400)
+        Me.Button8.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Button8.Name = "Button8"
-        Me.Button8.Size = New System.Drawing.Size(90, 30)
+        Me.Button8.Size = New System.Drawing.Size(120, 37)
         Me.Button8.TabIndex = 16
         Me.Button8.Text = "Add"
         Me.Button8.UseVisualStyleBackColor = False
@@ -750,9 +795,10 @@ Partial Class Fbuy
         Me.Button9.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Button9.Font = New System.Drawing.Font("Lucida Fax", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button9.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Button9.Location = New System.Drawing.Point(82, 325)
+        Me.Button9.Location = New System.Drawing.Point(109, 400)
+        Me.Button9.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Button9.Name = "Button9"
-        Me.Button9.Size = New System.Drawing.Size(90, 30)
+        Me.Button9.Size = New System.Drawing.Size(120, 37)
         Me.Button9.TabIndex = 15
         Me.Button9.Text = "Add"
         Me.Button9.UseVisualStyleBackColor = False
@@ -762,9 +808,10 @@ Partial Class Fbuy
         Me.Electronics.AutoSize = True
         Me.Electronics.Font = New System.Drawing.Font("Imprint MT Shadow", 18.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Electronics.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Electronics.Location = New System.Drawing.Point(322, 43)
+        Me.Electronics.Location = New System.Drawing.Point(429, 53)
+        Me.Electronics.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Electronics.Name = "Electronics"
-        Me.Electronics.Size = New System.Drawing.Size(139, 28)
+        Me.Electronics.Size = New System.Drawing.Size(166, 35)
         Me.Electronics.TabIndex = 11
         Me.Electronics.Text = "Electronics"
         '
@@ -772,9 +819,10 @@ Partial Class Fbuy
         '
         Me.PictureBox16.BackColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.PictureBox16.Image = Global.FDMS_Proposal.My.Resources.Resources._10
-        Me.PictureBox16.Location = New System.Drawing.Point(535, 409)
+        Me.PictureBox16.Location = New System.Drawing.Point(713, 503)
+        Me.PictureBox16.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.PictureBox16.Name = "PictureBox16"
-        Me.PictureBox16.Size = New System.Drawing.Size(217, 267)
+        Me.PictureBox16.Size = New System.Drawing.Size(289, 329)
         Me.PictureBox16.TabIndex = 14
         Me.PictureBox16.TabStop = False
         '
@@ -782,9 +830,10 @@ Partial Class Fbuy
         '
         Me.PictureBox17.BackColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.PictureBox17.Image = Global.FDMS_Proposal.My.Resources.Resources._11
-        Me.PictureBox17.Location = New System.Drawing.Point(277, 409)
+        Me.PictureBox17.Location = New System.Drawing.Point(369, 503)
+        Me.PictureBox17.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.PictureBox17.Name = "PictureBox17"
-        Me.PictureBox17.Size = New System.Drawing.Size(217, 267)
+        Me.PictureBox17.Size = New System.Drawing.Size(289, 329)
         Me.PictureBox17.TabIndex = 13
         Me.PictureBox17.TabStop = False
         '
@@ -792,9 +841,10 @@ Partial Class Fbuy
         '
         Me.PictureBox18.BackColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.PictureBox18.Image = Global.FDMS_Proposal.My.Resources.Resources._12
-        Me.PictureBox18.Location = New System.Drawing.Point(18, 409)
+        Me.PictureBox18.Location = New System.Drawing.Point(24, 503)
+        Me.PictureBox18.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.PictureBox18.Name = "PictureBox18"
-        Me.PictureBox18.Size = New System.Drawing.Size(217, 267)
+        Me.PictureBox18.Size = New System.Drawing.Size(289, 329)
         Me.PictureBox18.TabIndex = 12
         Me.PictureBox18.TabStop = False
         '
@@ -802,9 +852,10 @@ Partial Class Fbuy
         '
         Me.PictureBox7.BackColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.PictureBox7.Image = Global.FDMS_Proposal.My.Resources.Resources._7
-        Me.PictureBox7.Location = New System.Drawing.Point(535, 100)
+        Me.PictureBox7.Location = New System.Drawing.Point(713, 123)
+        Me.PictureBox7.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.PictureBox7.Name = "PictureBox7"
-        Me.PictureBox7.Size = New System.Drawing.Size(217, 267)
+        Me.PictureBox7.Size = New System.Drawing.Size(289, 329)
         Me.PictureBox7.TabIndex = 10
         Me.PictureBox7.TabStop = False
         '
@@ -812,9 +863,10 @@ Partial Class Fbuy
         '
         Me.PictureBox8.BackColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.PictureBox8.Image = Global.FDMS_Proposal.My.Resources.Resources._8
-        Me.PictureBox8.Location = New System.Drawing.Point(277, 100)
+        Me.PictureBox8.Location = New System.Drawing.Point(369, 123)
+        Me.PictureBox8.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.PictureBox8.Name = "PictureBox8"
-        Me.PictureBox8.Size = New System.Drawing.Size(217, 267)
+        Me.PictureBox8.Size = New System.Drawing.Size(289, 329)
         Me.PictureBox8.TabIndex = 9
         Me.PictureBox8.TabStop = False
         '
@@ -822,9 +874,10 @@ Partial Class Fbuy
         '
         Me.PictureBox9.BackColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.PictureBox9.Image = Global.FDMS_Proposal.My.Resources.Resources._9
-        Me.PictureBox9.Location = New System.Drawing.Point(18, 100)
+        Me.PictureBox9.Location = New System.Drawing.Point(24, 123)
+        Me.PictureBox9.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.PictureBox9.Name = "PictureBox9"
-        Me.PictureBox9.Size = New System.Drawing.Size(217, 267)
+        Me.PictureBox9.Size = New System.Drawing.Size(289, 329)
         Me.PictureBox9.TabIndex = 8
         Me.PictureBox9.TabStop = False
         '
@@ -857,10 +910,11 @@ Partial Class Fbuy
         Me.TabPage4.Controls.Add(Me.PictureBox10)
         Me.TabPage4.Controls.Add(Me.PictureBox11)
         Me.TabPage4.Controls.Add(Me.PictureBox12)
-        Me.TabPage4.Location = New System.Drawing.Point(4, 22)
+        Me.TabPage4.Location = New System.Drawing.Point(4, 25)
+        Me.TabPage4.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.TabPage4.Name = "TabPage4"
-        Me.TabPage4.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage4.Size = New System.Drawing.Size(792, 327)
+        Me.TabPage4.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TabPage4.Size = New System.Drawing.Size(1059, 405)
         Me.TabPage4.TabIndex = 3
         Me.TabPage4.Text = "Antique"
         Me.TabPage4.UseVisualStyleBackColor = True
@@ -871,9 +925,10 @@ Partial Class Fbuy
         Me.Label16.BackColor = System.Drawing.SystemColors.ActiveCaption
         Me.Label16.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label16.ForeColor = System.Drawing.Color.Black
-        Me.Label16.Location = New System.Drawing.Point(589, 434)
+        Me.Label16.Location = New System.Drawing.Point(785, 534)
+        Me.Label16.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label16.Name = "Label16"
-        Me.Label16.Size = New System.Drawing.Size(50, 15)
+        Me.Label16.Size = New System.Drawing.Size(65, 21)
         Me.Label16.TabIndex = 32
         Me.Label16.Text = "Label16"
         '
@@ -883,9 +938,10 @@ Partial Class Fbuy
         Me.Label17.BackColor = System.Drawing.SystemColors.ActiveCaption
         Me.Label17.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label17.ForeColor = System.Drawing.Color.Black
-        Me.Label17.Location = New System.Drawing.Point(319, 434)
+        Me.Label17.Location = New System.Drawing.Point(425, 534)
+        Me.Label17.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label17.Name = "Label17"
-        Me.Label17.Size = New System.Drawing.Size(50, 15)
+        Me.Label17.Size = New System.Drawing.Size(65, 21)
         Me.Label17.TabIndex = 31
         Me.Label17.Text = "Label17"
         '
@@ -895,9 +951,10 @@ Partial Class Fbuy
         Me.Label18.BackColor = System.Drawing.SystemColors.ActiveCaption
         Me.Label18.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label18.ForeColor = System.Drawing.Color.Black
-        Me.Label18.Location = New System.Drawing.Point(71, 434)
+        Me.Label18.Location = New System.Drawing.Point(95, 534)
+        Me.Label18.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label18.Name = "Label18"
-        Me.Label18.Size = New System.Drawing.Size(50, 15)
+        Me.Label18.Size = New System.Drawing.Size(65, 21)
         Me.Label18.TabIndex = 30
         Me.Label18.Text = "Label18"
         '
@@ -907,9 +964,10 @@ Partial Class Fbuy
         Me.Label13.BackColor = System.Drawing.SystemColors.ActiveCaption
         Me.Label13.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label13.ForeColor = System.Drawing.Color.Black
-        Me.Label13.Location = New System.Drawing.Point(585, 138)
+        Me.Label13.Location = New System.Drawing.Point(780, 170)
+        Me.Label13.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(50, 15)
+        Me.Label13.Size = New System.Drawing.Size(65, 21)
         Me.Label13.TabIndex = 29
         Me.Label13.Text = "Label13"
         '
@@ -919,9 +977,10 @@ Partial Class Fbuy
         Me.Label14.BackColor = System.Drawing.SystemColors.ActiveCaption
         Me.Label14.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label14.ForeColor = System.Drawing.Color.Black
-        Me.Label14.Location = New System.Drawing.Point(322, 138)
+        Me.Label14.Location = New System.Drawing.Point(429, 170)
+        Me.Label14.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(50, 15)
+        Me.Label14.Size = New System.Drawing.Size(65, 21)
         Me.Label14.TabIndex = 28
         Me.Label14.Text = "Label14"
         '
@@ -931,63 +990,70 @@ Partial Class Fbuy
         Me.Label15.BackColor = System.Drawing.SystemColors.ActiveCaption
         Me.Label15.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label15.ForeColor = System.Drawing.Color.Black
-        Me.Label15.Location = New System.Drawing.Point(62, 138)
+        Me.Label15.Location = New System.Drawing.Point(83, 170)
+        Me.Label15.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(50, 15)
+        Me.Label15.Size = New System.Drawing.Size(65, 21)
         Me.Label15.TabIndex = 27
         Me.Label15.Text = "Label15"
         '
         'PictureBox40
         '
         Me.PictureBox40.BackColor = System.Drawing.SystemColors.ActiveCaption
-        Me.PictureBox40.Location = New System.Drawing.Point(560, 431)
+        Me.PictureBox40.Location = New System.Drawing.Point(747, 530)
+        Me.PictureBox40.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.PictureBox40.Name = "PictureBox40"
-        Me.PictureBox40.Size = New System.Drawing.Size(180, 21)
+        Me.PictureBox40.Size = New System.Drawing.Size(240, 26)
         Me.PictureBox40.TabIndex = 26
         Me.PictureBox40.TabStop = False
         '
         'PictureBox41
         '
         Me.PictureBox41.BackColor = System.Drawing.SystemColors.ActiveCaption
-        Me.PictureBox41.Location = New System.Drawing.Point(294, 431)
+        Me.PictureBox41.Location = New System.Drawing.Point(392, 530)
+        Me.PictureBox41.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.PictureBox41.Name = "PictureBox41"
-        Me.PictureBox41.Size = New System.Drawing.Size(180, 21)
+        Me.PictureBox41.Size = New System.Drawing.Size(240, 26)
         Me.PictureBox41.TabIndex = 25
         Me.PictureBox41.TabStop = False
         '
         'PictureBox42
         '
         Me.PictureBox42.BackColor = System.Drawing.SystemColors.ActiveCaption
-        Me.PictureBox42.Location = New System.Drawing.Point(40, 431)
+        Me.PictureBox42.Location = New System.Drawing.Point(53, 530)
+        Me.PictureBox42.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.PictureBox42.Name = "PictureBox42"
-        Me.PictureBox42.Size = New System.Drawing.Size(180, 21)
+        Me.PictureBox42.Size = New System.Drawing.Size(240, 26)
         Me.PictureBox42.TabIndex = 24
         Me.PictureBox42.TabStop = False
         '
         'PictureBox37
         '
         Me.PictureBox37.BackColor = System.Drawing.SystemColors.ActiveCaption
-        Me.PictureBox37.Location = New System.Drawing.Point(560, 135)
+        Me.PictureBox37.Location = New System.Drawing.Point(747, 166)
+        Me.PictureBox37.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.PictureBox37.Name = "PictureBox37"
-        Me.PictureBox37.Size = New System.Drawing.Size(180, 21)
+        Me.PictureBox37.Size = New System.Drawing.Size(240, 26)
         Me.PictureBox37.TabIndex = 23
         Me.PictureBox37.TabStop = False
         '
         'PictureBox38
         '
         Me.PictureBox38.BackColor = System.Drawing.SystemColors.ActiveCaption
-        Me.PictureBox38.Location = New System.Drawing.Point(294, 135)
+        Me.PictureBox38.Location = New System.Drawing.Point(392, 166)
+        Me.PictureBox38.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.PictureBox38.Name = "PictureBox38"
-        Me.PictureBox38.Size = New System.Drawing.Size(180, 21)
+        Me.PictureBox38.Size = New System.Drawing.Size(240, 26)
         Me.PictureBox38.TabIndex = 22
         Me.PictureBox38.TabStop = False
         '
         'PictureBox39
         '
         Me.PictureBox39.BackColor = System.Drawing.SystemColors.ActiveCaption
-        Me.PictureBox39.Location = New System.Drawing.Point(40, 135)
+        Me.PictureBox39.Location = New System.Drawing.Point(53, 166)
+        Me.PictureBox39.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.PictureBox39.Name = "PictureBox39"
-        Me.PictureBox39.Size = New System.Drawing.Size(180, 21)
+        Me.PictureBox39.Size = New System.Drawing.Size(240, 26)
         Me.PictureBox39.TabIndex = 21
         Me.PictureBox39.TabStop = False
         '
@@ -997,9 +1063,10 @@ Partial Class Fbuy
         Me.Button16.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Button16.Font = New System.Drawing.Font("Lucida Fax", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button16.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Button16.Location = New System.Drawing.Point(600, 613)
+        Me.Button16.Location = New System.Drawing.Point(800, 754)
+        Me.Button16.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Button16.Name = "Button16"
-        Me.Button16.Size = New System.Drawing.Size(90, 30)
+        Me.Button16.Size = New System.Drawing.Size(120, 37)
         Me.Button16.TabIndex = 20
         Me.Button16.Text = "Add"
         Me.Button16.UseVisualStyleBackColor = False
@@ -1010,9 +1077,10 @@ Partial Class Fbuy
         Me.Button17.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Button17.Font = New System.Drawing.Font("Lucida Fax", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button17.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Button17.Location = New System.Drawing.Point(343, 613)
+        Me.Button17.Location = New System.Drawing.Point(457, 754)
+        Me.Button17.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Button17.Name = "Button17"
-        Me.Button17.Size = New System.Drawing.Size(90, 30)
+        Me.Button17.Size = New System.Drawing.Size(120, 37)
         Me.Button17.TabIndex = 19
         Me.Button17.Text = "Add"
         Me.Button17.UseVisualStyleBackColor = False
@@ -1023,9 +1091,10 @@ Partial Class Fbuy
         Me.Button18.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Button18.Font = New System.Drawing.Font("Lucida Fax", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button18.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Button18.Location = New System.Drawing.Point(85, 613)
+        Me.Button18.Location = New System.Drawing.Point(113, 754)
+        Me.Button18.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Button18.Name = "Button18"
-        Me.Button18.Size = New System.Drawing.Size(90, 30)
+        Me.Button18.Size = New System.Drawing.Size(120, 37)
         Me.Button18.TabIndex = 18
         Me.Button18.Text = "Add"
         Me.Button18.UseVisualStyleBackColor = False
@@ -1036,9 +1105,10 @@ Partial Class Fbuy
         Me.Button13.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Button13.Font = New System.Drawing.Font("Lucida Fax", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button13.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Button13.Location = New System.Drawing.Point(600, 314)
+        Me.Button13.Location = New System.Drawing.Point(800, 386)
+        Me.Button13.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Button13.Name = "Button13"
-        Me.Button13.Size = New System.Drawing.Size(90, 30)
+        Me.Button13.Size = New System.Drawing.Size(120, 37)
         Me.Button13.TabIndex = 17
         Me.Button13.Text = "Add"
         Me.Button13.UseVisualStyleBackColor = False
@@ -1049,9 +1119,10 @@ Partial Class Fbuy
         Me.Button14.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Button14.Font = New System.Drawing.Font("Lucida Fax", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button14.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Button14.Location = New System.Drawing.Point(343, 314)
+        Me.Button14.Location = New System.Drawing.Point(457, 386)
+        Me.Button14.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Button14.Name = "Button14"
-        Me.Button14.Size = New System.Drawing.Size(90, 30)
+        Me.Button14.Size = New System.Drawing.Size(120, 37)
         Me.Button14.TabIndex = 16
         Me.Button14.Text = "Add"
         Me.Button14.UseVisualStyleBackColor = False
@@ -1062,9 +1133,10 @@ Partial Class Fbuy
         Me.Button15.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Button15.Font = New System.Drawing.Font("Lucida Fax", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button15.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Button15.Location = New System.Drawing.Point(85, 314)
+        Me.Button15.Location = New System.Drawing.Point(113, 386)
+        Me.Button15.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Button15.Name = "Button15"
-        Me.Button15.Size = New System.Drawing.Size(90, 30)
+        Me.Button15.Size = New System.Drawing.Size(120, 37)
         Me.Button15.TabIndex = 15
         Me.Button15.Text = "Add"
         Me.Button15.UseVisualStyleBackColor = False
@@ -1074,9 +1146,10 @@ Partial Class Fbuy
         Me.Antique.AutoSize = True
         Me.Antique.Font = New System.Drawing.Font("Imprint MT Shadow", 18.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Antique.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Antique.Location = New System.Drawing.Point(321, 35)
+        Me.Antique.Location = New System.Drawing.Point(428, 43)
+        Me.Antique.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Antique.Name = "Antique"
-        Me.Antique.Size = New System.Drawing.Size(113, 28)
+        Me.Antique.Size = New System.Drawing.Size(138, 35)
         Me.Antique.TabIndex = 11
         Me.Antique.Text = "Antiques"
         '
@@ -1084,9 +1157,10 @@ Partial Class Fbuy
         '
         Me.PictureBox19.BackColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.PictureBox19.Image = Global.FDMS_Proposal.My.Resources.Resources._16
-        Me.PictureBox19.Location = New System.Drawing.Point(536, 384)
+        Me.PictureBox19.Location = New System.Drawing.Point(715, 473)
+        Me.PictureBox19.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.PictureBox19.Name = "PictureBox19"
-        Me.PictureBox19.Size = New System.Drawing.Size(217, 267)
+        Me.PictureBox19.Size = New System.Drawing.Size(289, 329)
         Me.PictureBox19.TabIndex = 14
         Me.PictureBox19.TabStop = False
         '
@@ -1094,9 +1168,10 @@ Partial Class Fbuy
         '
         Me.PictureBox20.BackColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.PictureBox20.Image = Global.FDMS_Proposal.My.Resources.Resources._17
-        Me.PictureBox20.Location = New System.Drawing.Point(278, 384)
+        Me.PictureBox20.Location = New System.Drawing.Point(371, 473)
+        Me.PictureBox20.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.PictureBox20.Name = "PictureBox20"
-        Me.PictureBox20.Size = New System.Drawing.Size(217, 267)
+        Me.PictureBox20.Size = New System.Drawing.Size(289, 329)
         Me.PictureBox20.TabIndex = 13
         Me.PictureBox20.TabStop = False
         '
@@ -1104,9 +1179,10 @@ Partial Class Fbuy
         '
         Me.PictureBox21.BackColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.PictureBox21.Image = Global.FDMS_Proposal.My.Resources.Resources._18
-        Me.PictureBox21.Location = New System.Drawing.Point(19, 384)
+        Me.PictureBox21.Location = New System.Drawing.Point(25, 473)
+        Me.PictureBox21.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.PictureBox21.Name = "PictureBox21"
-        Me.PictureBox21.Size = New System.Drawing.Size(217, 267)
+        Me.PictureBox21.Size = New System.Drawing.Size(289, 329)
         Me.PictureBox21.TabIndex = 12
         Me.PictureBox21.TabStop = False
         '
@@ -1114,9 +1190,10 @@ Partial Class Fbuy
         '
         Me.PictureBox10.BackColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.PictureBox10.Image = Global.FDMS_Proposal.My.Resources.Resources._13
-        Me.PictureBox10.Location = New System.Drawing.Point(536, 88)
+        Me.PictureBox10.Location = New System.Drawing.Point(715, 108)
+        Me.PictureBox10.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.PictureBox10.Name = "PictureBox10"
-        Me.PictureBox10.Size = New System.Drawing.Size(217, 267)
+        Me.PictureBox10.Size = New System.Drawing.Size(289, 329)
         Me.PictureBox10.TabIndex = 10
         Me.PictureBox10.TabStop = False
         '
@@ -1124,9 +1201,10 @@ Partial Class Fbuy
         '
         Me.PictureBox11.BackColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.PictureBox11.Image = Global.FDMS_Proposal.My.Resources.Resources._14
-        Me.PictureBox11.Location = New System.Drawing.Point(278, 88)
+        Me.PictureBox11.Location = New System.Drawing.Point(371, 108)
+        Me.PictureBox11.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.PictureBox11.Name = "PictureBox11"
-        Me.PictureBox11.Size = New System.Drawing.Size(217, 267)
+        Me.PictureBox11.Size = New System.Drawing.Size(289, 329)
         Me.PictureBox11.TabIndex = 9
         Me.PictureBox11.TabStop = False
         '
@@ -1134,9 +1212,10 @@ Partial Class Fbuy
         '
         Me.PictureBox12.BackColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.PictureBox12.Image = Global.FDMS_Proposal.My.Resources.Resources._15
-        Me.PictureBox12.Location = New System.Drawing.Point(19, 88)
+        Me.PictureBox12.Location = New System.Drawing.Point(25, 108)
+        Me.PictureBox12.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.PictureBox12.Name = "PictureBox12"
-        Me.PictureBox12.Size = New System.Drawing.Size(217, 267)
+        Me.PictureBox12.Size = New System.Drawing.Size(289, 329)
         Me.PictureBox12.TabIndex = 8
         Me.PictureBox12.TabStop = False
         '
@@ -1169,10 +1248,11 @@ Partial Class Fbuy
         Me.TabPage5.Controls.Add(Me.PictureBox13)
         Me.TabPage5.Controls.Add(Me.PictureBox14)
         Me.TabPage5.Controls.Add(Me.PictureBox15)
-        Me.TabPage5.Location = New System.Drawing.Point(4, 22)
+        Me.TabPage5.Location = New System.Drawing.Point(4, 25)
+        Me.TabPage5.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.TabPage5.Name = "TabPage5"
-        Me.TabPage5.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage5.Size = New System.Drawing.Size(792, 327)
+        Me.TabPage5.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TabPage5.Size = New System.Drawing.Size(1059, 405)
         Me.TabPage5.TabIndex = 4
         Me.TabPage5.Text = "Others"
         Me.TabPage5.UseVisualStyleBackColor = True
@@ -1183,9 +1263,10 @@ Partial Class Fbuy
         Me.Label22.BackColor = System.Drawing.SystemColors.ActiveCaption
         Me.Label22.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label22.ForeColor = System.Drawing.Color.Black
-        Me.Label22.Location = New System.Drawing.Point(585, 416)
+        Me.Label22.Location = New System.Drawing.Point(780, 512)
+        Me.Label22.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label22.Name = "Label22"
-        Me.Label22.Size = New System.Drawing.Size(50, 15)
+        Me.Label22.Size = New System.Drawing.Size(65, 21)
         Me.Label22.TabIndex = 32
         Me.Label22.Text = "Label22"
         '
@@ -1195,9 +1276,10 @@ Partial Class Fbuy
         Me.Label23.BackColor = System.Drawing.SystemColors.ActiveCaption
         Me.Label23.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label23.ForeColor = System.Drawing.Color.Black
-        Me.Label23.Location = New System.Drawing.Point(318, 416)
+        Me.Label23.Location = New System.Drawing.Point(424, 512)
+        Me.Label23.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label23.Name = "Label23"
-        Me.Label23.Size = New System.Drawing.Size(50, 15)
+        Me.Label23.Size = New System.Drawing.Size(65, 21)
         Me.Label23.TabIndex = 31
         Me.Label23.Text = "Label23"
         '
@@ -1207,9 +1289,10 @@ Partial Class Fbuy
         Me.Label24.BackColor = System.Drawing.SystemColors.ActiveCaption
         Me.Label24.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label24.ForeColor = System.Drawing.Color.Black
-        Me.Label24.Location = New System.Drawing.Point(67, 416)
+        Me.Label24.Location = New System.Drawing.Point(89, 512)
+        Me.Label24.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label24.Name = "Label24"
-        Me.Label24.Size = New System.Drawing.Size(50, 15)
+        Me.Label24.Size = New System.Drawing.Size(65, 21)
         Me.Label24.TabIndex = 30
         Me.Label24.Text = "Label24"
         '
@@ -1219,9 +1302,10 @@ Partial Class Fbuy
         Me.Label19.BackColor = System.Drawing.SystemColors.ActiveCaption
         Me.Label19.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label19.ForeColor = System.Drawing.Color.Black
-        Me.Label19.Location = New System.Drawing.Point(586, 113)
+        Me.Label19.Location = New System.Drawing.Point(781, 139)
+        Me.Label19.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label19.Name = "Label19"
-        Me.Label19.Size = New System.Drawing.Size(50, 15)
+        Me.Label19.Size = New System.Drawing.Size(65, 21)
         Me.Label19.TabIndex = 29
         Me.Label19.Text = "Label19"
         '
@@ -1231,9 +1315,10 @@ Partial Class Fbuy
         Me.Label20.BackColor = System.Drawing.SystemColors.ActiveCaption
         Me.Label20.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label20.ForeColor = System.Drawing.Color.Black
-        Me.Label20.Location = New System.Drawing.Point(321, 113)
+        Me.Label20.Location = New System.Drawing.Point(428, 139)
+        Me.Label20.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label20.Name = "Label20"
-        Me.Label20.Size = New System.Drawing.Size(50, 15)
+        Me.Label20.Size = New System.Drawing.Size(65, 21)
         Me.Label20.TabIndex = 28
         Me.Label20.Text = "Label20"
         '
@@ -1243,63 +1328,70 @@ Partial Class Fbuy
         Me.Label21.BackColor = System.Drawing.SystemColors.ActiveCaption
         Me.Label21.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label21.ForeColor = System.Drawing.Color.Black
-        Me.Label21.Location = New System.Drawing.Point(67, 113)
+        Me.Label21.Location = New System.Drawing.Point(89, 139)
+        Me.Label21.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label21.Name = "Label21"
-        Me.Label21.Size = New System.Drawing.Size(50, 15)
+        Me.Label21.Size = New System.Drawing.Size(65, 21)
         Me.Label21.TabIndex = 27
         Me.Label21.Text = "Label21"
         '
         'PictureBox46
         '
         Me.PictureBox46.BackColor = System.Drawing.SystemColors.ActiveCaption
-        Me.PictureBox46.Location = New System.Drawing.Point(560, 413)
+        Me.PictureBox46.Location = New System.Drawing.Point(747, 508)
+        Me.PictureBox46.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.PictureBox46.Name = "PictureBox46"
-        Me.PictureBox46.Size = New System.Drawing.Size(180, 21)
+        Me.PictureBox46.Size = New System.Drawing.Size(240, 26)
         Me.PictureBox46.TabIndex = 26
         Me.PictureBox46.TabStop = False
         '
         'PictureBox47
         '
         Me.PictureBox47.BackColor = System.Drawing.SystemColors.ActiveCaption
-        Me.PictureBox47.Location = New System.Drawing.Point(294, 413)
+        Me.PictureBox47.Location = New System.Drawing.Point(392, 508)
+        Me.PictureBox47.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.PictureBox47.Name = "PictureBox47"
-        Me.PictureBox47.Size = New System.Drawing.Size(180, 21)
+        Me.PictureBox47.Size = New System.Drawing.Size(240, 26)
         Me.PictureBox47.TabIndex = 25
         Me.PictureBox47.TabStop = False
         '
         'PictureBox48
         '
         Me.PictureBox48.BackColor = System.Drawing.SystemColors.ActiveCaption
-        Me.PictureBox48.Location = New System.Drawing.Point(40, 413)
+        Me.PictureBox48.Location = New System.Drawing.Point(53, 508)
+        Me.PictureBox48.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.PictureBox48.Name = "PictureBox48"
-        Me.PictureBox48.Size = New System.Drawing.Size(180, 21)
+        Me.PictureBox48.Size = New System.Drawing.Size(240, 26)
         Me.PictureBox48.TabIndex = 24
         Me.PictureBox48.TabStop = False
         '
         'PictureBox43
         '
         Me.PictureBox43.BackColor = System.Drawing.SystemColors.ActiveCaption
-        Me.PictureBox43.Location = New System.Drawing.Point(560, 110)
+        Me.PictureBox43.Location = New System.Drawing.Point(747, 135)
+        Me.PictureBox43.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.PictureBox43.Name = "PictureBox43"
-        Me.PictureBox43.Size = New System.Drawing.Size(180, 21)
+        Me.PictureBox43.Size = New System.Drawing.Size(240, 26)
         Me.PictureBox43.TabIndex = 23
         Me.PictureBox43.TabStop = False
         '
         'PictureBox44
         '
         Me.PictureBox44.BackColor = System.Drawing.SystemColors.ActiveCaption
-        Me.PictureBox44.Location = New System.Drawing.Point(294, 110)
+        Me.PictureBox44.Location = New System.Drawing.Point(392, 135)
+        Me.PictureBox44.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.PictureBox44.Name = "PictureBox44"
-        Me.PictureBox44.Size = New System.Drawing.Size(180, 21)
+        Me.PictureBox44.Size = New System.Drawing.Size(240, 26)
         Me.PictureBox44.TabIndex = 22
         Me.PictureBox44.TabStop = False
         '
         'PictureBox45
         '
         Me.PictureBox45.BackColor = System.Drawing.SystemColors.ActiveCaption
-        Me.PictureBox45.Location = New System.Drawing.Point(40, 110)
+        Me.PictureBox45.Location = New System.Drawing.Point(53, 135)
+        Me.PictureBox45.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.PictureBox45.Name = "PictureBox45"
-        Me.PictureBox45.Size = New System.Drawing.Size(180, 21)
+        Me.PictureBox45.Size = New System.Drawing.Size(240, 26)
         Me.PictureBox45.TabIndex = 21
         Me.PictureBox45.TabStop = False
         '
@@ -1309,9 +1401,10 @@ Partial Class Fbuy
         Me.Button22.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Button22.Font = New System.Drawing.Font("Lucida Fax", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button22.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Button22.Location = New System.Drawing.Point(600, 593)
+        Me.Button22.Location = New System.Drawing.Point(800, 730)
+        Me.Button22.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Button22.Name = "Button22"
-        Me.Button22.Size = New System.Drawing.Size(90, 30)
+        Me.Button22.Size = New System.Drawing.Size(120, 37)
         Me.Button22.TabIndex = 20
         Me.Button22.Text = "Buy"
         Me.Button22.UseVisualStyleBackColor = False
@@ -1322,9 +1415,10 @@ Partial Class Fbuy
         Me.Button23.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Button23.Font = New System.Drawing.Font("Lucida Fax", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button23.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Button23.Location = New System.Drawing.Point(343, 593)
+        Me.Button23.Location = New System.Drawing.Point(457, 730)
+        Me.Button23.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Button23.Name = "Button23"
-        Me.Button23.Size = New System.Drawing.Size(90, 30)
+        Me.Button23.Size = New System.Drawing.Size(120, 37)
         Me.Button23.TabIndex = 19
         Me.Button23.Text = "Buy"
         Me.Button23.UseVisualStyleBackColor = False
@@ -1335,9 +1429,10 @@ Partial Class Fbuy
         Me.Button24.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Button24.Font = New System.Drawing.Font("Lucida Fax", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button24.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Button24.Location = New System.Drawing.Point(85, 593)
+        Me.Button24.Location = New System.Drawing.Point(113, 730)
+        Me.Button24.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Button24.Name = "Button24"
-        Me.Button24.Size = New System.Drawing.Size(90, 30)
+        Me.Button24.Size = New System.Drawing.Size(120, 37)
         Me.Button24.TabIndex = 18
         Me.Button24.Text = "Buy"
         Me.Button24.UseVisualStyleBackColor = False
@@ -1348,9 +1443,10 @@ Partial Class Fbuy
         Me.Button19.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Button19.Font = New System.Drawing.Font("Lucida Fax", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button19.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Button19.Location = New System.Drawing.Point(605, 292)
+        Me.Button19.Location = New System.Drawing.Point(807, 359)
+        Me.Button19.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Button19.Name = "Button19"
-        Me.Button19.Size = New System.Drawing.Size(90, 30)
+        Me.Button19.Size = New System.Drawing.Size(120, 37)
         Me.Button19.TabIndex = 17
         Me.Button19.Text = "Buy"
         Me.Button19.UseVisualStyleBackColor = False
@@ -1361,9 +1457,10 @@ Partial Class Fbuy
         Me.Button20.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Button20.Font = New System.Drawing.Font("Lucida Fax", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button20.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Button20.Location = New System.Drawing.Point(343, 292)
+        Me.Button20.Location = New System.Drawing.Point(457, 359)
+        Me.Button20.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Button20.Name = "Button20"
-        Me.Button20.Size = New System.Drawing.Size(90, 30)
+        Me.Button20.Size = New System.Drawing.Size(120, 37)
         Me.Button20.TabIndex = 16
         Me.Button20.Text = "Buy"
         Me.Button20.UseVisualStyleBackColor = False
@@ -1374,9 +1471,10 @@ Partial Class Fbuy
         Me.Button21.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Button21.Font = New System.Drawing.Font("Lucida Fax", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button21.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Button21.Location = New System.Drawing.Point(85, 292)
+        Me.Button21.Location = New System.Drawing.Point(113, 359)
+        Me.Button21.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Button21.Name = "Button21"
-        Me.Button21.Size = New System.Drawing.Size(90, 30)
+        Me.Button21.Size = New System.Drawing.Size(120, 37)
         Me.Button21.TabIndex = 15
         Me.Button21.Text = "Buy"
         Me.Button21.UseVisualStyleBackColor = False
@@ -1386,9 +1484,10 @@ Partial Class Fbuy
         Me.Other.AutoSize = True
         Me.Other.Font = New System.Drawing.Font("Imprint MT Shadow", 18.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Other.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Other.Location = New System.Drawing.Point(332, 12)
+        Me.Other.Location = New System.Drawing.Point(443, 15)
+        Me.Other.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Other.Name = "Other"
-        Me.Other.Size = New System.Drawing.Size(89, 28)
+        Me.Other.Size = New System.Drawing.Size(107, 35)
         Me.Other.TabIndex = 11
         Me.Other.Text = "Others"
         '
@@ -1396,9 +1495,10 @@ Partial Class Fbuy
         '
         Me.PictureBox22.BackColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.PictureBox22.Image = Global.FDMS_Proposal.My.Resources.Resources._22
-        Me.PictureBox22.Location = New System.Drawing.Point(533, 366)
+        Me.PictureBox22.Location = New System.Drawing.Point(711, 450)
+        Me.PictureBox22.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.PictureBox22.Name = "PictureBox22"
-        Me.PictureBox22.Size = New System.Drawing.Size(217, 267)
+        Me.PictureBox22.Size = New System.Drawing.Size(289, 329)
         Me.PictureBox22.TabIndex = 14
         Me.PictureBox22.TabStop = False
         '
@@ -1406,9 +1506,10 @@ Partial Class Fbuy
         '
         Me.PictureBox23.BackColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.PictureBox23.Image = Global.FDMS_Proposal.My.Resources.Resources._23
-        Me.PictureBox23.Location = New System.Drawing.Point(275, 366)
+        Me.PictureBox23.Location = New System.Drawing.Point(367, 450)
+        Me.PictureBox23.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.PictureBox23.Name = "PictureBox23"
-        Me.PictureBox23.Size = New System.Drawing.Size(217, 267)
+        Me.PictureBox23.Size = New System.Drawing.Size(289, 329)
         Me.PictureBox23.TabIndex = 13
         Me.PictureBox23.TabStop = False
         '
@@ -1416,9 +1517,10 @@ Partial Class Fbuy
         '
         Me.PictureBox24.BackColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.PictureBox24.Image = Global.FDMS_Proposal.My.Resources.Resources._24
-        Me.PictureBox24.Location = New System.Drawing.Point(16, 366)
+        Me.PictureBox24.Location = New System.Drawing.Point(21, 450)
+        Me.PictureBox24.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.PictureBox24.Name = "PictureBox24"
-        Me.PictureBox24.Size = New System.Drawing.Size(217, 267)
+        Me.PictureBox24.Size = New System.Drawing.Size(289, 329)
         Me.PictureBox24.TabIndex = 12
         Me.PictureBox24.TabStop = False
         '
@@ -1426,9 +1528,10 @@ Partial Class Fbuy
         '
         Me.PictureBox13.BackColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.PictureBox13.Image = Global.FDMS_Proposal.My.Resources.Resources._19
-        Me.PictureBox13.Location = New System.Drawing.Point(536, 64)
+        Me.PictureBox13.Location = New System.Drawing.Point(715, 79)
+        Me.PictureBox13.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.PictureBox13.Name = "PictureBox13"
-        Me.PictureBox13.Size = New System.Drawing.Size(217, 267)
+        Me.PictureBox13.Size = New System.Drawing.Size(289, 329)
         Me.PictureBox13.TabIndex = 10
         Me.PictureBox13.TabStop = False
         '
@@ -1436,9 +1539,10 @@ Partial Class Fbuy
         '
         Me.PictureBox14.BackColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.PictureBox14.Image = Global.FDMS_Proposal.My.Resources.Resources._20
-        Me.PictureBox14.Location = New System.Drawing.Point(278, 64)
+        Me.PictureBox14.Location = New System.Drawing.Point(371, 79)
+        Me.PictureBox14.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.PictureBox14.Name = "PictureBox14"
-        Me.PictureBox14.Size = New System.Drawing.Size(217, 267)
+        Me.PictureBox14.Size = New System.Drawing.Size(289, 329)
         Me.PictureBox14.TabIndex = 9
         Me.PictureBox14.TabStop = False
         '
@@ -1446,9 +1550,10 @@ Partial Class Fbuy
         '
         Me.PictureBox15.BackColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.PictureBox15.Image = Global.FDMS_Proposal.My.Resources.Resources._21
-        Me.PictureBox15.Location = New System.Drawing.Point(19, 64)
+        Me.PictureBox15.Location = New System.Drawing.Point(25, 79)
+        Me.PictureBox15.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.PictureBox15.Name = "PictureBox15"
-        Me.PictureBox15.Size = New System.Drawing.Size(217, 267)
+        Me.PictureBox15.Size = New System.Drawing.Size(289, 329)
         Me.PictureBox15.TabIndex = 8
         Me.PictureBox15.TabStop = False
         '
@@ -1456,6 +1561,7 @@ Partial Class Fbuy
         '
         Me.Panel1.BackColor = System.Drawing.SystemColors.ButtonFace
         Me.Panel1.BackgroundImage = Global.FDMS_Proposal.My.Resources.Resources.DC_Header
+        Me.Panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Panel1.Controls.Add(Me.account)
         Me.Panel1.Controls.Add(Me.help)
         Me.Panel1.Controls.Add(Me.about)
@@ -1464,8 +1570,9 @@ Partial Class Fbuy
         Me.Panel1.Controls.Add(Me.buy)
         Me.Panel1.Controls.Add(Me.home)
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
+        Me.Panel1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(800, 100)
+        Me.Panel1.Size = New System.Drawing.Size(1067, 123)
         Me.Panel1.TabIndex = 2
         '
         'account
@@ -1475,9 +1582,10 @@ Partial Class Fbuy
         Me.account.Cursor = System.Windows.Forms.Cursors.Hand
         Me.account.Font = New System.Drawing.Font("Cambria", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.account.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.account.Location = New System.Drawing.Point(712, 4)
+        Me.account.Location = New System.Drawing.Point(949, 5)
+        Me.account.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.account.Name = "account"
-        Me.account.Size = New System.Drawing.Size(70, 19)
+        Me.account.Size = New System.Drawing.Size(83, 23)
         Me.account.TabIndex = 4
         Me.account.Text = "Account"
         '
@@ -1487,9 +1595,10 @@ Partial Class Fbuy
         Me.help.Cursor = System.Windows.Forms.Cursors.Help
         Me.help.Font = New System.Drawing.Font("Cambria", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.help.ForeColor = System.Drawing.Color.DarkSlateGray
-        Me.help.Location = New System.Drawing.Point(618, 36)
+        Me.help.Location = New System.Drawing.Point(824, 44)
+        Me.help.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.help.Name = "help"
-        Me.help.Size = New System.Drawing.Size(51, 22)
+        Me.help.Size = New System.Drawing.Size(63, 28)
         Me.help.TabIndex = 3
         Me.help.Text = "Help"
         '
@@ -1499,9 +1608,10 @@ Partial Class Fbuy
         Me.about.Cursor = System.Windows.Forms.Cursors.Help
         Me.about.Font = New System.Drawing.Font("Cambria", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.about.ForeColor = System.Drawing.Color.DarkSlateGray
-        Me.about.Location = New System.Drawing.Point(108, 36)
+        Me.about.Location = New System.Drawing.Point(144, 44)
+        Me.about.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.about.Name = "about"
-        Me.about.Size = New System.Drawing.Size(86, 22)
+        Me.about.Size = New System.Drawing.Size(109, 28)
         Me.about.TabIndex = 1
         Me.about.Text = "About us"
         '
@@ -1511,9 +1621,10 @@ Partial Class Fbuy
         Me.cart.Cursor = System.Windows.Forms.Cursors.Hand
         Me.cart.Font = New System.Drawing.Font("Cambria", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cart.ForeColor = System.Drawing.Color.DarkSlateGray
-        Me.cart.Location = New System.Drawing.Point(479, 72)
+        Me.cart.Location = New System.Drawing.Point(639, 89)
+        Me.cart.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.cart.Name = "cart"
-        Me.cart.Size = New System.Drawing.Size(47, 22)
+        Me.cart.Size = New System.Drawing.Size(59, 28)
         Me.cart.TabIndex = 1
         Me.cart.Text = "Cart"
         '
@@ -1523,9 +1634,10 @@ Partial Class Fbuy
         Me.Pawn.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Pawn.Font = New System.Drawing.Font("Cambria", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Pawn.ForeColor = System.Drawing.Color.DarkSlateGray
-        Me.Pawn.Location = New System.Drawing.Point(647, 72)
+        Me.Pawn.Location = New System.Drawing.Point(863, 89)
+        Me.Pawn.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Pawn.Name = "Pawn"
-        Me.Pawn.Size = New System.Drawing.Size(57, 22)
+        Me.Pawn.Size = New System.Drawing.Size(71, 28)
         Me.Pawn.TabIndex = 2
         Me.Pawn.Text = "Pawn"
         '
@@ -1535,9 +1647,10 @@ Partial Class Fbuy
         Me.buy.Cursor = System.Windows.Forms.Cursors.Hand
         Me.buy.Font = New System.Drawing.Font("Cambria", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.buy.ForeColor = System.Drawing.Color.DarkSlateGray
-        Me.buy.Location = New System.Drawing.Point(294, 72)
+        Me.buy.Location = New System.Drawing.Point(392, 89)
+        Me.buy.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.buy.Name = "buy"
-        Me.buy.Size = New System.Drawing.Size(42, 22)
+        Me.buy.Size = New System.Drawing.Size(54, 28)
         Me.buy.TabIndex = 1
         Me.buy.Text = "Buy"
         '
@@ -1547,19 +1660,21 @@ Partial Class Fbuy
         Me.home.Cursor = System.Windows.Forms.Cursors.Hand
         Me.home.Font = New System.Drawing.Font("Cambria", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.home.ForeColor = System.Drawing.Color.DarkSlateGray
-        Me.home.Location = New System.Drawing.Point(105, 73)
+        Me.home.Location = New System.Drawing.Point(140, 90)
+        Me.home.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.home.Name = "home"
-        Me.home.Size = New System.Drawing.Size(62, 22)
+        Me.home.Size = New System.Drawing.Size(77, 28)
         Me.home.TabIndex = 0
         Me.home.Text = "Home"
         '
         'Fbuy
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.ClientSize = New System.Drawing.Size(1067, 554)
         Me.Controls.Add(Me.TabControl1)
         Me.Controls.Add(Me.Panel1)
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Name = "Fbuy"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "login"

@@ -51,4 +51,9 @@
         Fpawn.Show()
         Me.Hide()
     End Sub
+
+    Private Sub help_Click(sender As Object, e As EventArgs) Handles help.Click
+        Me.Hide()
+        Fhelp.Show()
+    End Sub
 End Class

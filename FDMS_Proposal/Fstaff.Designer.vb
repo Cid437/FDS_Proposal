@@ -45,9 +45,9 @@ Partial Class Fstaff
         Me.TabPage2 = New System.Windows.Forms.TabPage()
         Me.Button8 = New System.Windows.Forms.Button()
         Me.Button7 = New System.Windows.Forms.Button()
-        Me.Button6 = New System.Windows.Forms.Button()
         Me.DataGridView2 = New System.Windows.Forms.DataGridView()
         Me.TabPage5 = New System.Windows.Forms.TabPage()
+        Me.TabPage6 = New System.Windows.Forms.TabPage()
         Me.TabControl2 = New System.Windows.Forms.TabControl()
         Me.TabPage3 = New System.Windows.Forms.TabPage()
         Me.TabPage4 = New System.Windows.Forms.TabPage()
@@ -77,6 +77,7 @@ Partial Class Fstaff
         Me.TabControl1.Controls.Add(Me.TabPage1)
         Me.TabControl1.Controls.Add(Me.TabPage2)
         Me.TabControl1.Controls.Add(Me.TabPage5)
+        Me.TabControl1.Controls.Add(Me.TabPage6)
         Me.TabControl1.Location = New System.Drawing.Point(31, 70)
         Me.TabControl1.Margin = New System.Windows.Forms.Padding(4)
         Me.TabControl1.Name = "TabControl1"
@@ -289,7 +290,6 @@ Partial Class Fstaff
         Me.TabPage2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.TabPage2.Controls.Add(Me.Button8)
         Me.TabPage2.Controls.Add(Me.Button7)
-        Me.TabPage2.Controls.Add(Me.Button6)
         Me.TabPage2.Controls.Add(Me.DataGridView2)
         Me.TabPage2.Location = New System.Drawing.Point(4, 25)
         Me.TabPage2.Margin = New System.Windows.Forms.Padding(4)
@@ -297,12 +297,12 @@ Partial Class Fstaff
         Me.TabPage2.Padding = New System.Windows.Forms.Padding(4)
         Me.TabPage2.Size = New System.Drawing.Size(975, 424)
         Me.TabPage2.TabIndex = 1
-        Me.TabPage2.Text = "Pawns"
+        Me.TabPage2.Text = "Pawn Request"
         Me.TabPage2.UseVisualStyleBackColor = True
         '
         'Button8
         '
-        Me.Button8.Location = New System.Drawing.Point(86, 306)
+        Me.Button8.Location = New System.Drawing.Point(105, 161)
         Me.Button8.Margin = New System.Windows.Forms.Padding(4)
         Me.Button8.Name = "Button8"
         Me.Button8.Size = New System.Drawing.Size(100, 28)
@@ -312,23 +312,13 @@ Partial Class Fstaff
         '
         'Button7
         '
-        Me.Button7.Location = New System.Drawing.Point(86, 205)
+        Me.Button7.Location = New System.Drawing.Point(105, 269)
         Me.Button7.Margin = New System.Windows.Forms.Padding(4)
         Me.Button7.Name = "Button7"
         Me.Button7.Size = New System.Drawing.Size(100, 28)
         Me.Button7.TabIndex = 3
         Me.Button7.Text = "Reject"
         Me.Button7.UseVisualStyleBackColor = True
-        '
-        'Button6
-        '
-        Me.Button6.Location = New System.Drawing.Point(86, 113)
-        Me.Button6.Margin = New System.Windows.Forms.Padding(4)
-        Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(100, 28)
-        Me.Button6.TabIndex = 2
-        Me.Button6.Text = "Search"
-        Me.Button6.UseVisualStyleBackColor = True
         '
         'DataGridView2
         '
@@ -350,8 +340,20 @@ Partial Class Fstaff
         Me.TabPage5.Padding = New System.Windows.Forms.Padding(4)
         Me.TabPage5.Size = New System.Drawing.Size(975, 424)
         Me.TabPage5.TabIndex = 2
-        Me.TabPage5.Text = "Customer help"
+        Me.TabPage5.Text = "Accepted Requests"
         Me.TabPage5.UseVisualStyleBackColor = True
+        '
+        'TabPage6
+        '
+        Me.TabPage6.BackgroundImage = Global.FDMS_Proposal.My.Resources.Resources.Fstaff
+        Me.TabPage6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.TabPage6.Location = New System.Drawing.Point(4, 25)
+        Me.TabPage6.Name = "TabPage6"
+        Me.TabPage6.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabPage6.Size = New System.Drawing.Size(975, 424)
+        Me.TabPage6.TabIndex = 3
+        Me.TabPage6.Text = "Customer Service"
+        Me.TabPage6.UseVisualStyleBackColor = True
         '
         'TabControl2
         '
@@ -448,7 +450,6 @@ Partial Class Fstaff
     Friend WithEvents DataGridView2 As DataGridView
     Friend WithEvents Button8 As Button
     Friend WithEvents Button7 As Button
-    Friend WithEvents Button6 As Button
     Friend WithEvents Label5 As Label
     Friend WithEvents TextBox5 As TextBox
     Friend WithEvents TextBox6 As TextBox
@@ -458,4 +459,5 @@ Partial Class Fstaff
     Friend WithEvents TabPage4 As TabPage
     Friend WithEvents TabPage5 As TabPage
     Friend WithEvents Button9 As Button
+    Friend WithEvents TabPage6 As TabPage
 End Class
