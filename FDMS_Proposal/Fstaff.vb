@@ -324,7 +324,8 @@ WHERE
             Dim i As Integer = dbcomm.ExecuteNonQuery()
 
             If (i > 0) Then
-                sql = "DELETE FROM pawn_request WHERE request_id = '" & requestId & "'"
+
+                sql = "UPDATE pawn_request SET process = 'accepted' WHERE request_id = '" & requestId & "'"
                 dbcomm = New MySqlCommand(sql, conn)
                 dbcomm.ExecuteNonQuery()
                 MsgBox("Request Accepted")
