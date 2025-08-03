@@ -6,6 +6,7 @@ Public Class Fstaff
     Public dbcomm As MySqlCommand
     Public dbread As MySqlDataReader
     Public DataAdapter1 As MySqlDataAdapter
+    Public DataAdapter2 As MySqlDataAdapter
     Public ds As DataSet
 
     Private Sub reloaddatagrid()
@@ -328,5 +329,122 @@ Public Class Fstaff
             ' Refresh the grid to show the updated status.
             reloadPawnRequestData()
         End If
+    End Sub
+
+    Private Sub Button11_Click(sender As Object, e As EventArgs) Handles Button11.Click
+        Try
+            conn.Open()
+            sql = "SELECT help_id, account_id, name, help_descrip FROM help_request WHERE reply_descrip IS NULL ORDER BY account_id"
+
+            DataAdapter2 = New MySqlDataAdapter(sql, conn)
+            ds = New DataSet()
+            DataAdapter2.Fill(ds, "help_request")
+            DataGridView3.DataSource = ds
+            DataGridView3.DataMember = "help_request"
+
+
+        Catch ex As Exception
+            MsgBox("Error in collecting data from Database. Error is :" & ex.Message)
+
+        End Try
+        conn.Close()
+    End Sub
+
+    Private Sub requestgrid()
+        Try
+            conn.Open()
+            sql = "SELECT * FROM help_request ORDER BY account_id"
+
+            DataAdapter2 = New MySqlDataAdapter(sql, conn)
+            ds = New DataSet()
+            DataAdapter2.Fill(ds, "help_request")
+            DataGridView3.DataSource = ds
+            DataGridView3.DataMember = "help_request"
+
+
+        Catch ex As Exception
+            MsgBox("Error in collecting data from Database. Error is :" & ex.Message)
+
+        End Try
+        conn.Close()
+    End Sub
+
+    Private Sub Button13_Click(sender As Object, e As EventArgs) Handles Button13.Click
+        requestgrid()
+    End Sub
+
+    Private Sub Button12_Click(sender As Object, e As EventArgs) Handles Button12.Click
+        Try
+            conn.Open()
+            sql = "SELECT help_id, account_id, name, reply_descrip, help_descrip FROM help_request WHERE reply_descrip IS NOT NULL ORDER BY account_id"
+
+            DataAdapter2 = New MySqlDataAdapter(sql, conn)
+            ds = New DataSet()
+            DataAdapter2.Fill(ds, "help_request")
+            DataGridView3.DataSource = ds
+            DataGridView3.DataMember = "help_request"
+
+        Catch ex As Exception
+            MsgBox("Error in collecting data from Database. Error is :" & ex.Message)
+
+        End Try
+        conn.Close()
+    End Sub
+
+    Private Sub Button10_Click(sender As Object, e As EventArgs) Handles Button10.Click
+        Dim id As Integer
+        Try
+            conn.Open()
+            id = Val(TextBox9.Text)
+            sql = "SELECT * FROM help_request WHERE help_id = " & id
+            dbcomm = New MySqlCommand(sql, conn)
+            dbread = dbcomm.ExecuteReader()
+
+            If dbread.Read() Then
+
+                If Not IsDBNull(dbread("reply_descrip")) Then
+                    TextBox7.Text = dbread("reply_descrip")
+                Else
+                    TextBox7.Text = ""
+                End If
+
+                TextBox8.Text = dbread("help_descrip")
+                TextBox10.Text = dbread("name")
+                TextBox11.Text = dbread("account_id")
+            Else
+                MsgBox("No data found for that account ID.")
+            End If
+
+        Catch ex As MySqlException
+            MsgBox(ex.Message)
+        Finally
+            conn.Close()
+        End Try
+
+        conn.Close()
+    End Sub
+
+    Private Sub Button6_Click_1(sender As Object, e As EventArgs) Handles Button6.Click
+        Dim id As String
+        Dim reply As String
+        reply = TextBox7.Text
+        id = TextBox9.Text
+        Try
+            conn.Open()
+            sql = "UPDATE help_request SET reply_descrip = ('" & reply & "') WHERE help_id = " & id
+            dbcomm = New MySqlCommand(sql, conn)
+            Dim i As Integer = dbcomm.ExecuteNonQuery
+
+            If (i > 0) Then
+                MsgBox("Reply Sent")
+            Else
+                MsgBox("Reply already sent")
+
+            End If
+        Catch ex As MySqlException
+            MsgBox("Request id might not exist")
+            conn.Close()
+        End Try
+        conn.Close()
     End Sub
 End Class
