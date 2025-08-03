@@ -25,16 +25,32 @@ Partial Class Fadmin
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button9 = New System.Windows.Forms.Button()
         Me.Label15 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
         Me.TabPage3 = New System.Windows.Forms.TabPage()
+        Me.ComboBox2 = New System.Windows.Forms.ComboBox()
+        Me.Label14 = New System.Windows.Forms.Label()
+        Me.TextBox12 = New System.Windows.Forms.TextBox()
+        Me.TextBox13 = New System.Windows.Forms.TextBox()
+        Me.Label16 = New System.Windows.Forms.Label()
+        Me.Label17 = New System.Windows.Forms.Label()
+        Me.Button13 = New System.Windows.Forms.Button()
+        Me.Button14 = New System.Windows.Forms.Button()
+        Me.Button15 = New System.Windows.Forms.Button()
+        Me.DataGridView3 = New System.Windows.Forms.DataGridView()
+        Me.Button12 = New System.Windows.Forms.Button()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
+        Me.ComboBox3 = New System.Windows.Forms.ComboBox()
+        Me.Label10 = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
+        Me.TextBox7 = New System.Windows.Forms.TextBox()
         Me.TextBox5 = New System.Windows.Forms.TextBox()
+        Me.TextBox6 = New System.Windows.Forms.TextBox()
         Me.TextBox4 = New System.Windows.Forms.TextBox()
         Me.Label7 = New System.Windows.Forms.Label()
+        Me.Label8 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.DataGridView2 = New System.Windows.Forms.DataGridView()
         Me.Button11 = New System.Windows.Forms.Button()
+        Me.Button8 = New System.Windows.Forms.Button()
         Me.Button7 = New System.Windows.Forms.Button()
         Me.Button6 = New System.Windows.Forms.Button()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
@@ -53,30 +69,13 @@ Partial Class Fadmin
         Me.Label1 = New System.Windows.Forms.Label()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.TabControl1 = New System.Windows.Forms.TabControl()
-        Me.Button8 = New System.Windows.Forms.Button()
-        Me.DataGridView3 = New System.Windows.Forms.DataGridView()
-        Me.Button12 = New System.Windows.Forms.Button()
-        Me.Button13 = New System.Windows.Forms.Button()
-        Me.Button14 = New System.Windows.Forms.Button()
-        Me.Button15 = New System.Windows.Forms.Button()
-        Me.TextBox6 = New System.Windows.Forms.TextBox()
-        Me.TextBox7 = New System.Windows.Forms.TextBox()
-        Me.Label8 = New System.Windows.Forms.Label()
-        Me.ComboBox2 = New System.Windows.Forms.ComboBox()
-        Me.Label14 = New System.Windows.Forms.Label()
-        Me.TextBox12 = New System.Windows.Forms.TextBox()
-        Me.TextBox13 = New System.Windows.Forms.TextBox()
-        Me.Label16 = New System.Windows.Forms.Label()
-        Me.Label17 = New System.Windows.Forms.Label()
-        Me.ComboBox3 = New System.Windows.Forms.ComboBox()
-        Me.Label10 = New System.Windows.Forms.Label()
         Me.TabPage3.SuspendLayout()
+        CType(Me.DataGridView3, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabPage2.SuspendLayout()
         CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabPage1.SuspendLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabControl1.SuspendLayout()
-        CType(Me.DataGridView3, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Button1
@@ -108,24 +107,12 @@ Partial Class Fadmin
         Me.Label15.AutoSize = True
         Me.Label15.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label15.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label15.Location = New System.Drawing.Point(410, 23)
+        Me.Label15.Location = New System.Drawing.Point(403, 33)
         Me.Label15.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(209, 29)
+        Me.Label15.Size = New System.Drawing.Size(335, 29)
         Me.Label15.TabIndex = 32
-        Me.Label15.Text = "Welcome Admin "
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label4.Location = New System.Drawing.Point(627, 22)
-        Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(82, 29)
-        Me.Label4.TabIndex = 33
-        Me.Label4.Text = "Name"
+        Me.Label15.Text = "Welcome To Admin Mode!!!"
         '
         'TabPage3
         '
@@ -149,6 +136,120 @@ Partial Class Fadmin
         Me.TabPage3.TabIndex = 3
         Me.TabPage3.Text = "Salary"
         Me.TabPage3.UseVisualStyleBackColor = True
+        '
+        'ComboBox2
+        '
+        Me.ComboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.ComboBox2.FormattingEnabled = True
+        Me.ComboBox2.Items.AddRange(New Object() {"Appraiser", "Cashier", "Stock Manager", "Manager"})
+        Me.ComboBox2.Location = New System.Drawing.Point(292, 289)
+        Me.ComboBox2.Name = "ComboBox2"
+        Me.ComboBox2.Size = New System.Drawing.Size(132, 24)
+        Me.ComboBox2.TabIndex = 63
+        '
+        'Label14
+        '
+        Me.Label14.AutoSize = True
+        Me.Label14.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Label14.Location = New System.Drawing.Point(219, 203)
+        Me.Label14.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label14.Name = "Label14"
+        Me.Label14.Size = New System.Drawing.Size(52, 17)
+        Me.Label14.TabIndex = 62
+        Me.Label14.Text = "Salary:"
+        '
+        'TextBox12
+        '
+        Me.TextBox12.Location = New System.Drawing.Point(292, 113)
+        Me.TextBox12.Margin = New System.Windows.Forms.Padding(4)
+        Me.TextBox12.Name = "TextBox12"
+        Me.TextBox12.Size = New System.Drawing.Size(132, 22)
+        Me.TextBox12.TabIndex = 60
+        '
+        'TextBox13
+        '
+        Me.TextBox13.Location = New System.Drawing.Point(292, 200)
+        Me.TextBox13.Margin = New System.Windows.Forms.Padding(4)
+        Me.TextBox13.Name = "TextBox13"
+        Me.TextBox13.Size = New System.Drawing.Size(132, 22)
+        Me.TextBox13.TabIndex = 58
+        '
+        'Label16
+        '
+        Me.Label16.AutoSize = True
+        Me.Label16.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Label16.Location = New System.Drawing.Point(209, 292)
+        Me.Label16.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label16.Name = "Label16"
+        Me.Label16.Size = New System.Drawing.Size(62, 17)
+        Me.Label16.TabIndex = 61
+        Me.Label16.Text = "Position:"
+        '
+        'Label17
+        '
+        Me.Label17.AutoSize = True
+        Me.Label17.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Label17.Location = New System.Drawing.Point(191, 116)
+        Me.Label17.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label17.Name = "Label17"
+        Me.Label17.Size = New System.Drawing.Size(80, 17)
+        Me.Label17.TabIndex = 59
+        Me.Label17.Text = "Account ID:"
+        '
+        'Button13
+        '
+        Me.Button13.Location = New System.Drawing.Point(42, 287)
+        Me.Button13.Margin = New System.Windows.Forms.Padding(4)
+        Me.Button13.Name = "Button13"
+        Me.Button13.Size = New System.Drawing.Size(122, 26)
+        Me.Button13.TabIndex = 51
+        Me.Button13.Text = "Update Position"
+        Me.Button13.UseVisualStyleBackColor = True
+        '
+        'Button14
+        '
+        Me.Button14.Location = New System.Drawing.Point(42, 197)
+        Me.Button14.Margin = New System.Windows.Forms.Padding(4)
+        Me.Button14.Name = "Button14"
+        Me.Button14.Size = New System.Drawing.Size(122, 28)
+        Me.Button14.TabIndex = 50
+        Me.Button14.Text = "Update Salary"
+        Me.Button14.UseVisualStyleBackColor = True
+        '
+        'Button15
+        '
+        Me.Button15.Location = New System.Drawing.Point(42, 110)
+        Me.Button15.Margin = New System.Windows.Forms.Padding(4)
+        Me.Button15.Name = "Button15"
+        Me.Button15.Size = New System.Drawing.Size(100, 28)
+        Me.Button15.TabIndex = 49
+        Me.Button15.Text = "Search"
+        Me.Button15.UseVisualStyleBackColor = True
+        '
+        'DataGridView3
+        '
+        Me.DataGridView3.AllowUserToOrderColumns = True
+        Me.DataGridView3.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells
+        Me.DataGridView3.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells
+        Me.DataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView3.Location = New System.Drawing.Point(523, 21)
+        Me.DataGridView3.Margin = New System.Windows.Forms.Padding(4)
+        Me.DataGridView3.Name = "DataGridView3"
+        Me.DataGridView3.RowHeadersWidth = 51
+        Me.DataGridView3.Size = New System.Drawing.Size(435, 380)
+        Me.DataGridView3.TabIndex = 34
+        '
+        'Button12
+        '
+        Me.Button12.BackColor = System.Drawing.Color.Black
+        Me.Button12.ForeColor = System.Drawing.Color.White
+        Me.Button12.Location = New System.Drawing.Point(411, 21)
+        Me.Button12.Margin = New System.Windows.Forms.Padding(4)
+        Me.Button12.Name = "Button12"
+        Me.Button12.Size = New System.Drawing.Size(104, 37)
+        Me.Button12.TabIndex = 33
+        Me.Button12.Text = "Refresh Grid"
+        Me.Button12.UseVisualStyleBackColor = False
         '
         'TabPage2
         '
@@ -178,6 +279,27 @@ Partial Class Fadmin
         Me.TabPage2.Text = " Staffs"
         Me.TabPage2.UseVisualStyleBackColor = True
         '
+        'ComboBox3
+        '
+        Me.ComboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.ComboBox3.FormattingEnabled = True
+        Me.ComboBox3.Items.AddRange(New Object() {"Appraiser", "Cashier", "Stock Manager", "Manager"})
+        Me.ComboBox3.Location = New System.Drawing.Point(300, 358)
+        Me.ComboBox3.Name = "ComboBox3"
+        Me.ComboBox3.Size = New System.Drawing.Size(132, 24)
+        Me.ComboBox3.TabIndex = 65
+        '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Label10.Location = New System.Drawing.Point(217, 361)
+        Me.Label10.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(62, 17)
+        Me.Label10.TabIndex = 64
+        Me.Label10.Text = "Position:"
+        '
         'Label9
         '
         Me.Label9.AutoSize = True
@@ -189,6 +311,14 @@ Partial Class Fadmin
         Me.Label9.TabIndex = 40
         Me.Label9.Text = "Salary:"
         '
+        'TextBox7
+        '
+        Me.TextBox7.Location = New System.Drawing.Point(300, 283)
+        Me.TextBox7.Margin = New System.Windows.Forms.Padding(4)
+        Me.TextBox7.Name = "TextBox7"
+        Me.TextBox7.Size = New System.Drawing.Size(132, 22)
+        Me.TextBox7.TabIndex = 39
+        '
         'TextBox5
         '
         Me.TextBox5.Location = New System.Drawing.Point(300, 156)
@@ -196,6 +326,14 @@ Partial Class Fadmin
         Me.TextBox5.Name = "TextBox5"
         Me.TextBox5.Size = New System.Drawing.Size(132, 22)
         Me.TextBox5.TabIndex = 36
+        '
+        'TextBox6
+        '
+        Me.TextBox6.Location = New System.Drawing.Point(300, 218)
+        Me.TextBox6.Margin = New System.Windows.Forms.Padding(4)
+        Me.TextBox6.Name = "TextBox6"
+        Me.TextBox6.Size = New System.Drawing.Size(132, 22)
+        Me.TextBox6.TabIndex = 35
         '
         'TextBox4
         '
@@ -215,6 +353,17 @@ Partial Class Fadmin
         Me.Label7.Size = New System.Drawing.Size(73, 17)
         Me.Label7.TabIndex = 38
         Me.Label7.Text = "Password:"
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Label8.Location = New System.Drawing.Point(230, 159)
+        Me.Label8.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(49, 17)
+        Me.Label8.TabIndex = 37
+        Me.Label8.Text = "Name:"
         '
         'Label6
         '
@@ -251,6 +400,16 @@ Partial Class Fadmin
         Me.Button11.TabIndex = 31
         Me.Button11.Text = "Refresh Grid"
         Me.Button11.UseVisualStyleBackColor = False
+        '
+        'Button8
+        '
+        Me.Button8.Location = New System.Drawing.Point(55, 279)
+        Me.Button8.Margin = New System.Windows.Forms.Padding(4)
+        Me.Button8.Name = "Button8"
+        Me.Button8.Size = New System.Drawing.Size(100, 26)
+        Me.Button8.TabIndex = 4
+        Me.Button8.Text = "Search"
+        Me.Button8.UseVisualStyleBackColor = True
         '
         'Button7
         '
@@ -303,7 +462,7 @@ Partial Class Fadmin
         '
         Me.ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Items.AddRange(New Object() {"customer", "staff"})
+        Me.ComboBox1.Items.AddRange(New Object() {"customer", "staff", "admin"})
         Me.ComboBox1.Location = New System.Drawing.Point(275, 300)
         Me.ComboBox1.Name = "ComboBox1"
         Me.ComboBox1.Size = New System.Drawing.Size(132, 24)
@@ -454,185 +613,12 @@ Partial Class Fadmin
         Me.TabControl1.Size = New System.Drawing.Size(983, 453)
         Me.TabControl1.TabIndex = 5
         '
-        'Button8
-        '
-        Me.Button8.Location = New System.Drawing.Point(55, 279)
-        Me.Button8.Margin = New System.Windows.Forms.Padding(4)
-        Me.Button8.Name = "Button8"
-        Me.Button8.Size = New System.Drawing.Size(100, 26)
-        Me.Button8.TabIndex = 4
-        Me.Button8.Text = "Search"
-        Me.Button8.UseVisualStyleBackColor = True
-        '
-        'DataGridView3
-        '
-        Me.DataGridView3.AllowUserToOrderColumns = True
-        Me.DataGridView3.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells
-        Me.DataGridView3.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells
-        Me.DataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView3.Location = New System.Drawing.Point(523, 21)
-        Me.DataGridView3.Margin = New System.Windows.Forms.Padding(4)
-        Me.DataGridView3.Name = "DataGridView3"
-        Me.DataGridView3.RowHeadersWidth = 51
-        Me.DataGridView3.Size = New System.Drawing.Size(435, 380)
-        Me.DataGridView3.TabIndex = 34
-        '
-        'Button12
-        '
-        Me.Button12.BackColor = System.Drawing.Color.Black
-        Me.Button12.ForeColor = System.Drawing.Color.White
-        Me.Button12.Location = New System.Drawing.Point(411, 21)
-        Me.Button12.Margin = New System.Windows.Forms.Padding(4)
-        Me.Button12.Name = "Button12"
-        Me.Button12.Size = New System.Drawing.Size(104, 37)
-        Me.Button12.TabIndex = 33
-        Me.Button12.Text = "Refresh Grid"
-        Me.Button12.UseVisualStyleBackColor = False
-        '
-        'Button13
-        '
-        Me.Button13.Location = New System.Drawing.Point(42, 287)
-        Me.Button13.Margin = New System.Windows.Forms.Padding(4)
-        Me.Button13.Name = "Button13"
-        Me.Button13.Size = New System.Drawing.Size(122, 26)
-        Me.Button13.TabIndex = 51
-        Me.Button13.Text = "Update Position"
-        Me.Button13.UseVisualStyleBackColor = True
-        '
-        'Button14
-        '
-        Me.Button14.Location = New System.Drawing.Point(42, 197)
-        Me.Button14.Margin = New System.Windows.Forms.Padding(4)
-        Me.Button14.Name = "Button14"
-        Me.Button14.Size = New System.Drawing.Size(122, 28)
-        Me.Button14.TabIndex = 50
-        Me.Button14.Text = "Update Salary"
-        Me.Button14.UseVisualStyleBackColor = True
-        '
-        'Button15
-        '
-        Me.Button15.Location = New System.Drawing.Point(42, 110)
-        Me.Button15.Margin = New System.Windows.Forms.Padding(4)
-        Me.Button15.Name = "Button15"
-        Me.Button15.Size = New System.Drawing.Size(100, 28)
-        Me.Button15.TabIndex = 49
-        Me.Button15.Text = "Search"
-        Me.Button15.UseVisualStyleBackColor = True
-        '
-        'TextBox6
-        '
-        Me.TextBox6.Location = New System.Drawing.Point(300, 218)
-        Me.TextBox6.Margin = New System.Windows.Forms.Padding(4)
-        Me.TextBox6.Name = "TextBox6"
-        Me.TextBox6.Size = New System.Drawing.Size(132, 22)
-        Me.TextBox6.TabIndex = 35
-        '
-        'TextBox7
-        '
-        Me.TextBox7.Location = New System.Drawing.Point(300, 283)
-        Me.TextBox7.Margin = New System.Windows.Forms.Padding(4)
-        Me.TextBox7.Name = "TextBox7"
-        Me.TextBox7.Size = New System.Drawing.Size(132, 22)
-        Me.TextBox7.TabIndex = 39
-        '
-        'Label8
-        '
-        Me.Label8.AutoSize = True
-        Me.Label8.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label8.Location = New System.Drawing.Point(230, 159)
-        Me.Label8.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(49, 17)
-        Me.Label8.TabIndex = 37
-        Me.Label8.Text = "Name:"
-        '
-        'ComboBox2
-        '
-        Me.ComboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.ComboBox2.FormattingEnabled = True
-        Me.ComboBox2.Items.AddRange(New Object() {"Appraiser", "Cashier", "Stock Manager", "Manager"})
-        Me.ComboBox2.Location = New System.Drawing.Point(292, 289)
-        Me.ComboBox2.Name = "ComboBox2"
-        Me.ComboBox2.Size = New System.Drawing.Size(132, 24)
-        Me.ComboBox2.TabIndex = 63
-        '
-        'Label14
-        '
-        Me.Label14.AutoSize = True
-        Me.Label14.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label14.Location = New System.Drawing.Point(219, 203)
-        Me.Label14.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(52, 17)
-        Me.Label14.TabIndex = 62
-        Me.Label14.Text = "Salary:"
-        '
-        'TextBox12
-        '
-        Me.TextBox12.Location = New System.Drawing.Point(292, 113)
-        Me.TextBox12.Margin = New System.Windows.Forms.Padding(4)
-        Me.TextBox12.Name = "TextBox12"
-        Me.TextBox12.Size = New System.Drawing.Size(132, 22)
-        Me.TextBox12.TabIndex = 60
-        '
-        'TextBox13
-        '
-        Me.TextBox13.Location = New System.Drawing.Point(292, 200)
-        Me.TextBox13.Margin = New System.Windows.Forms.Padding(4)
-        Me.TextBox13.Name = "TextBox13"
-        Me.TextBox13.Size = New System.Drawing.Size(132, 22)
-        Me.TextBox13.TabIndex = 58
-        '
-        'Label16
-        '
-        Me.Label16.AutoSize = True
-        Me.Label16.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label16.Location = New System.Drawing.Point(209, 292)
-        Me.Label16.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label16.Name = "Label16"
-        Me.Label16.Size = New System.Drawing.Size(62, 17)
-        Me.Label16.TabIndex = 61
-        Me.Label16.Text = "Position:"
-        '
-        'Label17
-        '
-        Me.Label17.AutoSize = True
-        Me.Label17.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label17.Location = New System.Drawing.Point(191, 116)
-        Me.Label17.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label17.Name = "Label17"
-        Me.Label17.Size = New System.Drawing.Size(80, 17)
-        Me.Label17.TabIndex = 59
-        Me.Label17.Text = "Account ID:"
-        '
-        'ComboBox3
-        '
-        Me.ComboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.ComboBox3.FormattingEnabled = True
-        Me.ComboBox3.Items.AddRange(New Object() {"Appraiser", "Cashier", "Stock Manager", "Manager"})
-        Me.ComboBox3.Location = New System.Drawing.Point(300, 358)
-        Me.ComboBox3.Name = "ComboBox3"
-        Me.ComboBox3.Size = New System.Drawing.Size(132, 24)
-        Me.ComboBox3.TabIndex = 65
-        '
-        'Label10
-        '
-        Me.Label10.AutoSize = True
-        Me.Label10.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label10.Location = New System.Drawing.Point(217, 361)
-        Me.Label10.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(62, 17)
-        Me.Label10.TabIndex = 64
-        Me.Label10.Text = "Position:"
-        '
         'Fadmin
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ActiveCaption
         Me.ClientSize = New System.Drawing.Size(1067, 554)
-        Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label15)
         Me.Controls.Add(Me.Button9)
         Me.Controls.Add(Me.Button1)
@@ -642,6 +628,7 @@ Partial Class Fadmin
         Me.Text = "Fadmin"
         Me.TabPage3.ResumeLayout(False)
         Me.TabPage3.PerformLayout()
+        CType(Me.DataGridView3, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabPage2.ResumeLayout(False)
         Me.TabPage2.PerformLayout()
         CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).EndInit()
@@ -649,7 +636,6 @@ Partial Class Fadmin
         Me.TabPage1.PerformLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabControl1.ResumeLayout(False)
-        CType(Me.DataGridView3, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -657,7 +643,6 @@ Partial Class Fadmin
     Friend WithEvents Button1 As Button
     Friend WithEvents Button9 As Button
     Friend WithEvents Label15 As Label
-    Friend WithEvents Label4 As Label
     Friend WithEvents TabPage3 As TabPage
     Friend WithEvents TabPage2 As TabPage
     Friend WithEvents Label9 As Label

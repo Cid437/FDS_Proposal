@@ -39,7 +39,7 @@ Public Class FLogin
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Dim id = loggedInUser
-        Fadmin.Label4.Text = id & "!!!"
+
 
         Dim name = TextBox1.Text
         Dim password = TextBox2.Text
@@ -122,5 +122,9 @@ Public Class FLogin
         Button4.Hide()
         Button3.Show()
         TextBox2.UseSystemPasswordChar = False
+    End Sub
+
+    Private Sub FLogin_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
     End Sub
 End Class

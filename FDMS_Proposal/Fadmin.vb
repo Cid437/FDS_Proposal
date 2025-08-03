@@ -184,34 +184,24 @@ Public Class Fadmin
     End Sub
 
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
-        ' First, check if a row is selected in the grid.
         If DataGridView1.SelectedRows.Count = 0 Then
             MsgBox("Please select the row of the account you want to delete .", MsgBoxStyle.Information)
-            Return ' Exit the sub if no row is selected.
+            Return
         End If
 
-        ' Get the selected row.
         Dim selectedRow As DataGridViewRow = DataGridView1.SelectedRows(0)
-
-        ' Get the ID from the "request_id" cell of that row.
         Dim idToDelete = selectedRow.Cells("account_id").Value
-
-        ' Ask for confirmation before deleting. This is a critical safety step.
         Dim ans = MessageBox.Show("Are you sure you want to permanently delete this account?", "Confirm Deletion", MessageBoxButtons.YesNo, MessageBoxIcon.Warning)
 
-        ' Proceed only if the user clicks "Yes".
         If ans = DialogResult.Yes Then
             Dim sql As String
             Dim dbcomm As MySqlCommand
 
             Try
                 conn.Open()
-
-                ' Create the SQL DELETE command using the ID from the selected row.
                 sql = "DELETE FROM acs WHERE account_id = '" & idToDelete & "'"
-
                 dbcomm = New MySqlCommand(sql, conn)
-                Dim i As Integer = dbcomm.ExecuteNonQuery() ' Execute the delete command.
+                Dim i As Integer = dbcomm.ExecuteNonQuery()
 
                 If (i > 0) Then
                     MsgBox("Request deleted successfully.")
@@ -222,14 +212,11 @@ Public Class Fadmin
             Catch ex As Exception
                 MsgBox("An error occurred while trying to delete the account: " & ex.Message)
             Finally
-                ' This 'Finally' block ensures the connection is always closed,
-                ' even if an error happened.
                 If conn.State = ConnectionState.Open Then
                     conn.Close()
                 End If
             End Try
 
-            ' Refresh the DataGridView to show the updated data.
             resetgrid()
         End If
     End Sub
@@ -260,7 +247,7 @@ Public Class Fadmin
         textboxreset()
     End Sub
 
-    Private Sub Label4_Click(sender As Object, e As EventArgs) Handles Label4.Click
+    Private Sub Label4_Click(sender As Object, e As EventArgs)
 
     End Sub
 
@@ -292,13 +279,12 @@ Public Class Fadmin
         Try
             conn.Open()
 
-            ' First INSERT for the 'acs' table
             sql = "INSERT INTO acs (account_id, name, password, role) VALUES ('" & accountId & "', '" & name & "', '" & password & "', 'staff')"
             dbcomm = New MySqlCommand(sql, conn)
             dbcomm.ExecuteNonQuery()
 
-            ' Second INSERT for the 'staffs' table
-            sql = "INSERT INTO staffs (accout_id, name, staff_salary, position) VALUES ('" & accountId & "', '" & name & "', '" & salary & "', '" & position & "')"
+
+            sql = "INSERT INTO staffs (account_id, name, staff_salary, position) VALUES ('" & accountId & "', '" & name & "', '" & salary & "', '" & position & "')"
             dbcomm = New MySqlCommand(sql, conn)
             Dim i As Integer = dbcomm.ExecuteNonQuery()
 
@@ -324,19 +310,19 @@ Public Class Fadmin
     Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
         If DataGridView2.SelectedRows.Count = 0 Then
             MsgBox("Please select the row of the account you want to delete .", MsgBoxStyle.Information)
-            Return ' Exit the sub if no row is selected.
+            Return
         End If
 
-        ' Get the selected row.
+
         Dim selectedRow As DataGridViewRow = DataGridView2.SelectedRows(0)
 
-        ' Get the ID from the "request_id" cell of that row.
+
         Dim idToDelete = selectedRow.Cells("account_id").Value
 
-        ' Ask for confirmation before deleting. This is a critical safety step.
+
         Dim ans = MessageBox.Show("Are you sure you want to permanently delete this account?", "Confirm Deletion", MessageBoxButtons.YesNo, MessageBoxIcon.Warning)
 
-        ' Proceed only if the user clicks "Yes".
+
         If ans = DialogResult.Yes Then
             Dim sql As String
             Dim dbcomm As MySqlCommand
@@ -344,15 +330,14 @@ Public Class Fadmin
             Try
                 conn.Open()
 
-                ' Create the SQL DELETE command using the ID from the selected row.
+
                 sql = "DELETE FROM acs WHERE account_id = '" & idToDelete & "'"
                 dbcomm = New MySqlCommand(sql, conn)
                 dbcomm.ExecuteNonQuery()
 
-                sql = "DELETE FROM staffs WHERE accout_id = '" & idToDelete & "'"
+                sql = "DELETE FROM staffs WHERE account_id = '" & idToDelete & "'"
                 dbcomm = New MySqlCommand(sql, conn)
-                Dim i As Integer = dbcomm.ExecuteNonQuery() ' Execute the delete command.
-
+                Dim i As Integer = dbcomm.ExecuteNonQuery()
 
                 If (i > 0) Then
                     MsgBox("Request deleted successfully.")
@@ -363,14 +348,13 @@ Public Class Fadmin
             Catch ex As Exception
                 MsgBox("An error occurred while trying to delete the account: " & ex.Message)
             Finally
-                ' This 'Finally' block ensures the connection is always closed,
-                ' even if an error happened.
+
                 If conn.State = ConnectionState.Open Then
                     conn.Close()
                 End If
             End Try
 
-            ' Refresh the DataGridView to show the updated data.
+
             resetgrid()
             resetgrid2()
             resetgrid3()
@@ -476,29 +460,22 @@ Public Class Fadmin
     End Sub
 
     Private Sub Button14_Click(sender As Object, e As EventArgs) Handles Button14.Click
-        ' First, check if any row is selected.
         If DataGridView3.SelectedRows.Count = 0 Then
             MsgBox("select a row in the datagrid to update the salary")
-            Return ' Stop the sub if nothing is selected.
+            Return
         End If
 
-        ' If a row is selected, proceed.
-        ' Get the new salary from the textbox.
         Dim newSalaryText As String = TextBox13.Text.Trim()
 
-        ' Check if the user actually entered a new salary.
         If newSalaryText <> "" Then
-            ' Get the unique ID from the selected row to know WHO to update.
             Dim selectedRow As DataGridViewRow = DataGridView3.SelectedRows(0)
             Dim staffIdToUpdate = selectedRow.Cells("staff_id").Value
 
-            ' --- Validate that the input is a valid number ---
             Dim newSalaryValue As Decimal
             If Not Decimal.TryParse(newSalaryText, newSalaryValue) Then
                 MsgBox("Please enter a valid number for the salary.")
                 Return
             End If
-            ' --- End of Validation ---
 
             Dim sql As String
             Dim dbcomm As MySqlCommand
@@ -506,8 +483,6 @@ Public Class Fadmin
             Try
                 conn.Open()
 
-                ' Build the SQL command to update ONLY the salary for the specific staff_id.
-                ' The salary is a number, so it does not get single quotes.
                 sql = "UPDATE staffs SET staff_salary = " & newSalaryValue & " WHERE staff_id = " & staffIdToUpdate
 
                 dbcomm = New MySqlCommand(sql, conn)
@@ -527,30 +502,23 @@ Public Class Fadmin
                 End If
             End Try
 
-            ' Refresh the grid and clear textboxes
             resetgrid3()
             textboxreset3()
 
         Else
-            ' This message appears if a row is selected but the textbox is empty.
             MsgBox("Please enter a new salary value in the textbox.")
         End If
     End Sub
 
     Private Sub Button13_Click(sender As Object, e As EventArgs) Handles Button13.Click
-        ' First, check if any row is selected.
         If DataGridView3.SelectedRows.Count = 0 Then
             MsgBox("select a row in the datagrid to update the position")
-            Return ' Stop the sub if nothing is selected.
+            Return
         End If
 
-        ' If a row is selected, proceed.
-        ' Get the new position from the ComboBox.
         Dim newPosition As String = ComboBox2.Text.Trim()
 
-        ' Check if the user actually selected a position.
         If newPosition <> "" Then
-            ' Get the unique ID from the selected row to know WHO to update.
             Dim selectedRow As DataGridViewRow = DataGridView3.SelectedRows(0)
             Dim staffIdToUpdate = selectedRow.Cells("staff_id").Value
 
@@ -560,8 +528,6 @@ Public Class Fadmin
             Try
                 conn.Open()
 
-                ' Build the SQL command to update ONLY the position for the specific staff_id.
-                ' The position is a string, so it MUST be enclosed in single quotes.
                 sql = "UPDATE staffs SET position = '" & newPosition & "' WHERE staff_id = " & staffIdToUpdate
 
                 dbcomm = New MySqlCommand(sql, conn)
@@ -581,12 +547,10 @@ Public Class Fadmin
                 End If
             End Try
 
-            ' Refresh the grid and clear textboxes/comboboxes
             resetgrid3()
-            textboxreset3() ' Assuming this also clears your combobox
+            textboxreset3()
 
         Else
-            ' This message appears if a row is selected but the ComboBox is empty.
             MsgBox("Please select a new position from the list.")
         End If
     End Sub

@@ -175,7 +175,7 @@ Public Class FCart
             dbread = dbcomm.ExecuteReader()
 
             If dbread.Read() Then
-                availableStock = Val(dbread("item_quantity")) ' assuming DESCRIPT holds the quantity/stock
+                availableStock = Val(dbread("item_quantity"))
                 itemName = dbread("item_name")
                 itemPrice = dbread("item_price")
             Else

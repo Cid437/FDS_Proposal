@@ -18,7 +18,7 @@ Public Class Fbuy
                 Return CType(ctrl, Label)
             End If
 
-            ' Recursive search
+
             Dim found As Label = FindControlRecursive(ctrl, name)
             If found IsNot Nothing Then Return found
         Next
@@ -243,5 +243,9 @@ Public Class Fbuy
     Private Sub help_Click(sender As Object, e As EventArgs) Handles help.Click
         Me.Hide()
         Fhelp.Show()
+    End Sub
+
+    Private Sub Panel1_Paint(sender As Object, e As PaintEventArgs) Handles Panel1.Paint
+
     End Sub
 End Class
