@@ -446,5 +446,8 @@
   <ItemGroup>
     <None Include="Resources\mata bukas.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shopping-day_medium-1-335746.wav" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

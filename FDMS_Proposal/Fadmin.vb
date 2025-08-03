@@ -191,7 +191,7 @@ Public Class Fadmin
 
         Dim selectedRow As DataGridViewRow = DataGridView1.SelectedRows(0)
         Dim idToDelete = selectedRow.Cells("account_id").Value
-        Dim ans = MessageBox.Show("Are you sure you want to permanently delete this account?", "Confirm Deletion", MessageBoxButtons.YesNo, MessageBoxIcon.Warning)
+        Dim ans = MessageBox.Show("Are you sure you want to permanently delete this account? this will permanently delete rows with the same account number in other tables. ", "Confirm Deletion", MessageBoxButtons.YesNo, MessageBoxIcon.Warning)
 
         If ans = DialogResult.Yes Then
             Dim sql As String
@@ -199,6 +199,29 @@ Public Class Fadmin
 
             Try
                 conn.Open()
+
+                ' Delete children tables
+                sql = "DELETE FROM pawn_request WHERE account_id = " & idToDelete
+                dbcomm = New MySqlCommand(sql, conn)
+                dbcomm.ExecuteNonQuery()
+
+                sql = "DELETE FROM help_request WHERE account_id = " & idToDelete
+                dbcomm = New MySqlCommand(sql, conn)
+                dbcomm.ExecuteNonQuery()
+
+                sql = "DELETE FROM order_description WHERE account_id = " & idToDelete
+                dbcomm = New MySqlCommand(sql, conn)
+                dbcomm.ExecuteNonQuery()
+
+                sql = "DELETE FROM staffs WHERE account_id = " & idToDelete
+                dbcomm = New MySqlCommand(sql, conn)
+                dbcomm.ExecuteNonQuery()
+
+                sql = "DELETE FROM transaction WHERE account_id = " & idToDelete
+                dbcomm = New MySqlCommand(sql, conn)
+                dbcomm.ExecuteNonQuery()
+
+                ' delete parent table
                 sql = "DELETE FROM acs WHERE account_id = '" & idToDelete & "'"
                 dbcomm = New MySqlCommand(sql, conn)
                 Dim i As Integer = dbcomm.ExecuteNonQuery()

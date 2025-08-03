@@ -199,9 +199,6 @@
   <data name="Whats in my Cart2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Whats in my Cart2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="valley_view_center_mall_298790" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\valley-view-center-mall-298790.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="_18" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\18.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -243,5 +240,8 @@
   </data>
   <data name="mata bukas" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\mata bukas.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="shopping_day_medium_1_335746" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\shopping-day_medium-1-335746.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
 </root>

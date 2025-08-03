@@ -2,12 +2,17 @@
     Dim count As Integer = 1
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        My.Computer.Audio.Play(My.Resources.valley_view_center_mall_298790, AudioPlayMode.Background)
+        My.Computer.Audio.Play(My.Resources.shopping_day_medium_1_335746, AudioPlayMode.Background)
+        Timer2.Start()
         Timer1.Start()
     End Sub
 
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
         adder()
+    End Sub
+
+    Private Sub Timer2_Tick(sender As Object, e As EventArgs) Handles Timer2.Tick
+        My.Computer.Audio.Play(My.Resources.shopping_day_medium_1_335746, AudioPlayMode.Background)
     End Sub
 
     Private Sub adder()
@@ -60,4 +65,5 @@
     Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
 
     End Sub
+
 End Class
