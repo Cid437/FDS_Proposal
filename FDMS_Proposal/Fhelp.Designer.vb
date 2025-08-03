@@ -29,6 +29,18 @@ Partial Class Fhelp
         Me.Label1 = New System.Windows.Forms.Label()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Button5 = New System.Windows.Forms.Button()
+        Me.Button6 = New System.Windows.Forms.Button()
+        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Button7 = New System.Windows.Forms.Button()
+        Me.Button8 = New System.Windows.Forms.Button()
+        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.Panel1.SuspendLayout()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Button1
@@ -111,12 +123,112 @@ Partial Class Fhelp
         Me.Button5.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Button5.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.Button5.Location = New System.Drawing.Point(497, 412)
+        Me.Button5.Location = New System.Drawing.Point(391, 412)
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(172, 26)
         Me.Button5.TabIndex = 6
         Me.Button5.Text = "- - - SUBMIT - - -"
         Me.Button5.UseVisualStyleBackColor = False
+        '
+        'Button6
+        '
+        Me.Button6.BackColor = System.Drawing.SystemColors.ButtonFace
+        Me.Button6.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Button6.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.Button6.Location = New System.Drawing.Point(599, 412)
+        Me.Button6.Name = "Button6"
+        Me.Button6.Size = New System.Drawing.Size(172, 26)
+        Me.Button6.TabIndex = 7
+        Me.Button6.Text = "Check replies"
+        Me.Button6.UseVisualStyleBackColor = False
+        '
+        'Panel1
+        '
+        Me.Panel1.Controls.Add(Me.TextBox2)
+        Me.Panel1.Controls.Add(Me.Button8)
+        Me.Panel1.Controls.Add(Me.Label3)
+        Me.Panel1.Controls.Add(Me.DataGridView1)
+        Me.Panel1.Location = New System.Drawing.Point(12, 154)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(348, 284)
+        Me.Panel1.TabIndex = 8
+        Me.Panel1.Visible = False
+        '
+        'DataGridView1
+        '
+        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView1.Location = New System.Drawing.Point(13, 85)
+        Me.DataGridView1.Name = "DataGridView1"
+        Me.DataGridView1.Size = New System.Drawing.Size(311, 183)
+        Me.DataGridView1.TabIndex = 0
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.BackColor = System.Drawing.Color.DarkSlateGray
+        Me.PictureBox1.Location = New System.Drawing.Point(406, 158)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(347, 33)
+        Me.PictureBox1.TabIndex = 9
+        Me.PictureBox1.TabStop = False
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.BackColor = System.Drawing.Color.DarkSlateGray
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.ForeColor = System.Drawing.SystemColors.ButtonFace
+        Me.Label2.Location = New System.Drawing.Point(488, 165)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(187, 20)
+        Me.Label2.TabIndex = 10
+        Me.Label2.Text = "Send a help message:"
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.BackColor = System.Drawing.Color.Transparent
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.Label3.Location = New System.Drawing.Point(79, 28)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(171, 20)
+        Me.Label3.TabIndex = 11
+        Me.Label3.Text = "See your messages:"
+        '
+        'Button7
+        '
+        Me.Button7.BackColor = System.Drawing.SystemColors.ButtonFace
+        Me.Button7.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Button7.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.Button7.Location = New System.Drawing.Point(599, 412)
+        Me.Button7.Name = "Button7"
+        Me.Button7.Size = New System.Drawing.Size(172, 26)
+        Me.Button7.TabIndex = 11
+        Me.Button7.Text = "Back"
+        Me.Button7.UseVisualStyleBackColor = False
+        Me.Button7.Visible = False
+        '
+        'Button8
+        '
+        Me.Button8.BackColor = System.Drawing.SystemColors.ButtonFace
+        Me.Button8.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Button8.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button8.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.Button8.Location = New System.Drawing.Point(13, 51)
+        Me.Button8.Name = "Button8"
+        Me.Button8.Size = New System.Drawing.Size(114, 28)
+        Me.Button8.TabIndex = 12
+        Me.Button8.Text = "Check help ID:"
+        Me.Button8.UseVisualStyleBackColor = False
+        '
+        'TextBox2
+        '
+        Me.TextBox2.Location = New System.Drawing.Point(133, 59)
+        Me.TextBox2.Name = "TextBox2"
+        Me.TextBox2.Size = New System.Drawing.Size(117, 20)
+        Me.TextBox2.TabIndex = 13
         '
         'Fhelp
         '
@@ -125,6 +237,11 @@ Partial Class Fhelp
         Me.BackgroundImage = Global.FDMS_Proposal.My.Resources.Resources.Fhelp
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.Button7)
+        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.PictureBox1)
+        Me.Controls.Add(Me.Panel1)
+        Me.Controls.Add(Me.Button6)
         Me.Controls.Add(Me.Button5)
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.Label1)
@@ -135,6 +252,10 @@ Partial Class Fhelp
         Me.Name = "Fhelp"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Fhelp"
+        Me.Panel1.ResumeLayout(False)
+        Me.Panel1.PerformLayout()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -147,4 +268,13 @@ Partial Class Fhelp
     Friend WithEvents Label1 As Label
     Friend WithEvents TextBox1 As TextBox
     Friend WithEvents Button5 As Button
+    Friend WithEvents Button6 As Button
+    Friend WithEvents Panel1 As Panel
+    Friend WithEvents DataGridView1 As DataGridView
+    Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents Label2 As Label
+    Friend WithEvents Label3 As Label
+    Friend WithEvents Button7 As Button
+    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents Button8 As Button
 End Class
