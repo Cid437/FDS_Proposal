@@ -1,0 +1,42 @@
+use dcpt;
+
+INSERT INTO items (item_id, item_name, item_category, item_price, item_quantity, item_description) VALUES
+-- Jewelry Items (quantity: 3)
+(1, 'Gold Necklace', 'jewelry', 3500.00, 3, 'A 24K solid gold necklace with intricate handcrafted design.'),
+(2, 'Diamond Ring', 'jewelry', 8200.00, 3, 'White gold ring with a brilliant-cut diamond centerpiece.'),
+(3, 'Silver Bracelet', 'jewelry', 1200.00, 3, 'Sterling silver bracelet with engraved floral pattern.'),
+(4, 'Pearl Earrings', 'jewelry', 1800.00, 3, 'Elegant freshwater pearl earrings, set in 14K gold.'),
+(5, 'Emerald Pendant', 'jewelry', 2500.00, 3, 'Pendant featuring an oval-cut emerald in vintage setting.'),
+(6, 'Platinum Watch', 'jewelry', 9500.00, 3, 'Luxury platinum wristwatch with diamond-studded bezel.'),
+
+-- Electronics Items (quantity: 5)
+(7, 'Samsung Smart TV', 'electronics', 32000.00, 5, '55-inch 4K UHD Smart TV with HDR and voice control.'),
+(8, 'Apple MacBook Air', 'electronics', 65000.00, 5, '13-inch Apple laptop with M1 chip, 8GB RAM, 256GB SSD.'),
+(9, 'Canon DSLR Camera', 'electronics', 42000.00, 5, 'EOS 90D DSLR camera with 18-135mm lens and 4K video.'),
+(10, 'Xbox Series X', 'electronics', 35000.00, 5, 'Next-gen gaming console with 1TB SSD and ultra-fast load times.'),
+(11, 'iPhone 13 Pro', 'electronics', 58000.00, 5, '128GB iPhone 13 Pro in Sierra Blue with triple-lens camera.'),
+(12, 'Bluetooth Headphones', 'electronics', 4500.00, 5, 'Noise-canceling wireless headphones with 40-hour battery.'),
+
+-- Antique Items (quantity: 2)
+(13, 'Victorian Clock', 'antique', 7000.00, 2, 'A 19th-century brass mantle clock with original mechanisms.'),
+(14, 'Vintage Radio', 'antique', 4800.00, 2, '1940s Bakelite AM radio in working condition.'),
+(15, 'Typewriter Remington', 'antique', 5300.00, 2, 'Manual Remington typewriter from early 1900s.'),
+(16, 'Antique Map', 'antique', 3000.00, 2, 'Framed 18th-century world map with hand-drawn borders.'),
+(17, 'Oil Lamp', 'antique', 1600.00, 2, 'Glass kerosene lamp with decorative bronze base.'),
+(18, 'Porcelain Tea Set', 'antique', 4500.00, 2, 'Delicate 12-piece tea set from 1920s Japan.'),
+
+-- Others Category (quantity: 4)
+(19, 'Mountain Bike', 'others', 8500.00, 4, 'All-terrain 21-speed mountain bike with disc brakes.'),
+(20, 'Leather Jacket', 'others', 3000.00, 4, 'Genuine leather biker jacket with zip-up front and lining.'),
+(21, 'Electric Guitar', 'others', 9200.00, 4, 'Six-string electric guitar with amplifier, cherry red finish.'),
+(22, 'Designer Handbag', 'others', 15000.00, 4, 'Limited edition branded handbag in black leather.'),
+(23, 'Luggage Set', 'others', 4000.00, 4, '3-piece travel luggage with TSA lock and spinner wheels.'),
+(24, 'Treadmill', 'others', 23000.00, 4, 'Foldable electric treadmill with digital display and pulse monitor.');
+
+INSERT INTO accounts (account_id, name, password, role) VALUES
+(1, 'Donn', 'sydney', 'admin'),
+(2, 'John', 'Jacob', 'staff'),
+(4, 'yown', 'town', 'customer'),
+(5, 'badu', 'town', 'customer');
+
+
