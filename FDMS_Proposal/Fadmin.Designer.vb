@@ -70,6 +70,7 @@ Partial Class Fadmin
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.TabPage4 = New System.Windows.Forms.TabPage()
+        Me.TextBox8 = New System.Windows.Forms.TextBox()
         Me.TabPage3.SuspendLayout()
         CType(Me.DataGridView3, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabPage2.SuspendLayout()
@@ -77,6 +78,7 @@ Partial Class Fadmin
         Me.TabPage1.SuspendLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabControl1.SuspendLayout()
+        Me.TabPage4.SuspendLayout()
         Me.SuspendLayout()
         '
         'Button1
@@ -581,12 +583,20 @@ Partial Class Fadmin
         Me.TabPage4.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.TabPage4.BackgroundImage = Global.FDMS_Proposal.My.Resources.Resources.Fstaff
         Me.TabPage4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.TabPage4.Controls.Add(Me.TextBox8)
         Me.TabPage4.Location = New System.Drawing.Point(4, 22)
         Me.TabPage4.Name = "TabPage4"
         Me.TabPage4.Padding = New System.Windows.Forms.Padding(3)
         Me.TabPage4.Size = New System.Drawing.Size(729, 342)
         Me.TabPage4.TabIndex = 4
         Me.TabPage4.Text = "Income"
+        '
+        'TextBox8
+        '
+        Me.TextBox8.Location = New System.Drawing.Point(128, 86)
+        Me.TextBox8.Name = "TextBox8"
+        Me.TextBox8.Size = New System.Drawing.Size(100, 20)
+        Me.TextBox8.TabIndex = 0
         '
         'Fadmin
         '
@@ -612,6 +622,8 @@ Partial Class Fadmin
         Me.TabPage1.PerformLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabControl1.ResumeLayout(False)
+        Me.TabPage4.ResumeLayout(False)
+        Me.TabPage4.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -664,4 +676,5 @@ Partial Class Fadmin
     Friend WithEvents ComboBox3 As ComboBox
     Friend WithEvents Label10 As Label
     Friend WithEvents TabPage4 As TabPage
+    Friend WithEvents TextBox8 As TextBox
 End Class
