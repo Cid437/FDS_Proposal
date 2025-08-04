@@ -258,6 +258,7 @@ Public Class FCart
             MsgBox("Error: " & ex.Message)
         Finally
             conn.Close()
+
         End Try
     End Sub
 

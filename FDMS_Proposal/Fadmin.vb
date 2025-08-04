@@ -577,4 +577,106 @@ Public Class Fadmin
             MsgBox("Please select a new position from the list.")
         End If
     End Sub
+
+    Private Sub Button16_Click(sender As Object, e As EventArgs) Handles Button16.Click
+        If Not DateTimePicker1.Checked Or Not DateTimePicker2.Checked Then
+            MsgBox("please choose date range")
+            Return
+        End If
+
+        Dim startDate As DateTime = DateTimePicker1.Value
+        Dim endDate As DateTime = DateTimePicker2.Value
+
+        Dim formattedStartDate As String = startDate.ToString("yyyy-MM-dd 00:00:00")
+        Dim formattedEndDate As String = endDate.ToString("yyyy-MM-dd 00:00:00")
+
+        Try
+            conn.Open()
+            sql = "SELECT transaction_id, date_pawned, pawned_ammount, date_due FROM transaction " &
+                  "WHERE date_pawned BETWEEN '" & formattedStartDate & "' AND '" & formattedEndDate & "'"
+
+            DataAdapter1 = New MySqlDataAdapter(sql, conn)
+            ds = New DataSet()
+            DataAdapter1.Fill(ds, "transactions")
+            DataGridView4.DataSource = ds
+            DataGridView4.DataMember = "transactions"
+
+        Catch ex As Exception
+            MsgBox("Error collecting data from Database. Error is :" & ex.Message)
+        Finally
+            If conn.State = ConnectionState.Open Then
+                conn.Close()
+            End If
+        End Try
+    End Sub
+
+    Private Sub Button17_Click(sender As Object, e As EventArgs) Handles Button17.Click
+        If Not DateTimePicker1.Checked OrElse Not DateTimePicker2.Checked Then
+            MsgBox("please choose date range")
+            Return
+        End If
+
+        Dim startDate As DateTime = DateTimePicker1.Value
+        Dim endDate As DateTime = DateTimePicker2.Value
+
+        Dim formattedStartDate As String = startDate.ToString("yyyy-MM-dd 00:00:00")
+        Dim formattedEndDate As String = endDate.ToString("yyyy-MM-dd 23:59:59")
+
+        Dim sql As String
+        Try
+            conn.Open()
+
+            sql = "SELECT SUM(pawned_ammount) AS 'Total Expense' FROM transaction " &
+              "WHERE date_pawned BETWEEN '" & formattedStartDate & "' AND '" & formattedEndDate & "'"
+
+            DataAdapter1 = New MySqlDataAdapter(sql, conn)
+            ds = New DataSet()
+            DataAdapter1.Fill(ds, "total")
+            DataGridView4.DataSource = ds
+            DataGridView4.DataMember = "total"
+
+        Catch ex As Exception
+            MsgBox("An error occurred while calculating the total: " & ex.Message)
+        Finally
+            If conn.State = ConnectionState.Open Then
+                conn.Close()
+            End If
+        End Try
+    End Sub
+
+    Private Sub Button19_Click(sender As Object, e As EventArgs) Handles Button19.Click
+        If Not DateTimePicker3.Checked OrElse Not DateTimePicker4.Checked Then
+            MsgBox("please choose date range")
+            Return
+        End If
+
+        Dim startDate As DateTime = DateTimePicker3.Value
+        Dim endDate As DateTime = DateTimePicker4.Value
+
+        Dim formattedStartDate As String = startDate.ToString("yyyy-MM-dd 00:00:00")
+        Dim formattedEndDate As String = endDate.ToString("yyyy-MM-dd 00:00:00")
+
+        Try
+            conn.Open()
+
+            sql = "SELECT date_pawned AS 'Transaction Date', Payment AS 'Amount', 'Pawn Payment' AS 'Type' FROM transaction " &
+                  "WHERE date_pawned BETWEEN '" & formattedStartDate & "' AND '" & formattedEndDate & "' " &
+                  "UNION ALL " &
+                  "SELECT date_ordered AS 'Transaction Date', price AS 'Amount', 'Order' AS 'Type' FROM order_description " &
+                  "WHERE date_ordered BETWEEN '" & formattedStartDate & "' AND '" & formattedEndDate & "'"
+
+            DataAdapter1 = New MySqlDataAdapter(sql, conn)
+            ds = New DataSet()
+            DataAdapter1.Fill(ds, "financial_report")
+            DataGridView5.DataSource = ds
+            DataGridView5.DataMember = "financial_report"
+
+        Catch ex As Exception
+            MsgBox("Error collecting data from Database. Error is :" & ex.Message)
+        Finally
+            If conn.State = ConnectionState.Open Then
+                conn.Close()
+            End If
+        End Try
+    End Sub
 End Class
