@@ -588,7 +588,7 @@ Public Class Fadmin
         Dim endDate As DateTime = DateTimePicker2.Value
 
         Dim formattedStartDate As String = startDate.ToString("yyyy-MM-dd 00:00:00")
-        Dim formattedEndDate As String = endDate.ToString("yyyy-MM-dd 00:00:00")
+        Dim formattedEndDate As String = endDate.ToString("yyyy-MM-dd 23:59:59")
 
         Try
             conn.Open()
@@ -654,7 +654,7 @@ Public Class Fadmin
         Dim endDate As DateTime = DateTimePicker4.Value
 
         Dim formattedStartDate As String = startDate.ToString("yyyy-MM-dd 00:00:00")
-        Dim formattedEndDate As String = endDate.ToString("yyyy-MM-dd 00:00:00")
+        Dim formattedEndDate As String = endDate.ToString("yyyy-MM-dd 23:59:59")
 
         Try
             conn.Open()
@@ -670,6 +670,42 @@ Public Class Fadmin
             DataAdapter1.Fill(ds, "financial_report")
             DataGridView5.DataSource = ds
             DataGridView5.DataMember = "financial_report"
+
+        Catch ex As Exception
+            MsgBox("Error collecting data from Database. Error is :" & ex.Message)
+        Finally
+            If conn.State = ConnectionState.Open Then
+                conn.Close()
+            End If
+        End Try
+    End Sub
+
+    Private Sub Button18_Click(sender As Object, e As EventArgs) Handles Button18.Click
+        If Not DateTimePicker3.Checked OrElse Not DateTimePicker4.Checked Then
+            MsgBox("please choose date range")
+            Return
+        End If
+
+        Dim startDate As DateTime = DateTimePicker3.Value
+        Dim endDate As DateTime = DateTimePicker4.Value
+
+        Dim formattedStartDate As String = startDate.ToString("yyyy-MM-dd 00:00:00")
+        Dim formattedEndDate As String = endDate.ToString("yyyy-MM-dd 23:59:59")
+
+        Try
+            conn.Open()
+
+            sql = "SELECT 'Total Pawn Payments' AS 'Category', SUM(Payment) AS 'Total Amount' FROM transaction " &
+                  "WHERE date_pawned BETWEEN '" & formattedStartDate & "' AND '" & formattedEndDate & "' " &
+                  "UNION ALL " &
+                  "SELECT 'Total Order Sales' AS 'Category', SUM(price) AS 'Total Amount' FROM order_description " &
+                  "WHERE date_ordered BETWEEN '" & formattedStartDate & "' AND '" & formattedEndDate & "'"
+
+            DataAdapter1 = New MySqlDataAdapter(sql, conn)
+            ds = New DataSet()
+            DataAdapter1.Fill(ds, "totals_report")
+            DataGridView5.DataSource = ds
+            DataGridView5.DataMember = "totals_report"
 
         Catch ex As Exception
             MsgBox("Error collecting data from Database. Error is :" & ex.Message)

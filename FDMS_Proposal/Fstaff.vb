@@ -307,7 +307,7 @@ WHERE
 
         Dim requestedAmountAsDecimal As Decimal = CDec(selectedRow.Cells("requested_ammount").Value)
         Dim finalPawnedAmount As Decimal = requestedAmountAsDecimal + (requestedAmountAsDecimal * interestRate)
-
+        Dim Payment = 0
         Dim processStatus = selectedRow.Cells("process").Value
         Dim pawnDate As DateTime = Date.Now
         Dim maturityDate As DateTime = pawnDate.AddMonths(monthsToAdd)
@@ -318,7 +318,7 @@ WHERE
         Try
             conn.Open()
 
-            sql = "INSERT INTO transaction (request_id, account_id, collateral, collateral_category, pawned_ammount, date_pawned, date_due, t_status) VALUES ('" & requestId & "', '" & accountId & "', '" & collateralName & "', '" & collateralCategory & "', " & finalPawnedAmount & ", '" & pawnDate.ToString("yyyy-MM-dd HH:mm:ss") & "', '" & maturityDate.ToString("yyyy-MM-dd HH:mm:ss") & "', '" & processStatus & "')"
+            sql = "INSERT INTO transaction (request_id, account_id, collateral, collateral_category, pawned_ammount, date_pawned, date_due, t_status, Payment) VALUES ('" & requestId & "', '" & accountId & "', '" & collateralName & "', '" & collateralCategory & "', " & finalPawnedAmount & ", '" & pawnDate.ToString("yyyy-MM-dd HH:mm:ss") & "', '" & maturityDate.ToString("yyyy-MM-dd HH:mm:ss") & "', '" & processStatus & "', '" & Payment & "')"
 
             dbcomm = New MySqlCommand(sql, conn)
             Dim i As Integer = dbcomm.ExecuteNonQuery()

@@ -70,13 +70,13 @@ Partial Class Fadmin
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.TabPage4 = New System.Windows.Forms.TabPage()
+        Me.Button17 = New System.Windows.Forms.Button()
         Me.Label11 = New System.Windows.Forms.Label()
         Me.DateTimePicker2 = New System.Windows.Forms.DateTimePicker()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
         Me.DataGridView4 = New System.Windows.Forms.DataGridView()
         Me.Button16 = New System.Windows.Forms.Button()
-        Me.Button17 = New System.Windows.Forms.Button()
         Me.TabPage5 = New System.Windows.Forms.TabPage()
         Me.Button18 = New System.Windows.Forms.Button()
         Me.Label12 = New System.Windows.Forms.Label()
@@ -103,7 +103,7 @@ Partial Class Fadmin
         Me.Button1.BackColor = System.Drawing.Color.White
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Button1.Location = New System.Drawing.Point(35, 23)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(4)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(100, 28)
         Me.Button1.TabIndex = 4
@@ -115,7 +115,7 @@ Partial Class Fadmin
         Me.Button9.BackColor = System.Drawing.Color.White
         Me.Button9.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Button9.Location = New System.Drawing.Point(180, 23)
-        Me.Button9.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button9.Margin = New System.Windows.Forms.Padding(4)
         Me.Button9.Name = "Button9"
         Me.Button9.Size = New System.Drawing.Size(135, 28)
         Me.Button9.TabIndex = 6
@@ -183,7 +183,7 @@ Partial Class Fadmin
         'TextBox12
         '
         Me.TextBox12.Location = New System.Drawing.Point(292, 113)
-        Me.TextBox12.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TextBox12.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox12.Name = "TextBox12"
         Me.TextBox12.Size = New System.Drawing.Size(132, 22)
         Me.TextBox12.TabIndex = 60
@@ -191,7 +191,7 @@ Partial Class Fadmin
         'TextBox13
         '
         Me.TextBox13.Location = New System.Drawing.Point(292, 199)
-        Me.TextBox13.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TextBox13.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox13.Name = "TextBox13"
         Me.TextBox13.Size = New System.Drawing.Size(132, 22)
         Me.TextBox13.TabIndex = 58
@@ -221,7 +221,7 @@ Partial Class Fadmin
         'Button13
         '
         Me.Button13.Location = New System.Drawing.Point(43, 287)
-        Me.Button13.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button13.Margin = New System.Windows.Forms.Padding(4)
         Me.Button13.Name = "Button13"
         Me.Button13.Size = New System.Drawing.Size(123, 26)
         Me.Button13.TabIndex = 51
@@ -231,7 +231,7 @@ Partial Class Fadmin
         'Button14
         '
         Me.Button14.Location = New System.Drawing.Point(43, 197)
-        Me.Button14.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button14.Margin = New System.Windows.Forms.Padding(4)
         Me.Button14.Name = "Button14"
         Me.Button14.Size = New System.Drawing.Size(123, 28)
         Me.Button14.TabIndex = 50
@@ -241,7 +241,7 @@ Partial Class Fadmin
         'Button15
         '
         Me.Button15.Location = New System.Drawing.Point(43, 110)
-        Me.Button15.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button15.Margin = New System.Windows.Forms.Padding(4)
         Me.Button15.Name = "Button15"
         Me.Button15.Size = New System.Drawing.Size(100, 28)
         Me.Button15.TabIndex = 49
@@ -255,7 +255,7 @@ Partial Class Fadmin
         Me.DataGridView3.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells
         Me.DataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridView3.Location = New System.Drawing.Point(523, 21)
-        Me.DataGridView3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.DataGridView3.Margin = New System.Windows.Forms.Padding(4)
         Me.DataGridView3.Name = "DataGridView3"
         Me.DataGridView3.RowHeadersWidth = 51
         Me.DataGridView3.Size = New System.Drawing.Size(435, 380)
@@ -266,7 +266,7 @@ Partial Class Fadmin
         Me.Button12.BackColor = System.Drawing.Color.Black
         Me.Button12.ForeColor = System.Drawing.Color.White
         Me.Button12.Location = New System.Drawing.Point(411, 21)
-        Me.Button12.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button12.Margin = New System.Windows.Forms.Padding(4)
         Me.Button12.Name = "Button12"
         Me.Button12.Size = New System.Drawing.Size(104, 37)
         Me.Button12.TabIndex = 33
@@ -293,9 +293,9 @@ Partial Class Fadmin
         Me.TabPage2.Controls.Add(Me.Button7)
         Me.TabPage2.Controls.Add(Me.Button6)
         Me.TabPage2.Location = New System.Drawing.Point(4, 25)
-        Me.TabPage2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TabPage2.Margin = New System.Windows.Forms.Padding(4)
         Me.TabPage2.Name = "TabPage2"
-        Me.TabPage2.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TabPage2.Padding = New System.Windows.Forms.Padding(4)
         Me.TabPage2.Size = New System.Drawing.Size(975, 424)
         Me.TabPage2.TabIndex = 1
         Me.TabPage2.Text = " Staffs"
@@ -337,7 +337,7 @@ Partial Class Fadmin
         'TextBox7
         '
         Me.TextBox7.Location = New System.Drawing.Point(300, 283)
-        Me.TextBox7.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TextBox7.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox7.Name = "TextBox7"
         Me.TextBox7.Size = New System.Drawing.Size(132, 22)
         Me.TextBox7.TabIndex = 39
@@ -345,7 +345,7 @@ Partial Class Fadmin
         'TextBox5
         '
         Me.TextBox5.Location = New System.Drawing.Point(300, 156)
-        Me.TextBox5.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TextBox5.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox5.Name = "TextBox5"
         Me.TextBox5.Size = New System.Drawing.Size(132, 22)
         Me.TextBox5.TabIndex = 36
@@ -353,7 +353,7 @@ Partial Class Fadmin
         'TextBox6
         '
         Me.TextBox6.Location = New System.Drawing.Point(300, 218)
-        Me.TextBox6.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TextBox6.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox6.Name = "TextBox6"
         Me.TextBox6.Size = New System.Drawing.Size(132, 22)
         Me.TextBox6.TabIndex = 35
@@ -361,7 +361,7 @@ Partial Class Fadmin
         'TextBox4
         '
         Me.TextBox4.Location = New System.Drawing.Point(300, 86)
-        Me.TextBox4.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TextBox4.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox4.Name = "TextBox4"
         Me.TextBox4.Size = New System.Drawing.Size(132, 22)
         Me.TextBox4.TabIndex = 33
@@ -406,7 +406,7 @@ Partial Class Fadmin
         Me.DataGridView2.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells
         Me.DataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridView2.Location = New System.Drawing.Point(523, 21)
-        Me.DataGridView2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.DataGridView2.Margin = New System.Windows.Forms.Padding(4)
         Me.DataGridView2.Name = "DataGridView2"
         Me.DataGridView2.RowHeadersWidth = 51
         Me.DataGridView2.Size = New System.Drawing.Size(435, 380)
@@ -417,7 +417,7 @@ Partial Class Fadmin
         Me.Button11.BackColor = System.Drawing.Color.Black
         Me.Button11.ForeColor = System.Drawing.Color.White
         Me.Button11.Location = New System.Drawing.Point(411, 21)
-        Me.Button11.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button11.Margin = New System.Windows.Forms.Padding(4)
         Me.Button11.Name = "Button11"
         Me.Button11.Size = New System.Drawing.Size(104, 37)
         Me.Button11.TabIndex = 31
@@ -427,7 +427,7 @@ Partial Class Fadmin
         'Button8
         '
         Me.Button8.Location = New System.Drawing.Point(55, 279)
-        Me.Button8.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button8.Margin = New System.Windows.Forms.Padding(4)
         Me.Button8.Name = "Button8"
         Me.Button8.Size = New System.Drawing.Size(100, 26)
         Me.Button8.TabIndex = 4
@@ -437,7 +437,7 @@ Partial Class Fadmin
         'Button7
         '
         Me.Button7.Location = New System.Drawing.Point(55, 190)
-        Me.Button7.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button7.Margin = New System.Windows.Forms.Padding(4)
         Me.Button7.Name = "Button7"
         Me.Button7.Size = New System.Drawing.Size(100, 28)
         Me.Button7.TabIndex = 3
@@ -447,7 +447,7 @@ Partial Class Fadmin
         'Button6
         '
         Me.Button6.Location = New System.Drawing.Point(55, 102)
-        Me.Button6.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button6.Margin = New System.Windows.Forms.Padding(4)
         Me.Button6.Name = "Button6"
         Me.Button6.Size = New System.Drawing.Size(100, 28)
         Me.Button6.TabIndex = 2
@@ -473,9 +473,9 @@ Partial Class Fadmin
         Me.TabPage1.Controls.Add(Me.Label1)
         Me.TabPage1.Controls.Add(Me.DataGridView1)
         Me.TabPage1.Location = New System.Drawing.Point(4, 25)
-        Me.TabPage1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TabPage1.Margin = New System.Windows.Forms.Padding(4)
         Me.TabPage1.Name = "TabPage1"
-        Me.TabPage1.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TabPage1.Padding = New System.Windows.Forms.Padding(4)
         Me.TabPage1.Size = New System.Drawing.Size(975, 424)
         Me.TabPage1.TabIndex = 0
         Me.TabPage1.Text = "Accounts"
@@ -497,7 +497,7 @@ Partial Class Fadmin
         Me.Button10.BackColor = System.Drawing.Color.Black
         Me.Button10.ForeColor = System.Drawing.Color.White
         Me.Button10.Location = New System.Drawing.Point(411, 21)
-        Me.Button10.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button10.Margin = New System.Windows.Forms.Padding(4)
         Me.Button10.Name = "Button10"
         Me.Button10.Size = New System.Drawing.Size(104, 37)
         Me.Button10.TabIndex = 30
@@ -507,7 +507,7 @@ Partial Class Fadmin
         'Button5
         '
         Me.Button5.Location = New System.Drawing.Point(67, 292)
-        Me.Button5.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button5.Margin = New System.Windows.Forms.Padding(4)
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(81, 32)
         Me.Button5.TabIndex = 29
@@ -517,7 +517,7 @@ Partial Class Fadmin
         'Button4
         '
         Me.Button4.Location = New System.Drawing.Point(67, 215)
-        Me.Button4.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button4.Margin = New System.Windows.Forms.Padding(4)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(81, 32)
         Me.Button4.TabIndex = 28
@@ -527,7 +527,7 @@ Partial Class Fadmin
         'Button3
         '
         Me.Button3.Location = New System.Drawing.Point(67, 153)
-        Me.Button3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button3.Margin = New System.Windows.Forms.Padding(4)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(81, 32)
         Me.Button3.TabIndex = 27
@@ -537,7 +537,7 @@ Partial Class Fadmin
         'Button2
         '
         Me.Button2.Location = New System.Drawing.Point(67, 89)
-        Me.Button2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button2.Margin = New System.Windows.Forms.Padding(4)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(83, 37)
         Me.Button2.TabIndex = 26
@@ -558,7 +558,7 @@ Partial Class Fadmin
         'TextBox3
         '
         Me.TextBox3.Location = New System.Drawing.Point(275, 223)
-        Me.TextBox3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TextBox3.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox3.Name = "TextBox3"
         Me.TextBox3.Size = New System.Drawing.Size(132, 22)
         Me.TextBox3.TabIndex = 13
@@ -566,7 +566,7 @@ Partial Class Fadmin
         'TextBox2
         '
         Me.TextBox2.Location = New System.Drawing.Point(275, 158)
-        Me.TextBox2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TextBox2.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(132, 22)
         Me.TextBox2.TabIndex = 11
@@ -574,7 +574,7 @@ Partial Class Fadmin
         'TextBox1
         '
         Me.TextBox1.Location = New System.Drawing.Point(275, 92)
-        Me.TextBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TextBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(132, 22)
         Me.TextBox1.TabIndex = 9
@@ -619,7 +619,7 @@ Partial Class Fadmin
         Me.DataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridView1.Location = New System.Drawing.Point(523, 21)
-        Me.DataGridView1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.DataGridView1.Margin = New System.Windows.Forms.Padding(4)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.RowHeadersWidth = 51
         Me.DataGridView1.Size = New System.Drawing.Size(435, 380)
@@ -633,7 +633,7 @@ Partial Class Fadmin
         Me.TabControl1.Controls.Add(Me.TabPage4)
         Me.TabControl1.Controls.Add(Me.TabPage5)
         Me.TabControl1.Location = New System.Drawing.Point(49, 78)
-        Me.TabControl1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TabControl1.Margin = New System.Windows.Forms.Padding(4)
         Me.TabControl1.Name = "TabControl1"
         Me.TabControl1.SelectedIndex = 0
         Me.TabControl1.Size = New System.Drawing.Size(983, 453)
@@ -652,12 +652,22 @@ Partial Class Fadmin
         Me.TabPage4.Controls.Add(Me.DataGridView4)
         Me.TabPage4.Controls.Add(Me.Button16)
         Me.TabPage4.Location = New System.Drawing.Point(4, 25)
-        Me.TabPage4.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TabPage4.Margin = New System.Windows.Forms.Padding(4)
         Me.TabPage4.Name = "TabPage4"
-        Me.TabPage4.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TabPage4.Padding = New System.Windows.Forms.Padding(4)
         Me.TabPage4.Size = New System.Drawing.Size(975, 424)
         Me.TabPage4.TabIndex = 4
         Me.TabPage4.Text = "Expenses"
+        '
+        'Button17
+        '
+        Me.Button17.Location = New System.Drawing.Point(226, 90)
+        Me.Button17.Margin = New System.Windows.Forms.Padding(4)
+        Me.Button17.Name = "Button17"
+        Me.Button17.Size = New System.Drawing.Size(131, 45)
+        Me.Button17.TabIndex = 10
+        Me.Button17.Text = "Calculate total Expences"
+        Me.Button17.UseVisualStyleBackColor = True
         '
         'Label11
         '
@@ -675,7 +685,7 @@ Partial Class Fadmin
         'DateTimePicker2
         '
         Me.DateTimePicker2.Location = New System.Drawing.Point(45, 287)
-        Me.DateTimePicker2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.DateTimePicker2.Margin = New System.Windows.Forms.Padding(4)
         Me.DateTimePicker2.Name = "DateTimePicker2"
         Me.DateTimePicker2.Size = New System.Drawing.Size(265, 22)
         Me.DateTimePicker2.TabIndex = 8
@@ -696,7 +706,7 @@ Partial Class Fadmin
         'DateTimePicker1
         '
         Me.DateTimePicker1.Location = New System.Drawing.Point(45, 194)
-        Me.DateTimePicker1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.DateTimePicker1.Margin = New System.Windows.Forms.Padding(4)
         Me.DateTimePicker1.Name = "DateTimePicker1"
         Me.DateTimePicker1.Size = New System.Drawing.Size(265, 22)
         Me.DateTimePicker1.TabIndex = 6
@@ -705,7 +715,7 @@ Partial Class Fadmin
         '
         Me.DataGridView4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridView4.Location = New System.Drawing.Point(485, 52)
-        Me.DataGridView4.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.DataGridView4.Margin = New System.Windows.Forms.Padding(4)
         Me.DataGridView4.Name = "DataGridView4"
         Me.DataGridView4.RowHeadersWidth = 51
         Me.DataGridView4.Size = New System.Drawing.Size(444, 329)
@@ -714,22 +724,12 @@ Partial Class Fadmin
         'Button16
         '
         Me.Button16.Location = New System.Drawing.Point(45, 90)
-        Me.Button16.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button16.Margin = New System.Windows.Forms.Padding(4)
         Me.Button16.Name = "Button16"
         Me.Button16.Size = New System.Drawing.Size(132, 28)
         Me.Button16.TabIndex = 1
         Me.Button16.Text = "List expense:"
         Me.Button16.UseVisualStyleBackColor = True
-        '
-        'Button17
-        '
-        Me.Button17.Location = New System.Drawing.Point(226, 90)
-        Me.Button17.Margin = New System.Windows.Forms.Padding(4)
-        Me.Button17.Name = "Button17"
-        Me.Button17.Size = New System.Drawing.Size(131, 45)
-        Me.Button17.TabIndex = 10
-        Me.Button17.Text = "Calculate total Expences"
-        Me.Button17.UseVisualStyleBackColor = True
         '
         'TabPage5
         '

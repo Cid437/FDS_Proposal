@@ -286,52 +286,58 @@ Public Class Fpawn
 
     Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
         Dim transaction_id As Integer
-        Dim amount_to_deduct As Decimal
+        Dim amount_to_pay As Decimal
+
         If TextBox3.Text = "" Then
             MsgBox("Please input data on seach box", MsgBoxStyle.Information)
         ElseIf TextBox7.Text = "" Then
             MsgBox("Please input how much you want to pay", MsgBoxStyle.Information)
         Else
-
             Try
                 conn.Open()
 
                 transaction_id = Val(TextBox3.Text)
-                amount_to_deduct = Val(TextBox7.Text)
+                amount_to_pay = Val(TextBox7.Text)
 
-                sql = "UPDATE transaction SET pawned_ammount = pawned_ammount - " & amount_to_deduct & " WHERE transaction_id = " & transaction_id
-                dbcomm = New MySqlCommand(sql, conn)
-                Dim i As Integer = dbcomm.ExecuteNonQuery()
+                Dim checkSql As String = "SELECT pawned_ammount FROM transaction WHERE transaction_id = " & transaction_id
+                Dim checkComm As New MySqlCommand(checkSql, conn)
+                Dim current_balance_checker As Object = checkComm.ExecuteScalar()
 
-                If i > 0 Then
+                If current_balance_checker Is Nothing Or IsDBNull(current_balance_checker) Then
+                    MsgBox("Update failed. The Transaction ID was not found.", MessageBoxIcon.Warning)
+                Else
+                    Dim current_balance As Decimal = CDec(current_balance_checker)
 
-                    Dim checkSql As String = "SELECT pawned_ammount FROM transaction WHERE transaction_id = " & transaction_id
-                    Dim checkComm As New MySqlCommand(checkSql, conn)
-                    Dim new_amount As Object = checkComm.ExecuteScalar()
+                    If amount_to_pay < current_balance Then
+                        sql = "UPDATE transaction SET pawned_ammount = pawned_ammount - " & amount_to_pay & ", Payment = Payment + " & amount_to_pay & " WHERE transaction_id = " & transaction_id
+                        dbcomm = New MySqlCommand(sql, conn)
+                        dbcomm.ExecuteNonQuery()
+                        MsgBox("Amount deducted successfully.", MsgBoxStyle.Information)
 
-                    If Val(new_amount) <= 0 Then
-                        MsgBox("please connect with our staff to complete the transaction")
+                    Else
+                        Dim change As Decimal = amount_to_pay - current_balance
+                        sql = "UPDATE transaction SET pawned_ammount = 0, Payment = Payment + " & amount_to_pay & " WHERE transaction_id = " & transaction_id
+                        dbcomm = New MySqlCommand(sql, conn)
+                        dbcomm.ExecuteNonQuery()
+
+                        MsgBox("Payment complete! Your change is: " & FormatCurrency(change) & vbCrLf & vbCrLf & "please connect with our staff to complete the transaction")
+
                         TextBox3.Text = ""
                         TextBox4.Text = ""
                         TextBox5.Text = ""
                         TextBox6.Text = ""
                         TextBox7.Text = ""
-
-
-                    Else
-                        MsgBox("Amount deducted successfully.", MsgBoxStyle.Information)
                     End If
-                Else
-                    MsgBox("Update failed. The Transaction ID was not found.", MessageBoxIcon.Warning)
                 End If
-            Catch
 
+            Catch ex As Exception
+                MsgBox("An error occurred: " & ex.Message)
             End Try
-        End If
-        conn.Close()
 
-        reloaddatagrid6()
-        textboxvalues()
+            conn.Close()
+            reloaddatagrid6()
+            textboxvalues()
+        End If
     End Sub
 
     Private Sub TabPage3_Click(sender As Object, e As EventArgs) Handles TabPage3.Click
