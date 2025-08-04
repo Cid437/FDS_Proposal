@@ -70,7 +70,12 @@ Partial Class Fadmin
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.TabPage4 = New System.Windows.Forms.TabPage()
-        Me.TextBox8 = New System.Windows.Forms.TextBox()
+        Me.Button16 = New System.Windows.Forms.Button()
+        Me.DataGridView4 = New System.Windows.Forms.DataGridView()
+        Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label11 = New System.Windows.Forms.Label()
+        Me.DateTimePicker2 = New System.Windows.Forms.DateTimePicker()
         Me.TabPage3.SuspendLayout()
         CType(Me.DataGridView3, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabPage2.SuspendLayout()
@@ -79,6 +84,7 @@ Partial Class Fadmin
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabControl1.SuspendLayout()
         Me.TabPage4.SuspendLayout()
+        CType(Me.DataGridView4, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Button1
@@ -583,20 +589,73 @@ Partial Class Fadmin
         Me.TabPage4.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.TabPage4.BackgroundImage = Global.FDMS_Proposal.My.Resources.Resources.Fstaff
         Me.TabPage4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.TabPage4.Controls.Add(Me.TextBox8)
+        Me.TabPage4.Controls.Add(Me.Label11)
+        Me.TabPage4.Controls.Add(Me.DateTimePicker2)
+        Me.TabPage4.Controls.Add(Me.Label4)
+        Me.TabPage4.Controls.Add(Me.DateTimePicker1)
+        Me.TabPage4.Controls.Add(Me.DataGridView4)
+        Me.TabPage4.Controls.Add(Me.Button16)
         Me.TabPage4.Location = New System.Drawing.Point(4, 22)
         Me.TabPage4.Name = "TabPage4"
         Me.TabPage4.Padding = New System.Windows.Forms.Padding(3)
         Me.TabPage4.Size = New System.Drawing.Size(729, 342)
         Me.TabPage4.TabIndex = 4
-        Me.TabPage4.Text = "Income"
+        Me.TabPage4.Text = "Expenses"
         '
-        'TextBox8
+        'Button16
         '
-        Me.TextBox8.Location = New System.Drawing.Point(128, 86)
-        Me.TextBox8.Name = "TextBox8"
-        Me.TextBox8.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox8.TabIndex = 0
+        Me.Button16.Location = New System.Drawing.Point(34, 73)
+        Me.Button16.Name = "Button16"
+        Me.Button16.Size = New System.Drawing.Size(99, 23)
+        Me.Button16.TabIndex = 1
+        Me.Button16.Text = "Check expense:"
+        Me.Button16.UseVisualStyleBackColor = True
+        '
+        'DataGridView4
+        '
+        Me.DataGridView4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView4.Location = New System.Drawing.Point(364, 42)
+        Me.DataGridView4.Name = "DataGridView4"
+        Me.DataGridView4.Size = New System.Drawing.Size(333, 267)
+        Me.DataGridView4.TabIndex = 5
+        '
+        'DateTimePicker1
+        '
+        Me.DateTimePicker1.Location = New System.Drawing.Point(34, 158)
+        Me.DateTimePicker1.Name = "DateTimePicker1"
+        Me.DateTimePicker1.Size = New System.Drawing.Size(200, 20)
+        Me.DateTimePicker1.TabIndex = 6
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.BackColor = System.Drawing.Color.Transparent
+        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Label4.Location = New System.Drawing.Point(31, 129)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(73, 16)
+        Me.Label4.TabIndex = 7
+        Me.Label4.Text = "start date"
+        '
+        'Label11
+        '
+        Me.Label11.AutoSize = True
+        Me.Label11.BackColor = System.Drawing.Color.Transparent
+        Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label11.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Label11.Location = New System.Drawing.Point(31, 204)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(69, 16)
+        Me.Label11.TabIndex = 9
+        Me.Label11.Text = "end date"
+        '
+        'DateTimePicker2
+        '
+        Me.DateTimePicker2.Location = New System.Drawing.Point(34, 233)
+        Me.DateTimePicker2.Name = "DateTimePicker2"
+        Me.DateTimePicker2.Size = New System.Drawing.Size(200, 20)
+        Me.DateTimePicker2.TabIndex = 8
         '
         'Fadmin
         '
@@ -624,6 +683,7 @@ Partial Class Fadmin
         Me.TabControl1.ResumeLayout(False)
         Me.TabPage4.ResumeLayout(False)
         Me.TabPage4.PerformLayout()
+        CType(Me.DataGridView4, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -676,5 +736,10 @@ Partial Class Fadmin
     Friend WithEvents ComboBox3 As ComboBox
     Friend WithEvents Label10 As Label
     Friend WithEvents TabPage4 As TabPage
-    Friend WithEvents TextBox8 As TextBox
+    Friend WithEvents Label11 As Label
+    Friend WithEvents DateTimePicker2 As DateTimePicker
+    Friend WithEvents Label4 As Label
+    Friend WithEvents DateTimePicker1 As DateTimePicker
+    Friend WithEvents DataGridView4 As DataGridView
+    Friend WithEvents Button16 As Button
 End Class
