@@ -82,6 +82,7 @@ CREATE TABLE transaction (
   t_status ENUM('ongoing','redeemed','forfeited'),
   collateral VARCHAR(45),
   collateral_category VARCHAR(45),
+  Payment DECIMAL(10, 2),
   PRIMARY KEY (transaction_id),
   FOREIGN KEY (request_id) REFERENCES pawn_request(request_id),
   FOREIGN KEY (account_id) REFERENCES acs(account_id)
